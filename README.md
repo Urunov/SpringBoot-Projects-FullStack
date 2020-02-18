@@ -23,3 +23,6 @@ We take an opinionated view of the Spring platform and third-party libraries so 
 
 Spring boot, JSP, JSON and H2 database integartion small project. 
 
+## Spring Boot Core elements
+
+![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
