@@ -1,4 +1,4 @@
-package Controllers;
+package controllers;
 
 import model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +22,11 @@ public class MainRestController {
 
     @Autowired
     private MainService mainService;
+
+    @GetMapping(value = "/")
+    public String hello(){
+        return "Hello Again.";
+    }
 
     @GetMapping("/findAllBook")
     public Collection<Book> getAllBooks(){

@@ -1,7 +1,9 @@
 package model;
 
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -12,19 +14,22 @@ import java.util.Date;
 @Entity(name = "materials")
 @ToString
 @NoArgsConstructor
+@Getter
+@Setter
+
 public class Book {
     //
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column(name = "book_name")
+//    @Column(name = "book_name")
     @NotBlank
     private String bookName;
 
     private String author;
 
-    @Column(name = "date")
+//    @Column(name = "date")
     @NotBlank
     @Temporal(TemporalType.DATE)
     private Date purchaseDate;
