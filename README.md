@@ -16,10 +16,14 @@ Architecure, anation relationship.
 ![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
 
 ##
-2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
+2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFirst)
 
-   * Create stand-alone Spring applications, only small project. 
+   * Create Spring applications with JSP. 
 
+##
+3. [ Spring Boot Second](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSecond)
+
+   * Create Spring applications with JSP. 
 * Embed Tomcat, Jetty or Undertow directly 
 
 * Provide opinionated 'starter' dependencies to simplify your build configuration
