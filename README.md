@@ -6,6 +6,10 @@
   
   . tbl ("Column 1", "Column 2", "Column 3" \ 10, 100, 1000 )
 ##
+. tbl ({l}"Left", {c}"Centered", {r}"Right" \ c(os),  c(machine_type), c(username))
+##
+
+##
 We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
 
 ##  Features 
