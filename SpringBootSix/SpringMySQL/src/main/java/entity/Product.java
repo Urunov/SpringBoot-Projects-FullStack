@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Data
 @AllArgsConstructor
 @Entity
-@Table(name = "PRODUCT_TBL")
+@Table(name = "item")
 @NoArgsConstructor
 
 

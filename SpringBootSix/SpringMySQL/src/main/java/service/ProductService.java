@@ -2,11 +2,13 @@ package service;
 
 import entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+
+import org.springframework.stereotype.Service;
 import repository.ProductRepository;
 
 import java.util.List;
 
+@Service
 public class ProductService {
     //
     @Autowired

@@ -26,6 +26,6 @@ public class Laptop {
     }
 
     public void compile() {
-        System.out.println("comiling now laptop" );
+        System.out.println("compiling now laptop" );
     }
 }
