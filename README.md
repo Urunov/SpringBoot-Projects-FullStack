@@ -7,12 +7,23 @@
 ------------  - - - - - - - - - - - - - - - - - - - - - - -   --------------
 
 ##
-We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration.
+We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
 
 ##  Features 
-* Create stand-alone Spring applications
+1. Spring Boot Core 
+* Create stand-alone Spring applications, only small project relates Spring Boot
+1. [ Description. ](#desc)
+2. [ Usage tips. ](#usage)
 
-* Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files)
+<a name="desc"></a>
+## 1. Description
+
+
+
+
+
+
+* Embed Tomcat, Jetty or Undertow directly 
 
 * Provide opinionated 'starter' dependencies to simplify your build configuration
 
