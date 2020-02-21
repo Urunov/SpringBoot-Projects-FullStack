@@ -11,11 +11,11 @@ We take an opinionated view of the Spring platform and several-party libraries s
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
 
    * Create stand-alone Spring applications, only small project. 
-## Architecure, anation relationship.
 
+Architecure, anation relationship.
 ![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
 
-
+##
 
 2. [ Usage tips. ](#usage)
 * Embed Tomcat, Jetty or Undertow directly 
