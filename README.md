@@ -1,13 +1,15 @@
 # Spring-Boot-Project
 
-  -> Core Project till Professional Project Spring Boot
-
+  - Spring Boot
+  - Spring Boot H2
+  - Spring Boot JPA, MySQL
+  
 ------------  - - - - - - - - - - - - - - - - - - - - - - -   --------------
 
+##
+We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration.
 
-We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
-
->> Features <<
+##  Features 
 * Create stand-alone Spring applications
 
 * Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files)
