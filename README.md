@@ -4,7 +4,7 @@
   - Spring Boot H2
   - Spring Boot JPA, MySQL
   
- # Essential elemnts
+ # Essential elements
   
 | Components  | Technology  | 
 | :---        |    :----:   |   
