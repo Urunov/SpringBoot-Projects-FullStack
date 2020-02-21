@@ -24,6 +24,28 @@ Architecure, anation relationship.
 3. [ Spring Boot Second](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSecond)
 
    * Create Spring applications with JSP. 
+##
+4. [ Spring Boot Three](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootThree)
+
+   * Create Spring applications with MySQL 
+##
+5. [ Spring Boot Four](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFour)
+
+   * Create Spring applications with MySQL    
+##
+6. [ Spring Boot Five](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFive)
+
+   * Create Spring applications with JPA, MySQL    
+##
+7. [ Spring Boot Six](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSix)
+
+   * Create Spring applications with JPA, MySQL    
+
+##
+8. [ Spring Boot Seven](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSeven)
+
+   * Create Spring applications with JPA, MySQL    
+
 * Embed Tomcat, Jetty or Undertow directly 
 
 * Provide opinionated 'starter' dependencies to simplify your build configuration
