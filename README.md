@@ -4,12 +4,19 @@
   - Spring Boot H2
   - Spring Boot JPA, MySQL
   
-  tbl ("Column 1", "Column 2", "Column 3" \ 10, 100, 1000 )
+ # Essential elemnts
   
-  | Syntax      | Description | Test Text     |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Components  | Technology  | 
+| :---        |    :----:   |   
+|   Frontend  | BootStrap, Jsp -> React 16+       | 
+| Backend   | Spring Boot 2.1+, Java 8, and Java 11+   |
+|Security | //Spring Security, JWT|
+| Database | H2, MySQL (workbench), MangoDB|
+|API Documentation	| Swagger API (Hub)|
+|Client Build | npm, yarn, webpack|
+|Server Build| Maven|
+
+
 ##
 We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
 
