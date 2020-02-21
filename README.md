@@ -12,17 +12,16 @@ We take an opinionated view of the Spring platform and several-party libraries s
 ##  Features 
 1. Spring Boot Core 
 * Create stand-alone Spring applications, only small project relates Spring Boot
-1. [ Description. ](#desc)
+1. [ Description. ](#Core)
+
+<a name="Core"></a>
+## 1. Small Architecure: anotation relationship.
+
+![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
+
+
+
 2. [ Usage tips. ](#usage)
-
-<a name="desc"></a>
-## 1. Description
-
-
-
-
-
-
 * Embed Tomcat, Jetty or Undertow directly 
 
 * Provide opinionated 'starter' dependencies to simplify your build configuration
@@ -36,6 +35,4 @@ We take an opinionated view of the Spring platform and several-party libraries s
 
 Spring boot, JSP, JSON and H2 database integartion small project. 
 
-## Spring Boot Core elements
 
-![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
