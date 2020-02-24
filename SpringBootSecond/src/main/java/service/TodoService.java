@@ -42,7 +42,6 @@ public class TodoService implements ITodoService {
         if(todo.isPresent()) {
             todoRepository.delete(todo.get());
         }
-
     }
 
     @Override

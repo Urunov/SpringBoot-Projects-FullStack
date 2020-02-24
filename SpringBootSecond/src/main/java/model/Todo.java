@@ -5,12 +5,12 @@ import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
-@Table(name = "management")
+@Table
 
 public class Todo {
     //
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     private String userName;
@@ -19,19 +19,16 @@ public class Todo {
     private String description;
 
     private Date targetDate;
-
-    private boolean isDone;
-
     public Todo() {
         super();
     }
 
     public Todo(String name, String description, Date targetDate, boolean isDone) {
         //
+        super();
         this.userName = name;
         this.description = description;
         this.targetDate = targetDate;
-        this.isDone = isDone;
     }
 
     public long getId() {
