@@ -1,0 +1,2 @@
+1. Why cannot connet MySQL
+2. Improtant is secure password
