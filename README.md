@@ -59,6 +59,27 @@ Architecure, anation relationship.
 
    * Create Spring applications with JPA, MySQL    
 
+##
+9. [ Spring Boot Eight](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSeven)
+
+   * Create Spring applications with JPA, MySQL  
+ 
+ ##
+10. [ Spring Boot Nine](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootNine)
+
+   * Create MySQL Database
+   * Create Project
+   * Specify Dependencies (Maven)
+   * Code Model Class
+   * Code DAO Classes + Unit Tests
+   * Configure Spring MVC Dispatcher Servlet
+   * Configure Spring MVC
+   * Code Spring Controller
+   * Code JSPs
+   * Test Application 
+   
+  
+
 * Embed Tomcat, Jetty or Undertow directly 
 
 * Provide opinionated 'starter' dependencies to simplify your build configuration
