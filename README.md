@@ -6,6 +6,7 @@
   - Database
     + H2
     + MySQL CRUD
+    + JPA
     + Oracle  etc.
 #  
  # Essential elements
