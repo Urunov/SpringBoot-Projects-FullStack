@@ -25,16 +25,14 @@
 ##
 We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
 
-#  Features 
+#  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
-
 
    * Create stand-alone Spring applications, only small project. 
    
-# Reference Resources 
- [ 1. Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
+    [ a. Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
 
- [ 2. Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
+    [ b. Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
 
 ##
 2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFirst)
