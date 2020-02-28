@@ -83,7 +83,6 @@ We take an opinionated view of the Spring platform and several-party libraries s
    * Code JSPs
    * Test Application 
    
-  
 
 * Embed Tomcat, Jetty or Undertow directly 
 
