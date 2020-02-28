@@ -8,8 +8,7 @@
     + MySQL CRUD
     + JPA
     + Oracle  etc.
-#  
- # Essential elements
+## Essential elements
   
 | Components  | Technology  | 
 | :---        |    :----:   |   
