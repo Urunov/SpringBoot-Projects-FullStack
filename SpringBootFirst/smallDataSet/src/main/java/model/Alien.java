@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
+@Table
+
 public class Alien {
     //
     @Id
@@ -13,6 +15,7 @@ public class Alien {
     private String aname;
     private String tech;
 
+  
 
 
     public int getAid() {
