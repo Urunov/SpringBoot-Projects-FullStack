@@ -15,7 +15,7 @@
 |   Frontend  | BootStrap, Jsp -> React 16+       | 
 | Backend   | Spring Boot 2.1+, Java 8, and Java 11+   |
 |Security | //Spring Security, JWT|
-| Database | H2, MySQL (workbench), MangoDB|
+| Database | H2, MySQL, Oracle, MangoDB|
 |API Documentation	| Swagger API (Hub)|
 |Client Build | npm, yarn, webpack|
 |Server Build| Maven|
