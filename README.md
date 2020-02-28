@@ -1,4 +1,5 @@
-# Spring-Boot-Project
+# Spring Boot Projects 
+ Total projects provide basic annotations core value project and real app valueabale application.
 
   - Spring Boot
   - Spring Boot H2
