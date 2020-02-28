@@ -1,10 +1,13 @@
-# Spring Boot Projects 
+## Spring Boot Projects 
    Total projects provide basic annotations Spring, and Spring Boot included core value project and real app valueabale application.
   - Spring 
   - Spring Boot
+  - Spring JDBC
   - Database
-    H2, JPA, MySQL, Oracle, etc.
-  
+    + H2
+    + MySQL CRUD
+    + Oracle  etc.
+#  
  # Essential elements
   
 | Components  | Technology  | 
