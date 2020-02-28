@@ -1,4 +1,4 @@
-## Spring Boot Projects - Source Code/ Tutorials/Articles/Guides/App  
+## Spring Boot Projects - Source Codes/Guides/App  
    Total projects provide basic annotations Spring, and Spring Boot included core value project and real app valueabale application.
   - Spring 
   - Spring Boot
