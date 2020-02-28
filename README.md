@@ -36,7 +36,7 @@ We take an opinionated view of the Spring platform and several-party libraries s
 ##
 2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFirst)
 
-   * Create Spring applications with JSP. 
+   * Create Spring applications with JSP.  
 
 ##
 3. [ Spring Boot Second](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSecond)
