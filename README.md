@@ -30,9 +30,9 @@ We take an opinionated view of the Spring platform and several-party libraries s
 
 
    * Create stand-alone Spring applications, only small project. 
-# Resources Reference
-[ 1 ] https://www.journaldev.com/16966/spring-annotations#spring-annotations-list
-[ 1 ] https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html
+ Resources Reference
+[ 1 Spring Annotation ] (https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
+[ 2 Spring MVC ] (https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
 
 ##
 2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFirst)
