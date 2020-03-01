@@ -33,7 +33,10 @@ Import-Package: javax.activation,javax.xml.bind;version="[2.3,3)",javax.
  x.xml.transform,javax.xml.transform.dom,javax.xml.transform.sax,javax.x
  ml.transform.stream,javax.xml.validation,org.w3c.dom,org.xml.sax,org.xm
  l.sax.ext,org.xml.sax.helpers,javax.xml.bind.helpers;version="[2.3,3)",
- javax.xml.bind.util;version="[2.3,3)"
+ javax.xml.bind.util;version="[2.3,3)",
+ javax.persistence,
+ javax.validation,
+ javax.servlet
 Multi-Release: true
 Specification-Vendor: Oracle Corporation
 Specification-Version: 2.3
