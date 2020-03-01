@@ -1,10 +1,10 @@
-package com.project.small;
+package my.index.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DataSetApplicationTests {
+class Springbooth2ApplicationTests {
 
     @Test
     void contextLoads() {
