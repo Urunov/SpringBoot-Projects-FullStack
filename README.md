@@ -1,17 +1,21 @@
-# Spring-Boot-Project
-
+## Spring Boot Projects - Source Codes/Guides/App  
+   Total projects provide basic annotations Spring, and Spring Boot included core value project and real app valueabale application.
+  - Spring 
   - Spring Boot
-  - Spring Boot H2
-  - Spring Boot JPA, MySQL
-  
- # Essential elements
+  - Spring JDBC
+  - Database
+    + H2
+    + MySQL CRUD
+    + JPA
+    + Oracle  etc.
+## Essential elements
   
 | Components  | Technology  | 
 | :---        |    :----:   |   
 |   Frontend  | BootStrap, Jsp -> React 16+       | 
 | Backend   | Spring Boot 2.1+, Java 8, and Java 11+   |
 |Security | //Spring Security, JWT|
-| Database | H2, MySQL (workbench), MangoDB|
+| Database | H2, MySQL, Oracle, MangoDB|
 |API Documentation	| Swagger API (Hub)|
 |Client Build | npm, yarn, webpack|
 |Server Build| Maven|
@@ -20,18 +24,19 @@
 ##
 We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
 
-##  Features 
+#  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
 
    * Create stand-alone Spring applications, only small project. 
+   
+    [ a. Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
 
-Architecure, anation relationship.
-![Architecure](https://user-images.githubusercontent.com/11626327/74656927-85eb6500-51d2-11ea-8352-20dfd49ff57b.jpg)
+    [ b. Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
 
 ##
 2. [ Spring Boot First](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootFirst)
 
-   * Create Spring applications with JSP. 
+   * Create Spring applications with JSP.  
 
 ##
 3. [ Spring Boot Second](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootSecond)
@@ -78,7 +83,6 @@ Architecure, anation relationship.
    * Code JSPs
    * Test Application 
    
-  
 
 * Embed Tomcat, Jetty or Undertow directly 
 
@@ -93,4 +97,10 @@ Architecure, anation relationship.
 
 Spring boot, JSP, JSON and H2 database integartion small project. 
 
+
+
+## Architecture design pictures
+1. Spring Boot Core. Annotation simple project.
+Architecure, anation relationship.
+![springbootcore](https://user-images.githubusercontent.com/11626327/75553625-1bf97800-5a7c-11ea-8a85-48740cf50795.jpg)
 
