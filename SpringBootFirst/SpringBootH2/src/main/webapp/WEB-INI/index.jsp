@@ -5,13 +5,13 @@
     <title>Home </title>
 </head>
 <body>
-    Internaional
+Internaional
 
-    <form acction="addPerson">
+<form acction="addPerson">
 
-        <input type="text" name="id"> <br>
-        <input type="text" name="name"> <br>
-        <input type="submit">
-    </form>
+    <input type="text" name="id"> <br>
+    <input type="text" name="name"> <br>
+    <input type="submit">
+</form>
 </body>
 </html>

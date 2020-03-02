@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_springbootfirst" default="compile.module.springbootfirst">
+  <dirname property="module.springbootfirst.basedir" file="${ant.file.module_springbootfirst}"/>
+  
+  <property name="module.jdk.home.springbootfirst" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.springbootfirst" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.springbootfirst" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.springbootfirst" value="-encoding UTF-8 -source 13 -target 13 ${compiler.args}"/>
+  
+  <property name="springbootfirst.output.dir" value="undefined"/>
+  <property name="springbootfirst.testoutput.dir" value="undefined"/>
+  
+  <path id="springbootfirst.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="springbootfirst.module.production.classpath">
+    <path refid="${module.jdk.classpath.springbootfirst}"/>
+  </path>
+  
+  <path id="springbootfirst.runtime.production.module.classpath"/>
+  
+  <path id="springbootfirst.module.classpath">
+    <path refid="${module.jdk.classpath.springbootfirst}"/>
+  </path>
+  
+  <path id="springbootfirst.runtime.module.classpath"/>
+  
+  
+  <patternset id="excluded.from.module.springbootfirst">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.springbootfirst">
+    <patternset refid="excluded.from.module.springbootfirst"/>
+  </patternset>
+  
+  
+  <target name="compile.module.springbootfirst" depends="compile.module.springbootfirst.production,compile.module.springbootfirst.tests" description="Compile module SpringBootFirst"/>
+  
+  <target name="compile.module.springbootfirst.production" depends="register.custom.compilers" description="Compile module SpringBootFirst; production classes"/>
+  
+  <target name="compile.module.springbootfirst.tests" depends="register.custom.compilers,compile.module.springbootfirst.production" description="compile module SpringBootFirst; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.springbootfirst" description="cleanup module">
+    <delete dir="${springbootfirst.output.dir}"/>
+    <delete dir="${springbootfirst.testoutput.dir}"/>
+  </target>
+</project>
