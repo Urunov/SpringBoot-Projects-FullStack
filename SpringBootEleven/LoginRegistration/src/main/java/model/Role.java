@@ -39,3 +39,5 @@ public class Role {
     }
 
 }
+
+//https://code.tutsplus.com/articles/visual-database-creation-with-mysql-workbench--net-10975
