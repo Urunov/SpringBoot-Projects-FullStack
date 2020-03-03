@@ -26,7 +26,7 @@ Specification value of the Spring Boot
 
    #3. RequestMapping and GetMapping
 
-
+https://www.reddit.com/
 https://www.onlineinterviewquestions.com/what-is-the-difference-between-requestmapping-and-getmapping-in-spring-boot/
 * */
 
