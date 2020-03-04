@@ -1,0 +1,94 @@
+the Spring Boot Action 5 th Edition  Dependecy Injection
+
+# Thymeleaf --->  generally prefer it over those other options. The template name is derived from the logical view name by prefixing it with /templates/ and postfixing it with .html. The resulting path for the template is /templates/home.html. 
+
+# JSP ---> Java Server Pages, None( provided by Tomcat or Jetty)
+
+# FreeMarker ---> spring-boot-starter-freemarker | spring.freemarker.cache
+
+# Groovy Templates ---> spring-boot-starter-grrovy-templates | spring.groovy.template.cache
+ 
+# Mustache ---> spring-boot-starter-mustache | spring.mestache.cache
+
+# Thymeleaf ---> spring-boot-starter-thymeleaf  | spring.thymeleaf.cache
+
+# DevTools ---> Automatic application restart when code changes, and browser refresh when browser-destined resources. Automatic diasble of template caches. Built in H2 Console if the H2 database is in use.
+
+# H2 ---> H2 database for development, DevTools will also automatically enable an H2 Console that you can access from your web browser.
+
+# JdbcTemplate ---> JDBC support. 
+
+# JPA (Java Persistence API) 
+
+# JDBC (Java Database Connectivity)
+
+# Document (Mongo)  
+
+# Graph(Neo4j)  
+
+# JSON 
+
+# microservices  
+
+# lombok
+
+# Spring Data JPA - JPA persistence against a relational database
+
+# Spring Data MongoDB - Persistence to a Mongo document database
+
+# Spring Data Neo4j - Persistence to a Neo4j graph database
+
+# Spring Data Redis - Persistence to a Redis key-value store
+
+# Spring Data Cassandra - Persistence to a Cassandra database
+
+# Hibernate as the JPA implementation
+
+#  access (String) Allows access if the given SpEL expression evaluates to true
+
+# anonymous () Allows access to anonymous users
+
+# authenticated () Allows access to authenticated users
+
+# denyAll() - Denies access unconditionally
+
+# fullyAuthenticated() - Allows access if the user is fully authenticated (not remembered_)
+
+# hasAnyAuthority(String) - Allow access if the user has any of the given autorities
+
+# hasAnyRole(String) - Allows access if the user has any ofthe fiven roles
+
+# hasAuthority(String) - Allows accesss if the user has the given authoriy
+
+# hasIpAddress(String_ )  - Allows access if the request comes from the given IP addess
+
+# hasRole(String) - Allows access if the user has the given role
+
+# not() - negates the effect of any of the other access methods
+
+# permitAll() - Allows access unconditionally
+
+# rememberMe() - Allows access for users who are authenticated via remember - me.
+
+# authentication - The user's authentication object 
+
+# denyAll - Always evaluates to false
+
+# hasAnyRole(list of roles- true if the user has any of the given roles
+
+# hasRole(role) - true if the user has the given role
+
+# hasIpAddress(IP address) - true if the request comes from the given IP address
+
+# isAnonymous () - true if the user is anonymous
+
+# isAuthenticated () - true if the user is authenticated
+
+# isFullAuthenticated()- ture if the user is fully authenticated(not authenticated with remember-me)
+
+# isRememberMe() - true if the user was authenticated via remember - me
+
+# permitAll - Always evaluates to true
+
+#principal - The user's principal object
+
