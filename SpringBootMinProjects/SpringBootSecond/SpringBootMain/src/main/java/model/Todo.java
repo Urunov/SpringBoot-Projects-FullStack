@@ -6,7 +6,6 @@ import java.util.Date;
 
 @Entity
 @Table
-
 public class Todo {
     //
     @Id

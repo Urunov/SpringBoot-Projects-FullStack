@@ -40,23 +40,20 @@ public class TodosController {
     }
 
     @PostMapping("/save-todo")
-    public String saveTodo(@ModelAttribute Todo todo, BindingResult bindingResult, HttpServletRequest request){
-        //
-        todo.setDateCreate(new Date());
+    public String saveTodo(@ModelAttribute Todo todo, BindingResult bindingResult, HttpServletRequest request) {
+        todo.setDateCreated(new Date());
         todosService.save(todo);
         request.setAttribute("todos", todosService.findAll());
         request.setAttribute("mode", "MODE_TODOS");
         return "index";
-
     }
 
     @GetMapping("/update-todo")
-    public String updateTodo(@RequestParam int id, HttpServletRequest request){
-        request.setAttribute("todo", todosService.findAll());
-        request.setAttribute("mode", "MODE_TODOS");
+    public String updateTodo(@RequestParam int id, HttpServletRequest request) {
+        request.setAttribute("todo", todosService.findTodo(id).get());
+        request.setAttribute("mode", "MODE_UPDATE");
         return "index";
     }
-
     @GetMapping("/delete-todo")
     public String deleteTodo(@RequestParam int id, HttpServletRequest request) {
         todosService.delete(id);

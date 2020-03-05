@@ -16,7 +16,7 @@ public class Todo implements Serializable {
     private String description;
 
     @Temporal(TemporalType.TIMESTAMP)
-    private Date dateCreate;
+    private Date dateCreated;
     private boolean finished;
 
     public Todo(String name, String description, Date dateCreate, boolean finished) {
@@ -24,7 +24,7 @@ public class Todo implements Serializable {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.dateCreate = dateCreate;
+        this.dateCreated = dateCreated;
         this.finished = finished;
     }
 
@@ -55,12 +55,12 @@ public class Todo implements Serializable {
         this.description = description;
     }
 
-    public Date getDateCreate() {
-        return dateCreate;
+    public Date getDateCreated() {
+        return dateCreated;
     }
 
-    public void setDateCreate(Date dateCreate) {
-        this.dateCreate = dateCreate;
+    public void setDateCreated(Date dateCreate) {
+        this.dateCreated = dateCreate;
     }
 
     public boolean isFinished() {
@@ -73,12 +73,7 @@ public class Todo implements Serializable {
 
     @Override
     public String toString() {
-        return "Todo{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", dateCreate=" + dateCreate +
-                ", finished=" + finished +
-                '}';
+        return "Todo [id=" + id + ", name=" + name + ", description=" + description + ", dateCreated=" + dateCreated
+                + ", finished=" + finished + "]";
     }
 }

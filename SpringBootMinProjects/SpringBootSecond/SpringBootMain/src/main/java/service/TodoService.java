@@ -39,7 +39,7 @@ public class TodoService implements ITodoService {
     @Override
     public void deleteTodo(long id) {
         Optional<Todo> todo = todoRepository.findById(id);
-        if(todo.isPresent()) {
+        if (todo.isPresent()) {
             todoRepository.delete(todo.get());
         }
     }
