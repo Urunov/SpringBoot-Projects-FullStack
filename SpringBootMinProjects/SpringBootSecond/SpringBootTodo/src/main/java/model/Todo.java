@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 @Entity
-@Table(name = "t_todos")
+@Table(name = "todosimple")
 
 public class Todo implements Serializable {
     //
