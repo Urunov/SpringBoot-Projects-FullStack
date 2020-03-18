@@ -1,5 +1,5 @@
-#              Spring Boot Projects
-   Total projects provide Source Codes/Guides/App. Indeed, down below represents
+#                          Spring Boot Projects
+   Total projects provide Source Codes/Guides/App, indeed down below represents
   - Spring / Spring Bean / 
   - Spring Boot / Spring Boot + MySQL CRUD/Spring Boot + Angular / Spring Boot Annotation/ Sptring Boot 2 CRUD REST API
   - JDBC / JDBC Template
@@ -8,6 +8,9 @@
     + H2 (embedded db/ local db)
     + MySQL / SQL / MongoDB
     + Oracle  
+#
+We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot. 
+
 ## Essential elements
   
 | Components  | Technology  | 
@@ -21,8 +24,7 @@
 |Server Build| Maven|
 
 
-##
-We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot Core. Most Spring Boot applications need very little Spring configuration, when you use Database (DB) also needs to configuration based on using method.
+
 
 #  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
