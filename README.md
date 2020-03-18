@@ -10,6 +10,18 @@
     + MySQL / SQL / MongoDB
     + Oracle  
 
+# Spring Boot Basics. Fundamental key points and projects
+
+* Getting Started with Spring Boot
+> Installing Spring Boot with Maven and Gradle
+> Spring Boot 2 Hello World Application
+Overview of Spring Boot Starter Parent
+Important Spring Boot Starters with Examples
+Spring Boot How to Change Port and Context Path
+Spring Boot 2 Deploy WAR file to External Tomcat
+Different Ways of Running Spring Boot Application
+Migrating from Spring to Spring Boot
+Spring Boot Annotations
 
 # Spring Boot Tutorials and Guides (TO-DO) 
 
@@ -26,7 +38,7 @@ Spring Boot + Angular 6 CRUD Example
 
 Spring Boot 2 + Angular 7 CRUD Example Tutorial
 
-Spring Boot Basics
+
 
 
 #  Features & Reference Resources 
