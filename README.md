@@ -34,7 +34,9 @@ Spring Boot Annotations
 
 # Spring Boot Annotations 
 
-* (resource /code) Spring Boot @EnableAutoConfiguration Annotation with Example
+* (resource /[ code ](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)) Spring Boot @EnableAutoConfiguration Annotation with Example
+
+
 * (resource /code) Spring Boot @SpringBootApplication Annotation with Example
 * (resource /code) Spring Boot Annotations
 * (resource /code) Spring Boot - Creating Asynchronous Methods using @Async Annotation
