@@ -1,12 +1,12 @@
-## Spring Boot Projects - Source Codes/Guides/App  
-   Total projects provide basic annotations Spring, and Spring Boot included core value project and real app valueabale application.
+##             Spring / Spring Boot Projects
+   Total projects provide Source Codes/Guides/App. Indeed, down below represents
   - Spring 
-  - Spring Boot
-  - Spring JDBC
+  - Spring Boot / Spring Boot + MySQL CRUD/Spring Boot + Angular / Spring Boot Annotation/ Sptring Boot 2 CRUD REST API
+  - JDBC / JDBC Template
+  - JPA
   - Database
     + H2
-    + MySQL CRUD
-    + JPA
+    + MySQL
     + Oracle  etc.
 ## Essential elements
   
