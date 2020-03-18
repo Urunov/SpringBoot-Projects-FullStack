@@ -34,7 +34,7 @@ Spring Boot Annotations
 
 # Spring Boot Annotations 
 
-* (resource /[ code ](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore) Spring Boot @EnableAutoConfiguration Annotation with Example
+* (resource /[ code ] (https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst)) Spring Boot @EnableAutoConfiguration Annotation with Example
 
 
 * (resource /code) Spring Boot @SpringBootApplication Annotation with Example
