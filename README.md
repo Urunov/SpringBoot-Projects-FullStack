@@ -34,10 +34,10 @@ Spring Boot Annotations
 
 # Spring Boot Annotations 
 
-* Spring Boot @EnableAutoConfiguration Annotation with Example
-* Spring Boot @SpringBootApplication Annotation with Example
-* Spring Boot Annotations
-* Spring Boot - Creating Asynchronous Methods using @Async Annotation
+* (resource /code) Spring Boot @EnableAutoConfiguration Annotation with Example
+* (resource /code) Spring Boot @SpringBootApplication Annotation with Example
+* (resource /code) Spring Boot Annotations
+* (resource /code) Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
 # Spring Boot Tutorials and Guides (TO-DO) 
 
