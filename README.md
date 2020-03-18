@@ -107,7 +107,9 @@ User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hi
 * Spring Boot 2 with JUnit 5 Testing Example
 
 
+# Spring Boot Real Project (toddler steps)
 
+* Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
 
 #  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
