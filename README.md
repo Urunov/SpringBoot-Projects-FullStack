@@ -5,7 +5,7 @@
 
 Getting Started with Spring Boot
 
-Installing Spring Boot with Maven and Gradle
+Installing Spring Boot +  Maven and Gradle
 
 Spring Boot 2 Hello World Application
 
