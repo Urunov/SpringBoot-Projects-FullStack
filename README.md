@@ -39,6 +39,50 @@ Spring Boot + Angular 6 CRUD Example
 Spring Boot 2 + Angular 7 CRUD Example Tutorial
 
 
+# Spring Boot REST API and Developments 
+
+Spring Boot 2 Hibernate 5 MySQL CRUD REST API Tutorial
+
+Spring Boot 2 JPA MySQL CRUD Example
+
+Spring Boot 2 Hello World Application
+
+Spring Boot 2 CRUD REST APIs Validation Example
+
+Spring Data JPA Auditing with Spring Boot 2 and MySQL Example
+
+Spring Boot 2 Exception Handling for REST APIs
+
+Spring Boot 2 Logging SLF4j Logback and LOG4j2 Example
+
+Spring Boot 2 + Jersey REST + JPA + Hibernate 5 CRUD REST APIs Example
+
+Spring Boot 2 - Scheduling Tasks
+
+Spring Boot 2 RESTful API Documentation with Swagger 2 Tutorial
+
+Spring Boot 2 - File Upload and Download Rest API Tutorial // LATEST
+
+
+# Spring Boot Web Application Development 
+
+Spring MVC + Spring Boot2 + JSP + JPA + Hibernate 5 + MySQL Example
+
+Spring Boot 2 MVC Web Application Thymeleaf JPA MySQL Example
+
+Spring Boot 2 - Spring MVC + Thymeleaf Input Form Validation
+
+Spring Boot JPA Multiple Data Sources Example
+
+
+# Spring Boot with Spring Security 
+
+Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL Tutorial
+
+Authenticating a User with LDAP using Spring Boot and Spring Security
+
+User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
+
 
 
 #  Features & Reference Resources 
