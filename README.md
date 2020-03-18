@@ -1,26 +1,26 @@
 #                        Spring Boot Projects
    Total projects provide Source Codes/Guides/App, indeed down below represents. We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot.
-   
-  - Spring / Spring Bean / 
-  - Spring Boot / Spring Boot + MySQL CRUD/Spring Boot + Angular / Spring Boot Annotation/ Sptring Boot 2 CRUD REST API
-  - JDBC / JDBC Template
-  - JPA / Hibernate / 
-  - Database
-    + H2 (embedded db/ local db)
-    + MySQL / SQL / MongoDB
-    + Oracle  
+  
+# Spring Boot Basics and Fundamentals (small projects)
 
-# Spring Boot Basics. Fundamental key points and projects
+Getting Started with Spring Boot
 
-* Getting Started with Spring Boot
-> Installing Spring Boot with Maven and Gradle
-> Spring Boot 2 Hello World Application
+Installing Spring Boot with Maven and Gradle
+
+Spring Boot 2 Hello World Application
+
 Overview of Spring Boot Starter Parent
+
 Important Spring Boot Starters with Examples
+
 Spring Boot How to Change Port and Context Path
+
 Spring Boot 2 Deploy WAR file to External Tomcat
+
 Different Ways of Running Spring Boot Application
+
 Migrating from Spring to Spring Boot
+
 Spring Boot Annotations
 
 # Spring Boot Tutorials and Guides (TO-DO) 
