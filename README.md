@@ -23,10 +23,16 @@ Migrating from Spring to Spring Boot
 
 Spring Boot Annotations
 
+# Spring Boot Configuration
+
+> Spring Boot 2 + Java Based Configuration: (Using  Project)
+
+> Spring Boot 2 + XML Configuration: (Using Project)
+
+> Migrating from Spring to Spring Boot
 # Spring Boot Tutorials and Guides (TO-DO) 
 
 Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
-
 
 Spring Boot + Angular 8 Example Tutorial
 
@@ -83,13 +89,7 @@ Authenticating a User with LDAP using Spring Boot and Spring Security
 
 User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
 
-# Spring Boot Configuration
 
-Spring Boot 2 + Java Based Configuration: (Using  Project)
-
-Spring Boot 2 + XML Configuration: (Using Project)
-
-Migrating from Spring to Spring Boot
 
 #  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
