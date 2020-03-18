@@ -30,6 +30,15 @@ Spring Boot Annotations
 > Spring Boot 2 + XML Configuration: (Using Project)
 
 > Migrating from Spring to Spring Boot
+
+
+# Spring Boot Annotations 
+
+* Spring Boot @EnableAutoConfiguration Annotation with Example
+* Spring Boot @SpringBootApplication Annotation with Example
+* Spring Boot Annotations
+* Spring Boot - Creating Asynchronous Methods using @Async Annotation
+
 # Spring Boot Tutorials and Guides (TO-DO) 
 
 Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
@@ -88,6 +97,13 @@ Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQ
 Authenticating a User with LDAP using Spring Boot and Spring Security
 
 User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
+
+# TESTING Spring Boot 
+
+* Spring Data JPA + Repository Testing using Spring Boot + @DataJpaTest
+* Spring Boot 2 + REST APIs Integration Testing
+* Spring Boot 2 with JUnit 5 Testing Example
+
 
 
 
