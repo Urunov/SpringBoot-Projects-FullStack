@@ -1,13 +1,13 @@
 ##             Spring / Spring Boot Projects
    Total projects provide Source Codes/Guides/App. Indeed, down below represents
-  - Spring 
+  - Spring / Spring Bean / 
   - Spring Boot / Spring Boot + MySQL CRUD/Spring Boot + Angular / Spring Boot Annotation/ Sptring Boot 2 CRUD REST API
   - JDBC / JDBC Template
-  - JPA
+  - JPA / Hibernate / 
   - Database
-    + H2
-    + MySQL
-    + Oracle  etc.
+    + H2 (embedded db/ local db)
+    + MySQL / SQL / MongoDB
+    + Oracle  
 ## Essential elements
   
 | Components  | Technology  | 
@@ -102,5 +102,5 @@ Spring boot, JSP, JSON and H2 database integartion small project.
 ## Architecture design pictures
 1. Spring Boot Core. Annotation simple project.
 Architecure, anation relationship.
-![springbootcore](https://user-images.githubusercontent.com/11626327/75553625-1bf97800-5a7c-11ea-8a85-48740cf50795.jpg)
+[springbootcore](https://user-images.githubusercontent.com/11626327/75553625-1bf97800-5a7c-11ea-8a85-48740cf50795.jpg)
 
