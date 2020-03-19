@@ -21,7 +21,7 @@
 
 *  (SourceCode) /(Resource) Migrating from Spring to Spring Boot
 
-*  (SourceCode) /(Resource) Spring Boot Annotations
+*  (sourceCode) /(Resource) Spring Boot Annotations
 
 # Spring Boot Configuration
 
