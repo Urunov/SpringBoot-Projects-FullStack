@@ -3,25 +3,25 @@
   
 # Spring Boot Basics and Fundamentals with projects
 
- * ##### (SourceCode) /  [ (Resource)  Getting Started with Spring Boot ](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967))
+ * ##### (SourceCode) /  [ (Resource)  Getting Started with Spring Boot ](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967)
 
- Installing Spring Boot +  Maven and Gradle
+* ##### (SourceCode) /(Resource) Installing Spring Boot +  Maven and Gradle
 
-Spring Boot 2 Hello World Application
+* ##### (SourceCode) /(Resource) Spring Boot 2 Hello World Application
 
-Overview of Spring Boot Starter Parent
+* ##### (SourceCode) /(Resource) Overview of Spring Boot Starter Parent
 
-Important Spring Boot Starters with Examples
+* ##### (SourceCode) /(Resource) Important Spring Boot Starters with Examples
 
-Spring Boot How to Change Port and Context Path
+* ##### (SourceCode) /(Resource) Spring Boot How to Change Port and Context Path
 
-Spring Boot 2 Deploy WAR file to External Tomcat
+* ##### (SourceCode) /(Resource) Spring Boot 2 Deploy WAR file to External Tomcat
 
-Different Ways of Running Spring Boot Application
+* ##### (SourceCode) /(Resource) Different Ways of Running Spring Boot Application
 
-Migrating from Spring to Spring Boot
+* ##### (SourceCode) /(Resource) Migrating from Spring to Spring Boot
 
-Spring Boot Annotations
+* ##### (SourceCode) /(Resource) Spring Boot Annotations
 
 # Spring Boot Configuration
 
