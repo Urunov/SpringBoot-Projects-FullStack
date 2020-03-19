@@ -3,7 +3,7 @@
   
 # Spring Boot Basics and Fundamentals with projects
 
- * (code/[resource)Getting Started with Spring Boot](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967)
+ * (source code) /[Getting Started with Spring Boot](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967)
 
 Installing Spring Boot +  Maven and Gradle
 
