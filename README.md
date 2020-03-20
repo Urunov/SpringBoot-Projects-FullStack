@@ -18,7 +18,7 @@
 #
 # Spring Boot Basics and Fundamentals with Projects
 
- * ###  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
+  ### * [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
 
       *  Installing Spring Boot +  Maven and Gradle
       *  Spring Boot 2 Hello World Application "Welcome back Again" 
@@ -31,15 +31,6 @@
       *  Different Ways of Running Spring Boot Application
       *  Migrating from Spring to Spring Boot
 #
-# Spring Boot Annotations 
-
-  ### * Spring Boot Annotation practices  (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))
-  
-     *  Spring Boot @EnableAutoConfiguration Annotation with Example
-     *  Spring Boot @SpringBootApplication Annotation with Example
-     *  Spring Boot Annotations
-     *  Spring Boot - Creating Asynchronous Methods using @Async Annotation
-
 # Spring Boot Configuration
 
  * (resource/code) Spring Boot 2 + Java Based Configuration: (Using  Project)
@@ -47,6 +38,17 @@
  * (resource/code) Spring Boot 2 + XML Configuration: (Using Project)
 
  * (resource/code) Migrating from Spring to Spring Boot
+#
+# Spring Boot Annotations 
+
+  ### * Practical Experience with Annotation  (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))
+  
+     *  Spring Boot Annotations Definiation and Practics
+     *  Spring Boot @EnableAutoConfiguration Annotation with Example
+     *  Spring Boot @SpringBootApplication Annotation with Example
+     *  Spring Boot - Creating Asynchronous Methods using @Async Annotation
+
+
 
 
 # Spring Boot REST API and Developments 
