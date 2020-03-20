@@ -101,6 +101,6 @@
      * Spring Boot 2 + Angular 7 CRUD Example Tutorial
 
 # Reference Resources 
-   [ Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
+  * [ Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
 
-   [ Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
+  * [ Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
