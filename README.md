@@ -49,7 +49,7 @@
      *  Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
 #
-#  Development of Spring Boot REST API
+#  Spring Boot + REST API
  * ### (resource/code)  Database interconnections 
 
     * Spring Boot 2 Hibernate 5 MySQL CRUD REST API Tutorial
@@ -65,7 +65,7 @@
     * Spring Boot 2 - File Upload and Download Rest API Tutorial // LATEST
 #
 
-# Spring Boot Web Application Development 
+# Spring Boot + Web Application 
  * ### (resource/code)  Web applicaiton develops
  
    * Spring MVC + Spring Boot2 + JSP + JPA + Hibernate 5 + MySQL Example
@@ -74,7 +74,7 @@
    * Spring Boot JPA Multiple Data Sources Example
 
 #
-# Spring Boot Security 
+# Spring Boot + Security 
  * ### (resource/code)  Security possiblities
   
      * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
