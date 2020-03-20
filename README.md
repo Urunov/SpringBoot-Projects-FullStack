@@ -1,13 +1,14 @@
-#                        Spring Boot Projects
+#                                           Spring Boot Projects
    Total projects provide Source Codes/Guides/App, indeed down below represents. We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot.
-  
-# Spring Boot Basics and Fundamentals with projects
+   
+#  
+# Spring Boot Basics and Fundamentals with Projects
 
  *  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
 
-*  (SourceCode) /(Resource) Installing Spring Boot +  Maven and Gradle
+      * (resource) /(code)Installing Spring Boot +  Maven and Gradle
 
-*  (SourceCode) /(Resource) Spring Boot 2 Hello World Application
+     *  (resource) /(code) Spring Boot 2 Hello World Application
 
 *  (SourceCode) /(Resource) Overview of Spring Boot Starter Parent
 
@@ -23,15 +24,6 @@
 
 *  (sourceCode) /(Resource) Spring Boot Annotations
 
-# Spring Boot Configuration
-
-> Spring Boot 2 + Java Based Configuration: (Using  Project)
-
-> Spring Boot 2 + XML Configuration: (Using Project)
-
-> Migrating from Spring to Spring Boot
-
-
 # Spring Boot Annotations 
 
 * (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst)) Spring Boot @EnableAutoConfiguration Annotation with Example
@@ -41,19 +33,15 @@
 * (resource /code) Spring Boot Annotations
 * (resource /code) Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
-# Spring Boot Tutorials and Guides (TO-DO) 
+# Spring Boot Configuration
 
-Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
+> Spring Boot 2 + Java Based Configuration: (Using  Project)
 
-Spring Boot + Angular 8 Example Tutorial
+> Spring Boot 2 + XML Configuration: (Using Project)
 
-Spring Boot + Angular 8 + WebSocket Example Tutorial
+> Migrating from Spring to Spring Boot
 
-Spring Boot Thymeleaf CRUD Example Tutorial
 
-Spring Boot + Angular 6 CRUD Example
-
-Spring Boot 2 + Angular 7 CRUD Example Tutorial
 
 
 # Spring Boot REST API and Developments 
@@ -110,6 +98,21 @@ User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hi
 # Spring Boot Real Project (toddler steps)
 
 * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
+
+# Project: Spring Boot Tutorials and Guides (TO-DO) 
+
+Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
+
+Spring Boot + Angular 8 Example Tutorial
+
+Spring Boot + Angular 8 + WebSocket Example Tutorial
+
+Spring Boot Thymeleaf CRUD Example Tutorial
+
+Spring Boot + Angular 6 CRUD Example
+
+Spring Boot 2 + Angular 7 CRUD Example Tutorial
+
 
 #  Features & Reference Resources 
 1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
