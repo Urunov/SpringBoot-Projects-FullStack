@@ -6,23 +6,16 @@
 
  * ###  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
 
-      * Installing Spring Boot +  Maven and Gradle
+      *  Installing Spring Boot +  Maven and Gradle
+      *  Spring Boot 2 Hello World Application Welcome back Again 
+      *  Overview of Spring Boot Starter Parent
+      *  Important Spring Boot Starters with Examples
 
-     *  Spring Boot 2 Hello World Application
+*  ### (resource / code) Spring Boot How to Change Port and Context Path
 
-*  (SourceCode) /(Resource) Overview of Spring Boot Starter Parent
-
-*  (SourceCode) /(Resource) Important Spring Boot Starters with Examples
-
-*  (SourceCode) /(Resource) Spring Boot How to Change Port and Context Path
-
-*  (SourceCode) /(Resource) Spring Boot 2 Deploy WAR file to External Tomcat
-
-*  (SourceCode) /(Resource) Different Ways of Running Spring Boot Application
-
-*  (SourceCode) /(Resource) Migrating from Spring to Spring Boot
-
-*  (sourceCode) /(Resource) Spring Boot Annotations
+      *  Spring Boot 2 Deploy WAR file to External Tomcat
+      *  Different Ways of Running Spring Boot Application
+      *  Migrating from Spring to Spring Boot
 
 # Spring Boot Annotations 
 
