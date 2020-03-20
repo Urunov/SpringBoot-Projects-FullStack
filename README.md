@@ -13,6 +13,7 @@
    |API Documentation	| Swagger API (Hub)|
    |Client Build | npm, yarn, webpack|
    |Server Build| Maven / Gradle|
+   |API | POSTMAN|
 
 
 
