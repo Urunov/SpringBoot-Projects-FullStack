@@ -10,6 +10,14 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ControllerSpring {
     //
 
+    /**
+     *@ AtomicLong
+     * @Function: The AtomicLong class provides you with a long variable
+     * which can be read and written atomically, and
+     * which also contains advanced atomic operations like compareAndSet().
+     *
+     * @Proccess: Function is updating id, as well.
+     * **/
     private static final String template = "Hello, %s !";
     private final AtomicLong counter = new AtomicLong();
 
