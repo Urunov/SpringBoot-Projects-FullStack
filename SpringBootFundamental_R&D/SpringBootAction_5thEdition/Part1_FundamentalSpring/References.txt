@@ -1,2 +1,0 @@
-# Microservice 
-Spring Microservices in Action by John Carnell (Manning, 2017, www.manning.com/books/spring-microservices-in-action).
