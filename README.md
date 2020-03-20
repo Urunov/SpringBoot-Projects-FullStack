@@ -77,12 +77,13 @@
 # Spring Boot Security 
  * ### (resource/code)  Security possiblities
   
-  * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
-  * Authenticating a User with LDAP using Spring Boot and Spring Security
-  * User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
+     * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
+     * Authenticating a User with LDAP using Spring Boot and Spring Security
+     * User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
 #
 # TEST: Spring Boot 
  * ### (resource/code)  Security possiblities
+ 
    * Spring Data JPA + Repository Testing using Spring Boot + @DataJpaTest
    * Spring Boot 2 + REST APIs Integration Testing
    * Spring Boot 2 with JUnit 5 Testing Example
@@ -91,56 +92,15 @@
 # Spring Boot Real Project (TO-DO)
   * ### (resource/code) Project: Spring Boot  (toddler steps) 
 
-  * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
-  * Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
-  * Spring Boot + Angular 8 Example Tutorial
-  * Spring Boot + Angular 8 + WebSocket Example Tutorial
-  * Spring Boot Thymeleaf CRUD Example Tutorial
-  * Spring Boot + Angular 6 CRUD Example
-  * Spring Boot 2 + Angular 7 CRUD Example Tutorial
+     * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
+     * Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
+     * Spring Boot + Angular 8 Example Tutorial
+     * Spring Boot + Angular 8 + WebSocket Example Tutorial
+     * Spring Boot Thymeleaf CRUD Example Tutorial
+     * Spring Boot + Angular 6 CRUD Example
+     * Spring Boot 2 + Angular 7 CRUD Example Tutorial
 
 # Reference Resources 
-1. [ Spring Boot Core](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootCore)
+   [ Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
 
-   * Create stand-alone Spring applications, only small project. 
-   
-    [ a. Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
-
-    [ b. Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
-
- ##
-10. [ Spring Boot Nine](https://github.com/Hamdambek/Spring-Boot-Projects/tree/master/SpringBootNine)
-
-   * Create MySQL Database
-   * Create Project
-   * Specify Dependencies (Maven)
-   * Code Model Class
-   * Code DAO Classes + Unit Tests
-   * Configure Spring MVC Dispatcher Servlet
-   * Configure Spring MVC
-   * Code Spring Controller
-   * Code JSPs
-   * Test Application 
-   
-
-* Embed Tomcat, Jetty or Undertow directly 
-
-* Provide opinionated 'starter' dependencies to simplify your build configuration
-
-* Automatically configure Spring and 3rd party libraries whenever possible
-
-* Provide production-ready features such as metrics, health checks and externalized configuration
-
-* Absolutely no code generation and no requirement for XML configuration
-
-
-Spring boot, JSP, JSON and H2 database integartion small project. 
-
-
-
-
-## Architecture design pictures
-1. Spring Boot Core. Annotation simple project.
-Architecure, anation relationship.
-[springbootcore](https://user-images.githubusercontent.com/11626327/75553625-1bf97800-5a7c-11ea-8a85-48740cf50795.jpg)
-
+   [ Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
