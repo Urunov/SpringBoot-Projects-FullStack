@@ -8,21 +8,17 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>myindex</groupId>
-    <artifactId>spring</artifactId>
+    <groupId>spring</groupId>
+    <artifactId>basic</artifactId>
     <version>0.0.1</version>
-    <name>spring</name>
-    <description>The Spring Boot Project related to Web, Spring, Maven</description>
+    <name>basic</name>
+    <description>The spring boot and hello world</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
