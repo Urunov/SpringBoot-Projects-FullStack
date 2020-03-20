@@ -19,7 +19,7 @@
 
 # Spring Boot Basics and Fundamentals with Projects
 
- * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( whttps://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/SpringBootBasic-FundamentalProjects/SpringBootSourceCode ) Getting Started with Spring Boot
+ * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/SpringBootBasic-FundamentalProjects/SpringBootSourceCode ) Getting Started with Spring Boot
  
  
 
