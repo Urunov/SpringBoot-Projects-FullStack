@@ -1,13 +1,27 @@
-#                                           Spring Boot Projects
+#                                           Spring Boot Projects - Full Stack
    Total projects provide Source Codes/Guides/App, indeed down below represents. We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot.
    
 #  
+## Projects base configuration
+  
+                                 | Components  | Technology  | 
+                                 | :---        |    :----:   |   
+                                 |   Frontend  | BootStrap, Jsp -> React 16+       | 
+                                 | Backend   | Spring Boot 2.1+, Java 8, and Java 11+   |
+                                 |Security | //Spring Security, JWT|
+                                 | Database | JDBC, JPA-Hibernate, H2, MySQL, Oracle, MangoDB|
+                                 |API Documentation	| Swagger API (Hub)|
+                                 |Client Build | npm, yarn, webpack|
+                                 |Server Build| Maven / Gradle|
+
+
+#
 # Spring Boot Basics and Fundamentals with Projects
 
  * ###  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
 
       *  Installing Spring Boot +  Maven and Gradle
-      *  Spring Boot 2 Hello World Application Welcome back Again 
+      *  Spring Boot 2 Hello World Application "Welcome back Again" 
       *  Overview of Spring Boot Starter Parent
       *  Important Spring Boot Starters with Examples
 
@@ -20,21 +34,17 @@
 # Spring Boot Annotations 
 
 * (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst)) Spring Boot @EnableAutoConfiguration Annotation with Example
-
-
 * (resource /code) Spring Boot @SpringBootApplication Annotation with Example
 * (resource /code) Spring Boot Annotations
 * (resource /code) Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
 # Spring Boot Configuration
 
-> Spring Boot 2 + Java Based Configuration: (Using  Project)
+ * (resource/code) Spring Boot 2 + Java Based Configuration: (Using  Project)
 
-> Spring Boot 2 + XML Configuration: (Using Project)
+ * (resource/code) Spring Boot 2 + XML Configuration: (Using Project)
 
-> Migrating from Spring to Spring Boot
-
-
+ * (resource/code) Migrating from Spring to Spring Boot
 
 
 # Spring Boot REST API and Developments 
@@ -181,17 +191,6 @@ Spring Boot 2 + Angular 7 CRUD Example Tutorial
 Spring boot, JSP, JSON and H2 database integartion small project. 
 
 
-## Essential elements
-  
-| Components  | Technology  | 
-| :---        |    :----:   |   
-|   Frontend  | BootStrap, Jsp -> React 16+       | 
-| Backend   | Spring Boot 2.1+, Java 8, and Java 11+   |
-|Security | //Spring Security, JWT|
-| Database | H2, MySQL, Oracle, MangoDB|
-|API Documentation	| Swagger API (Hub)|
-|Client Build | npm, yarn, webpack|
-|Server Build| Maven|
 
 
 ## Architecture design pictures
