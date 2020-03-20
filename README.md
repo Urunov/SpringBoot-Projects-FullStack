@@ -19,12 +19,16 @@
 
 # Spring Boot Basics and Fundamentals with Projects
 
- * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
+ * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [code)] (https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) Getting Started with Spring Boot
+ 
+ 
 
    * Installing Spring Boot +  Maven and Gradle
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
+   
+   
 
 *  ### (resource / code) Spring Boot How to Change Port and Context Path
 
