@@ -4,11 +4,11 @@
 #  
 # Spring Boot Basics and Fundamentals with Projects
 
- *  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
+ *  [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) ### Getting Started with Spring Boot
 
-      * (resource) /(code)Installing Spring Boot +  Maven and Gradle
+      * Installing Spring Boot +  Maven and Gradle
 
-     *  (resource) /(code) Spring Boot 2 Hello World Application
+     *  Spring Boot 2 Hello World Application
 
 *  (SourceCode) /(Resource) Overview of Spring Boot Starter Parent
 
