@@ -8,7 +8,7 @@
    | :---        |    :----:   |   
    |   Frontend  | BootStrap, Jsp -> React 16+  | 
    | Backend   | Spring Boot 2.1+, Java 8, and Java 11+ |
-   |Security | //Spring Security, JWT|
+   |Security |  Spring Security, JWT|
    | Database | JDBC, JPA-Hibernate, H2, MySQL, Oracle, MangoDB|
    |API Documentation	| Swagger API (Hub)|
    |Client Build | npm, yarn, webpack|
@@ -30,13 +30,15 @@
       *  Spring Boot 2 Deploy WAR file to External Tomcat
       *  Different Ways of Running Spring Boot Application
       *  Migrating from Spring to Spring Boot
-
+#
 # Spring Boot Annotations 
 
-* (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst)) Spring Boot @EnableAutoConfiguration Annotation with Example
-* (resource /code) Spring Boot @SpringBootApplication Annotation with Example
-* (resource /code) Spring Boot Annotations
-* (resource /code) Spring Boot - Creating Asynchronous Methods using @Async Annotation
+  ### * Spring Boot Annotation practices  (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))
+  
+     *  Spring Boot @EnableAutoConfiguration Annotation with Example
+     *  Spring Boot @SpringBootApplication Annotation with Example
+     *  Spring Boot Annotations
+     *  Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
 # Spring Boot Configuration
 
