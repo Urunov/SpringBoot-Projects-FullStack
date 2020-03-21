@@ -13,18 +13,22 @@
    |API Documentation	| Swagger API (Hub)|
    |Client Build | npm, yarn, webpack|
    |Server Build| Maven / Gradle|
-   |API | POSTMAN|
+   |API testing| POSTMAN|
 
 
 
-# Spring Boot Basics and Fundamentals with Projects
+# Part-1: Spring Boot Basics and Fundamentals with Projects
 
- * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) /code) Getting Started with Spring Boot
+ * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/SpringBootBasic-FundamentalProjects/SpringBootSourceCode ) Getting Started with Spring Boot
+ 
+ 
 
    * Installing Spring Boot +  Maven and Gradle
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
+   
+   
 
 *  ### (resource / code) Spring Boot How to Change Port and Context Path
 
@@ -33,7 +37,7 @@
    *  Migrating from Spring to Spring Boot
 #
 
-# Spring Boot Configuration
+# Part-2: Spring Boot Configuration
  * ### (resource/code) Configuration in Practical way
  
     *  Spring Boot 2 + Java Based Configuration: (Using  Project)
@@ -105,5 +109,8 @@
   * [ Spring Annotation ](https://www.journaldev.com/16966/spring-annotations#spring-annotations-list)
 
   * [ Spring MVC  ](https://www.java67.com/2019/04/top-10-spring-mvc-and-rest-annotations-examples-java.html)
+  
+  * [ Spring Books  ](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/ReferenceResources)
+  
 # License: Spring Boot is Open Source software released 
   * [ Apache 2.0 license ](http://www.apache.org/licenses/LICENSE-2.0.html)
