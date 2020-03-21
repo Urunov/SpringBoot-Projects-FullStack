@@ -13,11 +13,11 @@
    |API Documentation	| Swagger API (Hub)|
    |Client Build | npm, yarn, webpack|
    |Server Build| Maven / Gradle|
-   |API | POSTMAN|
+   |API testing| POSTMAN|
 
 
 
-# Spring Boot Basics and Fundamentals with Projects
+# Part-1: Spring Boot Basics and Fundamentals with Projects
 
  * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/SpringBootBasic-FundamentalProjects/SpringBootSourceCode ) Getting Started with Spring Boot
  
@@ -37,7 +37,7 @@
    *  Migrating from Spring to Spring Boot
 #
 
-# Spring Boot Configuration
+# Part-2: Spring Boot Configuration
  * ### (resource/code) Configuration in Practical way
  
     *  Spring Boot 2 + Java Based Configuration: (Using  Project)
