@@ -44,7 +44,7 @@
     *  Spring Boot 2 + XML Configuration: (Using Project)
     *  Migrating from Spring to Spring Boot
 #
-# Spring Boot Annotations 
+# Part-3: Spring Boot Annotations 
 
  * ### (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))  Practical Experience with Annotation  
   
@@ -54,7 +54,7 @@
      *  Spring Boot - Creating Asynchronous Methods using @Async Annotation
 
 #
-#  Spring Boot + REST API
+# Part-4: Spring Boot + REST API
  * ### (resource/code)  Database interconnections 
 
     * Spring Boot 2 Hibernate 5 MySQL CRUD REST API Tutorial
@@ -70,7 +70,7 @@
     * Spring Boot 2 - File Upload and Download Rest API Tutorial // LATEST
 #
 
-# Spring Boot + Web Application 
+# Part-5: Spring Boot + Web Application 
  * ### (resource/code)  Web applicaiton develops
  
    * Spring MVC + Spring Boot2 + JSP + JPA + Hibernate 5 + MySQL Example
@@ -79,14 +79,14 @@
    * Spring Boot JPA Multiple Data Sources Example
 
 #
-# Spring Boot + Security 
+# Part-6: Spring Boot + Security 
  * ### (resource/code)  Security possiblities
   
      * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
      * Authenticating a User with LDAP using Spring Boot and Spring Security
      * User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
 #
-# TEST: Spring Boot 
+# Part-7: TEST: Spring Boot 
  * ### (resource/code)  Security possiblities
  
    * Spring Data JPA + Repository Testing using Spring Boot + @DataJpaTest
@@ -94,7 +94,7 @@
    * Spring Boot 2 with JUnit 5 Testing Example
 #
 
-# Spring Boot Real Project (TO-DO)
+# Part-8: Spring Boot Real Project (TO-DO)
   * ### (resource/code) Project: Spring Boot  (toddler steps) 
 
      * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
