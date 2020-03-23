@@ -27,7 +27,8 @@
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
-   
+     <-> Small Projects
+         - Family
    
 
 *  ### (resource / code) Spring Boot How to Change Port and Context Path
@@ -35,8 +36,7 @@
    *  Spring Boot 2 Deploy WAR file to External Tomcat
    *  Different Ways of Running Spring Boot Application
    *  Migrating from Spring to Spring Boot
-      * Small Projects
-         - Family
+      
 #
 
 # Part-2: Spring Boot Configuration
