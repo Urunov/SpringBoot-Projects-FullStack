@@ -18,7 +18,7 @@
 
 
 # Part-1: Spring Boot Basics and Fundamentals with Projects
-    ### (Attention: When You click  RESOURE OR CODE, indeed, Details explanation are inside the sources!)
+    (Attention: When You click  RESOURE OR CODE, indeed, Detail explanations are inside the sources!)
 
  * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20SpringBoot%20Basic%20Fund%20Projects ) Getting Started with Spring Boot
  
