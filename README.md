@@ -26,7 +26,7 @@
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
     
-*  ### (resource / code) Spring Boot How to Change Port and Context Path
+*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20SpringBoot%20Basic%20Fund%20Projects ) Spring Boot How to Change Port and Context Path
 
    *  Spring Boot 2 Deploy WAR file to External Tomcat
    *  Different Ways of Running Spring Boot Application
