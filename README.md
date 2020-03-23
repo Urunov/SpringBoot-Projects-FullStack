@@ -21,15 +21,11 @@
 
  * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20SpringBoot%20Basic%20Fund%20Projects ) Getting Started with Spring Boot
  
- 
-
-   * Installing Spring Boot +  Maven and Gradle
+   *  Installing Spring Boot +  Maven and Gradle
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
-     Family
-   
-
+    
 *  ### (resource / code) Spring Boot How to Change Port and Context Path
 
    *  Spring Boot 2 Deploy WAR file to External Tomcat
