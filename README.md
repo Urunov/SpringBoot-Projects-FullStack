@@ -35,6 +35,8 @@
    *  Spring Boot 2 Deploy WAR file to External Tomcat
    *  Different Ways of Running Spring Boot Application
    *  Migrating from Spring to Spring Boot
+      * Small Projects
+         - Family
 #
 
 # Part-2: Spring Boot Configuration
