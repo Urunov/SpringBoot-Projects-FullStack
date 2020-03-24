@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Home</title>
+</head>
+<body>
+<h2 th:text="#{app.title}">Spring Boot Thymeleaf Process</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="company : ${company}">
+        <td th:text="${company.id}">Id</td>
+        <td th:text="${company.name}">Name</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
