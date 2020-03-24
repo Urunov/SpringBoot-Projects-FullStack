@@ -55,6 +55,7 @@
 # Part-4: Spring Boot + REST API
  * ### (resource/code)  Database interconnections 
 
+    * Aspect Orient Programming (AOP) in Spring
     * Spring Boot 2 Hibernate 5 MySQL CRUD REST API Tutorial
     * Spring Boot 2 JPA MySQL CRUD Example
     * Spring Boot 2 Hello World Application
