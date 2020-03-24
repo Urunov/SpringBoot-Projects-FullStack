@@ -20,14 +20,14 @@
 # Part-1: Spring Boot Basics and Fundamentals with Projects
     (Attention: When You click  RESOURE OR CODE, indeed, Detail explanations are inside the sources!)
 
- * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20SpringBoot%20Basic%20Fund%20Projects/SpringBootSourceCode ) Getting Started with Spring Boot
+ * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSourceCode) Getting Started with Spring Boot
  
    *  Installing Spring Boot +  Maven and Gradle
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
     
-*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20SpringBoot%20Basic%20Fund%20Projects/SpringBootSources ) Spring Boot How to Change Port and Context Path
+*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) Spring Boot How to Change Port and Context Path
 
    *  Spring Boot 2 Deploy WAR file to External Tomcat
    *  Different Ways of Running Spring Boot Application
