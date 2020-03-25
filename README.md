@@ -116,5 +116,5 @@
 # License: Spring Boot is Open Source software released 
   * [ Apache 2.0 license ](http://www.apache.org/licenses/LICENSE-2.0.html)
   
- # REFERENCE FIGURES FOR EACH PARTS
-   
+# Reference FIGURES for each parts
+  
