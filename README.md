@@ -6,14 +6,14 @@
   
    | Components  | Technology  | 
    | :---        |    :----:   |   
-   |   Frontend  | BootStrap, Jsp -> React 16+  | 
+   | Frontend  | BootStrap, Jsp -> React 16+  | 
    | Backend   | Spring Boot 2.1+, Java 8, and Java 11+ |
-   |Security |  Spring Security, JWT|
+   | Security |  Spring Security, JWT|
    | Database | JDBC, JPA-Hibernate, H2, MySQL, Oracle, MangoDB|
-   |API Documentation	| Swagger API (Hub)|
-   |Client Build | npm, yarn, webpack|
-   |Server Build| Maven / Gradle|
-   |API testing| POSTMAN|
+   | API Documentation	| Swagger API (Hub)|
+   | Client Build | npm, yarn, webpack|
+   | Server Build| Maven / Gradle|
+   | API testing| POSTMAN|
 
 
 
@@ -27,9 +27,11 @@
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
     
-*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) Spring Boot How to Change Port and Context Path
-
-   *  Spring Boot 2 Deploy WAR file to External Tomcat
+*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) RESTfull API: Spring REST Template-Spring REST Client Methods
+   
+   *  Spring REST Client Methods (GET, POST, PUT and DELETE) 
+   *  Spring Boot How to Change Port and Context Path
+   *  Spring Boot2 Deploy WAR file to External Tomcat
    *  Different Ways of Running Spring Boot Application
    *  Migrating from Spring to Spring Boot
       
