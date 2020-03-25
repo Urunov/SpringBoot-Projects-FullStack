@@ -26,14 +26,14 @@
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
+   *  Different Ways of Running Spring Boot Application
+   *  Migrating from Spring to Spring Boot
     
 *  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) RESTfull API: Spring REST Template-Spring REST Client Methods
    
    *  Spring REST Client Methods (GET, POST, PUT and DELETE) 
    *  Spring Boot How to Change Port and Context Path
    *  Spring Boot2 Deploy WAR file to External Tomcat
-   *  Different Ways of Running Spring Boot Application
-   *  Migrating from Spring to Spring Boot
       
 #
 
@@ -115,3 +115,6 @@
   
 # License: Spring Boot is Open Source software released 
   * [ Apache 2.0 license ](http://www.apache.org/licenses/LICENSE-2.0.html)
+  
+ # REFERENCE FIGURES FOR EACH PARTS
+   
