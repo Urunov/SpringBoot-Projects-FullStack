@@ -118,3 +118,4 @@
   
 # Reference FIGURES for each parts
   ![Part-1. API: REST Methods ]( https://user-images.githubusercontent.com/11626327/77514502-5d821500-6eba-11ea-8699-04dcffdd6007.JPG )
+![API REST methods](https://user-images.githubusercontent.com/11626327/77514502-5d821500-6eba-11ea-8699-04dcffdd6007.JPG)
