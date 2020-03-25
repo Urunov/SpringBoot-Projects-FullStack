@@ -14,6 +14,7 @@
    | Client Build | npm, yarn, webpack|
    | Server Build| Maven / Gradle|
    | API testing| POSTMAN|
+   | Tool | Intellj Idea|
 
 
 
@@ -22,7 +23,8 @@
 
  * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSourceCode) Getting Started with Spring Boot
  
-   *  Installing Spring Boot +  Maven and Gradle
+   *  Installing Spring Boot +  Maven (pom.xml) : (code) SpringBootFamilyMember
+   *  Spring Boot + Gradle
    *  Spring Boot 2 Hello World Application "Welcome-Back Again" 
    *  Overview of Spring Boot Starter Parent
    *  Important Spring Boot Starters with Examples
