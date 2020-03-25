@@ -7,6 +7,7 @@ package spring.basic;
  @Project is ${PROJECT_NAME}
  */
 
+// This part is more extended other project in Spring MVC (as Model part)
 
 public class FamilyMembers {
     //
