@@ -21,7 +21,7 @@
 # Part-1: Spring Boot Basics and Fundamentals with Projects
     (Attention: When You click  RESOURE OR CODE, indeed, Detail explanations are inside the sources!)
 
- * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ allcode) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSourceCode) Getting Started with Spring Boot
+ * ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSourceCode) Getting Started with Spring Boot
  
    *  Installing Spring Boot +  Maven (pom.xml) : (code) SpringBootFamilyMember
    *  Spring Boot + Gradle : (code) Spring Gradle
@@ -29,7 +29,7 @@
    *  Important Spring Boot Standalone : (code) SpringStandalone
    *  Migrating from Spring to Spring Boot : (code) SpringDownloadFiles
     
-*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ allcode) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) RESTfull API: Spring REST Template-Spring REST Client Methods
+*  ### [ (resource](https://dev.to/hamdamboy/spring-boot-basics-and-fundamentals-with-projects-5967) / [ code) ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-1%20Spring%20Boot%20Basic%20Fund%20Projects/SpringBootSources ) RESTfull API: Spring REST Template-Spring REST Client Methods
    
    *  Spring REST Client Methods (GET, POST, PUT and DELETE) : (code) SpringRestAPI
    *  Spring Boot How to Change Port and Context Path : (code) SpringEmailProcess
