@@ -34,7 +34,7 @@
    *  Spring REST Client Methods (GET, POST, PUT and DELETE) : (code) SpringRestAPI
    *  Spring Boot How to Change Port and Context Path : (code) SpringEmailProcess
    *  Spring Boot2 Deploy WAR file to External Tomcat : (code) SpringWebJar
-   *  Bonus: Extra source codes improvement coding skills 
+   *  Bonus: Additional source codes
       
 #
 
