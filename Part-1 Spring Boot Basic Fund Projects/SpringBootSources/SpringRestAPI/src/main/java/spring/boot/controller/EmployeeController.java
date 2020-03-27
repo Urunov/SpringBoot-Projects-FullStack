@@ -40,7 +40,6 @@ public class EmployeeController {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(()-> new ResourceNotFoundException("Employee not found for this id::"  + employeeId));
         return ResponseEntity.ok().body(employee);
-
     }
 
     @PostMapping("/employees")
@@ -64,11 +63,9 @@ public class EmployeeController {
     public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long employeeId) throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(()-> new ResourceRequestDeniedException("Employee not found far this id::" + employeeId));
-
         employeeRepository.delete(employee);
         Map<String, Boolean> response = new HashMap<>();
         response.put("deleted", Boolean.TRUE);
-
         return response;
     }
 }
