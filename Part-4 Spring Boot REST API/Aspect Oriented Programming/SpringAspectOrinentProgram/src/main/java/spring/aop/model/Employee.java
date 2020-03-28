@@ -1,5 +1,7 @@
 package spring.aop.model;
 
+import org.aspectj.lang.annotation.AfterReturning;
+
 import javax.persistence.*;
 
 /**
