@@ -56,7 +56,7 @@
 
 #
 # Part-4: Spring Boot + REST API
- * ### (resource/ [ code ](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-4%20Spring%20Boot%20REST%20API/Aspect%20Oriented%20Programming)) Database interconnections
+ * ### (resource/ [ code ](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-4%20Spring%20Boot%20REST%20API)) Database interconnections
 
 
 
