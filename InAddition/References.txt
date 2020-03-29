@@ -1,0 +1,6 @@
+# Microservice 
+Spring Microservices in Action by John Carnell (Manning, 2017, www.manning.com/books/spring-microservices-in-action).
+
+# Spring Boot Action 5
+
+https://github.com/habuma/spring-in-action-5-samples/blob/master/ch03/tacos-jdbc/src/main/java/tacos/data/JdbcTacoRepository.java

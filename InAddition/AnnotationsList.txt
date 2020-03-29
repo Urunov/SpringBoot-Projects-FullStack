@@ -1,0 +1,57 @@
+Annotation list in Fundamental Spring Action 5 th Edition: 
+
+
+@Autowired
+@autoconfiguration
+-------------------------
+@Bean
+-------------------------
+@Configuration
+@Control
+@Component
+@ComponentScan
+-------------------------
+@Data ---> at the class level is provided by Lombok and tells Lombok to generate all of those missing methods. 
+@DeleteMapping
+-------------------------
+@EnableAutoConfiguration
+@Entity
+@EnableWebSecurity
+------------------------
+@ManyToMany (targetEntity=Ingredient.class_)
+@ManyToOne
+------------------------
+@ NotNull
+@ NotBlank
+@ NoArgsConstructor ( access=AccessLevel.PRIVATE, force=true )
+------------------------
+@GetMapping
+-------------------------
+@Service
+@SpringBootApplication
+@SpringBootTest
+@Size
+@Slf4j - Simple Logging Facade for Java. Lombok's @Slf4j annotation to create a free SLF4J Logger object at runtime.
+@SessionAttributes
+@SuppressWarnings("")
+
+-------------------------
+@PostMapping
+@PutMapping
+@PatchMapping
+@PrePersist
+@Profile
+-------------------------
+@RunWith(SpringRunner.class)---> prividing a test runner that guides JUnit in running a test. Plugin to JUnit to provide custom.
+@Repository
+@RequestMapping
+@RequiredArgsConstructor
+
+------------------------
+@Table
+------------------------
+@Query("")
+------------------------
+@Valid
+------------------------
+@WebMvcTest  - set up Spring support for testing Spring MVC. Although it could be made to start a server, mocking the mechanics of Spring MVC.
