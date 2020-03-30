@@ -9,30 +9,21 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>spring</groupId>
-    <artifactId>mvctomcat</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>mvctomcat</name>
-    <description>The spring boot and security</description>
+    <artifactId>jsp</artifactId>
+    <version>0.0.1</version>
+    <name>jsp</name>
+    <description>The Spring Boot and JSP</description>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>11</java.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
