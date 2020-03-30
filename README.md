@@ -9,8 +9,7 @@
    | Frontend  | BootStrap, Jsp -> React 16+  | 
    | Backend   | Spring Boot 2.1+, Java 8, and Java 11+ |
    | Security |  Spring Security, JWT|
-   | Database | JDBC, JPA-Hibernate, H2,
-               MySQL, Oracle, MangoDB, Postgresql|
+   | Database | JPA-Hibernate, H2, MySQL, Oracle, MangoDB, Postgresql|
    | API Documentation	| Swagger API (Hub)|
    | Client Build | npm, yarn, webpack|
    | Server Build| Maven / Gradle|
