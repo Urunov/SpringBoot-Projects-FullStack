@@ -39,10 +39,10 @@
 #
 
 # Part-2: Spring Boot Configuration
- * ### (resource/code) Configuration in Practical way
+ * ### [(resource](https://dev.to/hamdamboy/twitter-sms-services-spring-boot-possible-xml-configuration-2p9m)/[ code)]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-2%20Spring%20Boot%20Configuration ) Configuration in Practical way
  
-    *  Spring Boot 2 + Java Based Configuration: (Using  Project)
-    *  Spring Boot 2 + XML Configuration: (Using Project)
+    *  Spring Boot 2 + Java Based Configuration 
+    *  Spring Boot 2 + XML Configuration 
     *  Migrating from Spring to Spring Boot
 #
 # Part-3: Spring Boot Annotations 
