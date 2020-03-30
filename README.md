@@ -39,7 +39,7 @@
 #
 
 # Part-2: Spring Boot Configuration
- * ### [(resource]( https://dev.to/hamdamboy/twitter-sms-services-spring-boot-possible-configuration-1n1m-temp-slug-1887130/edit)/[ code)]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-2%20Spring%20Boot%20Configuration ) Configuration in Practical way
+ * ### [(resource](https://dev.to/hamdamboy/twitter-sms-services-spring-boot-possible-xml-configuration-2p9m)/[ code)]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-2%20Spring%20Boot%20Configuration ) Configuration in Practical way
  
     *  Spring Boot 2 + Java Based Configuration 
     *  Spring Boot 2 + XML Configuration 
