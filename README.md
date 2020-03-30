@@ -47,7 +47,7 @@
 #
 # Part-3: Spring Boot Annotations 
 
- * ### (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))  Practical Experience with Annotation  
+ * ### (resource /  [ code ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-3%20Spring%20Boot%20Annotations))  Practical Experience with Annotation  
   
      *  Spring Boot Annotations Definiation and Practics
      *  Spring Boot @EnableAutoConfiguration Annotation with Example
