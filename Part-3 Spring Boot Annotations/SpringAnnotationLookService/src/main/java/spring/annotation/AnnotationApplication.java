@@ -10,11 +10,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.core.task.TaskExecutor;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import spring.annotation.model.Developer;
-import spring.annotation.service.GithubLookupService;
+import spring.annotation.model.User;
+import spring.annotation.service.GitHubLookupService;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ThreadPoolExecutor;
 
 @SpringBootApplication
 @EnableAsync
@@ -22,12 +21,9 @@ public class AnnotationApplication implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(AnnotationApplication.class);
 
-    public static void main(String[] args) {
-        SpringApplication.run(AnnotationApplication.class, args);
-    }
 
     @Autowired
-    private GithubLookupService githubLookupService;
+    private GitHubLookupService githubLookupService;
 
     @Bean("threadPoolTaskExecutor")
     public TaskExecutor getAsyncExecutor() {
@@ -39,16 +35,22 @@ public class AnnotationApplication implements CommandLineRunner {
         return executor;
     }
 
+    public static void main(String[] args) {
+        SpringApplication.run(AnnotationApplication.class, args);
+    }
+
 
     @Override
     public void run(String... args) throws Exception {
         // Start the clock
+
         long start = System.currentTimeMillis();
         //kick of multiple, asynchronous lookups
-        CompletableFuture<Developer> page1 = githubLookupService.findDeveloper("Urunov");
-        CompletableFuture < Developer > page2 = githubLookupService.findDeveloper("SpringBoot-Database");
-        CompletableFuture < Developer > page3 = githubLookupService.findDeveloper("Spring-Projects");
-        CompletableFuture < Developer > page4 = githubLookupService.findDeveloper("Hamdamboy");
+
+        CompletableFuture <User>   page1 = githubLookupService.findUser("PivotalSoftware");
+        CompletableFuture < User > page2 = githubLookupService.findUser("CloudFoundry");
+        CompletableFuture < User > page3 = githubLookupService.findUser("Spring-Projects");
+        CompletableFuture < User > page4 = githubLookupService.findUser("Hamdambek");
         // Wait until they are all done
         CompletableFuture.allOf(page1, page2, page3, page4).join();
 
@@ -60,4 +62,7 @@ public class AnnotationApplication implements CommandLineRunner {
         logger.info("--> " + page3.get());
         logger.info("--> " + page4.get());
     }
+
+
+
 }

@@ -7,7 +7,8 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import org.springframework.web.client.RestTemplate;
-import spring.annotation.model.Developer;
+
+import spring.annotation.model.User;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,22 +19,22 @@ import java.util.concurrent.CompletableFuture;
  */
 
 @Service
-public class GithubLookupService {
+public class GitHubLookupService {
     //
-    private static final Logger logger = LoggerFactory.getLogger(GithubLookupService.class);
+    private static final Logger logger = LoggerFactory.getLogger(GitHubLookupService.class);
 
     private final RestTemplate restTemplate;
 
 
-    public GithubLookupService(RestTemplateBuilder restTemplateBuilder) {
+    public GitHubLookupService(RestTemplateBuilder restTemplateBuilder) {
        this.restTemplate = restTemplateBuilder.build();
     }
 
     @Async("threadPoolTaskExecutor")
-    public CompletableFuture<Developer> findDeveloper(String developer) throws InterruptedException {
-        logger.info("Looking up : " + developer);
-        String url = String.format("https://api.github.com/developer/%s", developer);
-        Developer results = restTemplate.getForObject(url, Developer.class);
+    public CompletableFuture<User> findUser(String user) throws InterruptedException {
+        logger.info("Looking up : " + user);
+        String url = String.format("https://api.github.com/user/%s", user);
+        User results = restTemplate.getForObject(url, User.class);
 
         //Artificial delay of 1st for demonstration purpose
         Thread.sleep(1000);

@@ -1,7 +1,9 @@
-Annotation list in Fundamental Spring Action 5 th Edition: 
-
+                                                 @Annotation list 
+  ------------------------------------------------------------------------------------------------------------------------------
 
 @Autowired
+@Qualifier("laptop") this may use component regarding laptop name... (ex>= Component("lap1")
+
 @autoconfiguration
 -------------------------
 @Bean
@@ -21,9 +23,9 @@ Annotation list in Fundamental Spring Action 5 th Edition:
 @ManyToMany (targetEntity=Ingredient.class_)
 @ManyToOne
 ------------------------
-@ NotNull
-@ NotBlank
-@ NoArgsConstructor ( access=AccessLevel.PRIVATE, force=true )
+@NotNull
+@NotBlank
+@NoArgsConstructor ( access=AccessLevel.PRIVATE, force=true)
 ------------------------
 @GetMapping
 -------------------------
