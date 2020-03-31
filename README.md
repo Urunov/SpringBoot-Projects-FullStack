@@ -9,7 +9,7 @@
    | Frontend  | BootStrap, Jsp -> React 16+  | 
    | Backend   | Spring Boot 2.1+, Java 8, and Java 11+ |
    | Security |  Spring Security, JWT|
-   | Database | JDBC, JPA-Hibernate, H2, MySQL, Oracle, MangoDB|
+   | Database | JPA-Hibernate, H2, MySQL, Oracle, MangoDB, Postgresql|
    | API Documentation	| Swagger API (Hub)|
    | Client Build | npm, yarn, webpack|
    | Server Build| Maven / Gradle|
@@ -47,7 +47,7 @@
 #
 # Part-3: Spring Boot Annotations 
 
- * ### (resource /  [ code ](https://github.com/Hamdambek/SpringBoot-Projects/tree/master/SpringBootMinProjects/SpringBootFirst))  Practical Experience with Annotation  
+ * ### ([resource](https://dev.to/hamdamboy/cognitive-control-annotations-in-spring-boot-23io) /  [ code ]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-3%20Spring%20Boot%20Annotations))  Practical Experience with Annotation  
   
      *  Spring Boot Annotations Definiation and Practics
      *  Spring Boot @EnableAutoConfiguration Annotation with Example
