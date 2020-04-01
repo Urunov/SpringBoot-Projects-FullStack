@@ -1,6 +1,7 @@
 package spring.restapi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import spring.restapi.exception.ResourceNotFoundException;
@@ -43,7 +44,7 @@ public class DeveloperController {
         return developerRepository.save(developer);
     }
 
-    @PutMapping("/develop/{id}")
+    @PutMapping("/dev/{id}")
     public ResponseEntity<Developer> updateDeveloper (
             @PathVariable(value = "id") Long devId,
             @Valid @RequestBody Developer developerDetails) throws ResourceNotFoundException{
@@ -53,7 +54,8 @@ public class DeveloperController {
         developer.setEmailId(developerDetails.getEmailId());
         developer.setLastName(developerDetails.getLastName());
         developerDetails.setFirstName(developerDetails.getFirstName());
-        developer.setUpdatedAt(new Date());
+        developerDetails.setCreateAt(developerDetails.getCreateAt());
+       // developer.setUpdatedAt(new Date());
 
         final Developer updateDev = developerRepository.save(developer);
         return ResponseEntity.ok(updateDev);
@@ -67,7 +69,7 @@ public class DeveloperController {
 
         developerRepository.delete(developer);
         Map<String, Boolean> response = new HashMap<>();
-            response.put("delete", Boolean.TRUE);
+        response.put("delete", Boolean.TRUE);
         return response;
     }
 

@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
@@ -15,6 +16,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import spring.restapi.model.Developer;
 
 import java.net.http.HttpHeaders;
+import java.time.Instant;
 
 import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
 import static org.junit.Assert.assertEquals;
@@ -37,7 +39,7 @@ public class SpringBootCrudRestApplicationTests {
     private int port;
 
     private String getRootUrl(){
-        return "http://localhost:" +port;
+        return "http://localhost:" + port;
     }
 
     @Test
@@ -45,26 +47,15 @@ public class SpringBootCrudRestApplicationTests {
 
     }
 
-    @Test
-    public void testGetAllDevelopers(){
-        HttpHeaders headers = new HttpHeaders();
-        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-
-        ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/users",
-                HttpMethod.GET, entity, String.class);
-
-        assertNotNull(response.getBody());
-    }
-
-    @Test
-    public void testGetAllDevelopers(){
-        HttpHeaders headers = new HttpHeaders();
-        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
-
-        ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/users", HttpMethod.GET, entity, String.class);
-
-        assertNotNull(response.getBody());
-    }
+//    @Test
+//    public void testGetAllDevelopers(){
+//        HttpHeaders headers = new HttpHeaders();
+//        HttpEntity<String> entity = new HttpEntity<String>(null, headers);
+//
+//        ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/users", HttpMethod.GET, entity, String.class);
+//
+//        assertNotNull(response.getBody());
+//    }
 
     @Test
     public void testGetDeveloperById() {
@@ -80,8 +71,8 @@ public class SpringBootCrudRestApplicationTests {
         developer.setEmailId("hamdamboy.urunov@gmail.com");
         developer.setFirstName("Hamdamboy");
         developer.setLastName("Urunov");
-        developer.setCreateAt("admin");
-        developer.setUpdatedAt("admin");
+//        developer.setCreateAt(null);
+//        developer.setUpdatedAt(null);
 
         ResponseEntity<Developer> postResponse = restTemplate.postForEntity(getRootUrl() + "/devs", developer, Developer.class);
         assertNotNull(postResponse);

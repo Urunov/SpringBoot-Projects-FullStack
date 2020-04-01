@@ -1,7 +1,6 @@
 package spring.restapi.model;
 
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
@@ -22,8 +21,7 @@ public class Developer {
     private String lastName;
     private String emailId;
     private Date createAt;
-    private String createdBy;
-    private Date updatedAt;
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -71,25 +69,4 @@ public class Developer {
     public void setCreateAt(Date createAt) {
         this.createAt = createAt;
     }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    @Column(name = "update_by", nullable = false)
-    @LastModifiedBy
-    public Date getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(Date updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
-
-
 }
