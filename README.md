@@ -64,7 +64,6 @@
     * Aspect Orient Programming (AOP) in Spring
     * Spring Boot 2 Hibernate 5 MySQL CRUD REST API Tutorial
     * Spring Boot 2 JPA MySQL CRUD Example
-    * Spring Boot 2 Hello World Application
     * Spring Boot 2 CRUD REST APIs Validation Example
     * Spring Data JPA Auditing with Spring Boot 2 and MySQL Example
     * Spring Boot 2 Exception Handling for REST APIs
