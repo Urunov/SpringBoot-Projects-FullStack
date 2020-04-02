@@ -23,7 +23,7 @@ import java.util.Map;
  */
 
 @Component
-@Path("/api")
+@Path("/api/")
 public class JobResource {
     //
     @Autowired

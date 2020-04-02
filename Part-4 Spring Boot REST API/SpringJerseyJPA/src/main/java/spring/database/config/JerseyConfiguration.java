@@ -5,9 +5,6 @@ import org.springframework.stereotype.Component;
 import spring.database.controller.JobResource;
 
 import javax.ws.rs.ApplicationPath;
-
-
-
 /**
  * @Author: apple
  * @created on 01/04/2020
