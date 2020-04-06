@@ -1,5 +1,6 @@
 package spring.swagger;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,8 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringSwaggerController {
     //
-    @RequestMapping(method = RequestMethod.GET, value = "/api/project")
-    public String HelloAgain(){
-        return "Spring Swagger Good afternoon";
+    @RequestMapping(method = RequestMethod.GET, value = "/api/aspera")
+    public String File(){
+
+        return "Spring Swagger File ";
     }
+
+    @PostMapping(value = "/api/aspera")
+    public String UpdateFile(){
+       return "Spring Update Files";
+    }
+
+
 }

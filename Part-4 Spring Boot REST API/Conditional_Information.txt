@@ -24,3 +24,8 @@ SpringJerseyJPA
 
 Source code is not error
 but complier error.
+
+----------------------------------------------------------------------------
+
+Spring Swagger 2 
+---

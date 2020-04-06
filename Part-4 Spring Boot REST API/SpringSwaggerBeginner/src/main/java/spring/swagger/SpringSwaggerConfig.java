@@ -9,7 +9,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import java.util.function.Predicate;
+import com.google.common.base.Predicate;
+
 import static com.google.common.base.Predicates.or;
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -19,27 +20,29 @@ import static springfox.documentation.builders.PathSelectors.regex;
  * @Author Hamdamboy
  */
 
+@Profile("swagger-enable-for-qa")
 @Configuration
 @EnableSwagger2
-@Profile("swagger-enable-for-qa")
 public class SpringSwaggerConfig {
     //
     @Bean
-    public Docket postsApi(){
+    public Docket postsApi() {
         return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")
-                .apiInfo(apiInfo()).select().paths((com.google.common.base.Predicate<String>) postPaths()).build();
+                .apiInfo(apiInfo()).select().paths(postPaths()).build();
     }
 
-    private Predicate<String> postPaths(){
-        return (Predicate<String>) or(regex("/api/posts.*"), regex("/api/projects.*"));
+
+
+    private Predicate<String> postPaths() {
+        return or(regex("/api/posts.*"), regex("/api/javainuse.*"));
     }
 
-    private ApiInfo apiInfo(){
-        return new ApiInfoBuilder().title("Project Aspera API in Spring Boot 2")
-                .description("Projects Spring Swagger API reference for developers")
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder().title("Aspera API using FastFor")
+                .description("Aspera API reference for developers")
                 .termsOfServiceUrl("http://javainuse.com")
-                .contact("myindexu@gmail.com").license("JavaUnite license")
-                .licenseUrl("myindexu@gmail.com").version("1.0").build();
+                .contact("javainuse@gmail.com").license("JavaInUse License")
+                .licenseUrl("javainuse@gmail.com").version("1.0").build();
     }
 
 }
