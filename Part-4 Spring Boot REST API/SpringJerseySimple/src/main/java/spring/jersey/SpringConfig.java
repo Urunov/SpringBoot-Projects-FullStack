@@ -27,14 +27,14 @@ import javax.sql.DataSource;
 @EnableJpaRepositories("spring.jersey.repository")
 public class SpringConfig {
 
-    @Bean
-    public DataSource dataSource(){
-        return new EmbeddedDatabaseBuilder()
-                .setType(EmbeddedDatabaseType.H2)
-                .addScript("classpath:schema.sql")
-                .addScript("classpath:data.sql")
-                .build();
-    }
+//    @Bean
+//    public DataSource dataSource(){
+//        return new EmbeddedDatabaseBuilder()
+//                .setType(EmbeddedDatabaseType.H2)
+//                .addScript("classpath:schema.sql")
+//                .addScript("classpath:data.sql")
+//                .build();
+//    }
 
     @Bean
     public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
@@ -53,7 +53,7 @@ public class SpringConfig {
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(){
         LocalContainerEntityManagerFactoryBean localContainerEntityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
-        localContainerEntityManagerFactoryBean.setDataSource(dataSource());
+     //   localContainerEntityManagerFactoryBean.setDataSource(dataSource());
         localContainerEntityManagerFactoryBean.setJpaVendorAdapter(jpaVendorAdapter());
         localContainerEntityManagerFactoryBean.setPackagesToScan("spring.jersey.domain");
         return localContainerEntityManagerFactoryBean;

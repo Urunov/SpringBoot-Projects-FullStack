@@ -37,7 +37,7 @@ public class EmployeeController {
        return ResponseEntity.ok().body(employee);
     }
 
-    @PostMapping("/emp")
+    @PostMapping("/emp1")
     public Employee createEmployee(@Valid @RequestBody Employee employee){
         return employeeRepository.save(employee);
     }
