@@ -68,9 +68,9 @@
     * Spring Data JPA Auditing with Spring Boot 2 and MySQL Example
     * Spring Boot 2 Exception Handling for REST APIs
     * Spring Boot 2 Logging SLF4j Logback and LOG4j2 Example
-    * Spring Boot 2 + Jersey REST + JPA + Hibernate 5 CRUD REST APIs Example
+    * Spring Boot 2 + Jersey REST + JPA + Hibernate 5 CRUD REST APIs 
     * Spring Boot 2 - Scheduling Tasks
-    * Spring Boot 2 RESTful API Documentation with Swagger 2 Tutorial
+    * Spring Boot 2 RESTful API Documentation with Swagger 2 
     * Spring Boot 2 - File Upload and Download Rest API Tutorial // LATEST
 #
 
