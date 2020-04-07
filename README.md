@@ -56,7 +56,7 @@
 
 #
 # Part-4: Spring Boot + REST API
- * ### (resource/ [ code ](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-4%20Spring%20Boot%20REST%20API)) Database interconnections
+ * ### ([resource](https://dev.to/hamdamboy/truly-there-is-no-difference-in-implementation-integrating-spring-with-jersey-and-integrating-jersey-with-spring-m2k)/ [ code ](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-4%20Spring%20Boot%20REST%20API)) Database interconnections
 
 
 
