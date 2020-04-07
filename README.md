@@ -75,7 +75,7 @@
 #
 
 # Part-5: Spring Boot + Web Application 
- * ### (resource/code)  Web applicaiton develops
+ * ### (resource/[code](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-5%20Spring%20Boot%20Web%20Application))  Web applicaiton develops
  
    * Spring MVC + Spring Boot2 + JSP + JPA + Hibernate 5 + MySQL Example
    * Spring Boot 2 MVC Web Application Thymeleaf JPA MySQL Example
