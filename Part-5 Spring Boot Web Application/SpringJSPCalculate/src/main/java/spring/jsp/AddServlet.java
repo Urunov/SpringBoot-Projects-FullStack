@@ -1,29 +1,41 @@
 package spring.jsp;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+
+import javax.validation.Valid;
+
 
 /**
  * @Created 27 / 03 / 2020 - 5:56 PM
  * @project SpringJSP
  * @Author Hamdamboy
  */
-@WebServlet("/add")
-public class AddServlet extends HttpServlet {
+@Controller
+public class AddServlet implements WebMvcConfigurer {
     //
-        public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/results").setViewName("results");
+    }
 
-            int i = Integer.parseInt(request.getParameter("num1"));
-            int j = Integer.parseInt(request.getParameter("num2"));
+    @GetMapping("/")
+    public String showForm(PersonForm personForm) {
+        return "form";
+    }
 
-            int k = i + j;
+    @PostMapping("/")
+    public String checkPersonInfo(@Valid PersonForm personForm, BindingResult bindingResult) {
 
-            PrintWriter out = response.getWriter();
-            out.println("OutPut:" + k);
+        if (bindingResult.hasErrors()) {
+            return "form";
         }
+
+        return "redirect:/results";
+    }
 }
