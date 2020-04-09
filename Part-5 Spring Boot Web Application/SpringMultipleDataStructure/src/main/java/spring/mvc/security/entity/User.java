@@ -1,10 +1,15 @@
 package spring.mvc.security.entity;
 
-import sun.jvm.hotspot.debugger.Address;
 
-import javax.persistence.*;
 import java.util.Set;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 /**
  * @Created 08 / 04 / 2020 - 5:38 PM
  * @project SpringMultipleDataStructure
@@ -13,6 +18,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "USERS")
+
 public class User {
 
     @Id
@@ -29,6 +35,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private Set<Address> address;
 
+    public User(){}
     public User(Integer id, String name, String email, boolean disabled) {
         this.id = id;
         this.name = name;

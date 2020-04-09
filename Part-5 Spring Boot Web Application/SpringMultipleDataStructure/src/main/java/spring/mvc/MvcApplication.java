@@ -8,7 +8,8 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication(
-        exclude = {DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class,
+        exclude = {DataSourceAutoConfiguration.class,
+                HibernateJpaAutoConfiguration.class,
                 DataSourceTransactionManagerAutoConfiguration.class
         }
 )
