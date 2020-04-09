@@ -34,6 +34,7 @@ public class User {
     @Size(min=4)
     private String password;
 
+    public User(){}
     public User(String email, String password, Collection<? extends GrantedAuthority> authorities) {
             this.email = email;
             this.password = password;

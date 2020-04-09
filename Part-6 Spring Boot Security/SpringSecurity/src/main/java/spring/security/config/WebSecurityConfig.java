@@ -1,6 +1,7 @@
 package spring.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -29,7 +30,7 @@ import javax.sql.DataSource;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     //
     @Autowired
-    private UserDetailsService customUserDetailsService;
+    private UserDetailsService customerUserDetailsService;
 
     @Autowired
     private DataSource dataSource;
@@ -42,7 +43,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configuration(AuthenticationManagerBuilder auth) throws Exception {
         auth
-                .userDetailsService(customUserDetailsService)
+                .userDetailsService(customerUserDetailsService)
                 .passwordEncoder(passwordEncoder());
     }
 

@@ -11,3 +11,4 @@ public class SecurityApplication {
     }
 
 }
+//https://github.com/RameshMF/spring-boot-tutorial/tree/master/springboot-thymeleaf-security-demo/src/main/resources
