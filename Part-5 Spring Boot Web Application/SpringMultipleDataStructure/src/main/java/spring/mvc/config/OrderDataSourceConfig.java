@@ -65,7 +65,7 @@ public class OrderDataSourceConfig {
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setDataSource(ordersDataSource());
         factory.setPackagesToScan(new String[] {
-                "spring.mvc.orders.repository"
+                "spring.mvc.orders.entities"
         });
         factory.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
@@ -78,7 +78,7 @@ public class OrderDataSourceConfig {
     }
 
     @Bean
-    public DataSourceInitializer ordersDataSrouceInitializer(){
+    public DataSourceInitializer ordersDataSourceInitializer(){
         DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
         dataSourceInitializer.setDataSource(ordersDataSource());
         ResourceDatabasePopulator databasePopulator = new ResourceDatabasePopulator();
