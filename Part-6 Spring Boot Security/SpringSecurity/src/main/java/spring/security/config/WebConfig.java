@@ -23,9 +23,8 @@ public class WebConfig implements WebMvcConfigurer {
     private MessageSource messageSource;
 
     @Override
-    public void addViewControllers(ViewControllerRegistry registry)
-    {
-        registry.addViewController("/").setViewName("index");
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("ind ex");
         registry.addViewController("/login").setViewName("login");
         //registry.addViewController("/home").setViewName("userhome");
         registry.addViewController("/admin/home").setViewName("adminhome");
@@ -40,9 +39,8 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
 
-
     @Bean
-    public SpringSecurityDialect securityDialect (){
+    public SpringSecurityDialect securityDialect() {
         return new SpringSecurityDialect();
     }
 }

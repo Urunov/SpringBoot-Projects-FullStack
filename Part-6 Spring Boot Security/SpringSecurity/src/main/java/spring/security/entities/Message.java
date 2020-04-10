@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 
 @Entity
-@Table(name="message")
+@Table(name = "message")
 public class Message {
     //
     @Id
@@ -31,7 +31,7 @@ public class Message {
         this.content = content;
     }
 
-    public Integer getId(){
+    public Integer getId() {
         return id;
     }
 }

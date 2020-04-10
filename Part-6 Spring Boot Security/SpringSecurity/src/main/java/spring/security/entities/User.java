@@ -16,7 +16,7 @@ import java.util.List;
  */
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class User {
 
     @Id
@@ -31,13 +31,15 @@ public class User {
     private String email;
     @Column(nullable = false)
     @NotEmpty
-    @Size(min=4)
+    @Size(min = 4)
     private String password;
 
-    public User(){}
+    public User() {
+    }
+
     public User(String email, String password, Collection<? extends GrantedAuthority> authorities) {
-            this.email = email;
-            this.password = password;
+        this.email = email;
+        this.password = password;
 
     }
 
@@ -51,8 +53,8 @@ public class User {
 
     @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(
-            name="user_role",
-            joinColumns = {@JoinColumn(name="USER_ID", referencedColumnName = "ID")},
+            name = "user_role",
+            joinColumns = {@JoinColumn(name = "USER_ID", referencedColumnName = "ID")},
             inverseJoinColumns = {@JoinColumn(name = "ROLE_ID", referencedColumnName = "ID")})
 
     private List<Role> roles;

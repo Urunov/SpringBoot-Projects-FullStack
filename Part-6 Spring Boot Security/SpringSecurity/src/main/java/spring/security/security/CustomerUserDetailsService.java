@@ -26,8 +26,6 @@ public class CustomerUserDetailsService implements UserDetailsService {
     private UserRepository userRepository;
 
 
-
-
     private static Collection<? extends GrantedAuthority> getAuthorities(User user) {
         String[] userRoles = user.getRoles().stream().map((role) -> role.getName()).toArray(String[]::new);
         Collection<GrantedAuthority> authorities = AuthorityUtils.createAuthorityList(userRoles);

@@ -21,13 +21,13 @@ public class HomeController {
     private MessageRepository messageRepository;
 
     @GetMapping("/home")
-    public String home(Model model){
+    public String home(Model model) {
         model.addAttribute("msgs", messageRepository.findAll());
         return "userhome";
     }
 
     @PostMapping("/message")
-    public String saveMessage(Message message){
+    public String saveMessage(Message message) {
 
         messageRepository.save(message);
         return "redirect:/home";
