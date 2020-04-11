@@ -84,7 +84,7 @@
 
 #
 # Part-6: Spring Boot + Security 
- * ### (resource/code)  Security possiblities
+ * ### (resource/[code]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-6%20Spring%20Boot%20Security))  Security possiblities
   
      * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
      * Authenticating a User with LDAP using Spring Boot and Spring Security
