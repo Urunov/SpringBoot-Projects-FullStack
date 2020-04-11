@@ -54,6 +54,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
                 .anyRequest().fullyAuthenticated()
                 .and()
                 .formLogin();
+
+
     }
 
     // Create two users, admin and user

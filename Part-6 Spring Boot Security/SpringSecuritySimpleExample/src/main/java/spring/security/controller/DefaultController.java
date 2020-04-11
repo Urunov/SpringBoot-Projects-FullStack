@@ -1,5 +1,6 @@
 package spring.security.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author Hamdamboy
  */
 
-@RestController
+@Controller
 public class DefaultController {
 
-    @GetMapping(value = "/")
+    @GetMapping("/")
     public String home1(){
-        return "home.html";
+        return "home";
     }
 
     @GetMapping("/home")
