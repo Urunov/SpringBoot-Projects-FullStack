@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring 4 Security + Thymeleaf Integration Example</title>
+</head>
+<body>
+<h3>Spring 4 Security + Thymeleaf Integration Example </h3>
+Logged in user: <b th:inline="text"> [[${#httpServletRequest.remoteUser}]] </b>
+<form th:action="@{/appLogout}" method="POST">
+    <input type="submit" value="Logout"/>
+</form>
+<table>
+    <tr th:each="student : ${students}">
+        <td th:text="${student.stdId}">Id</td>
+        <td th:text="${student.stdName}">Name</td>
+    </tr>
+</table>
+</body>
+</html>
