@@ -11,3 +11,5 @@ public class SecurityApplication {
     }
 
 }
+
+//https://github.com/dangeabunea/RomanianCoderExamples/tree/master/SpringBootSecurity
