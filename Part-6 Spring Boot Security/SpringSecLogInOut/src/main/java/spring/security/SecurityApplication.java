@@ -12,4 +12,7 @@ public class SecurityApplication {
 
 }
 
+//https://www.concretepage.com/spring-4/spring-security-thymeleaf-login-logout
+//https://portswigger.net/web-security/csrf
+
 //https://github.com/dangeabunea/RomanianCoderExamples/tree/master/SpringBootSecurity
