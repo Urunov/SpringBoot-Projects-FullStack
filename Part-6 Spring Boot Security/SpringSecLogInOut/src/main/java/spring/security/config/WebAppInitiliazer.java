@@ -11,7 +11,7 @@ public class WebAppInitiliazer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-                ThymleafConfig.class
+                ThymeleafConfig.class
         };
     }
 

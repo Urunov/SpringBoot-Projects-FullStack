@@ -25,36 +25,35 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
 
-//                http
+                http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/", "/home**", "/about**").permitAll()
+                .antMatchers("/user/**").hasAnyRole("USER")
+                        .antMatchers("/admin").access("hasAnyAuthority('ADMIN')")
+
+                .anyRequest().authenticated()
+              .and()
+              .formLogin()
+              .loginPage("/login")
+                .permitAll()
+                .and()
+              .logout()
+              .permitAll()
+              .and()
+              .exceptionHandling().accessDeniedHandler(accessDeniedHandler);
+//        http
 //                .csrf().disable()
 //                .authorizeRequests()
 //
-//                .antMatchers("/", "/home**", "/about**").permitAll()
-//                .antMatchers("/user/**").hasAnyRole("USER")
-//                        .antMatchers("/admin").access("hasAnyAuthority('ADMIN')")
+//                .antMatchers("/login**", "/").permitAll()
+//                .antMatchers("/user/**").access("hasAnyAuthority('USER')")
+//                .antMatchers("/admin/**").access("hasAnyAuthority('ADMIN')")
 //
-//                .anyRequest().authenticated()
-//              .and()
-//              .formLogin()
-//              .loginPage("/login")
-//                .permitAll()
+//                .anyRequest().fullyAuthenticated()
 //                .and()
-//              .logout()
-//              .permitAll()
-//              .and()
-//              .exceptionHandling().accessDeniedHandler(accessDeniedHandler);
-        http
-                .csrf().disable()
-                .authorizeRequests()
-
-                .antMatchers("/login**", "/").permitAll()
-                .antMatchers("/user/**").access("hasAnyAuthority('USER')")
-                .antMatchers("/admin/**").access("hasAnyAuthority('ADMIN')")
-
-                .anyRequest().fullyAuthenticated()
-                .and()
-                .formLogin();
-
+//                .formLogin();
+//
 
     }
 
@@ -63,8 +62,8 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 
         auth.inMemoryAuthentication()
-                .withUser("user").password("password").roles("USER")
+                .withUser("user").password("12345").roles("USER")
                 .and()
-                .withUser("admin").password("password").roles("ADMIN");
+                .withUser("admin").password("admin12345").roles("ADMIN");
     }
 }

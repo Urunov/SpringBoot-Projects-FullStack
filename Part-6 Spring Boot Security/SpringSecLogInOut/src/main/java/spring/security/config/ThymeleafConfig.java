@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+import org.thymeleaf.spring4.SpringTemplateEngine;
+import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 /**
@@ -21,16 +21,14 @@ import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 @EnableWebMvc
 @Deprecated
 @Import(SecurityConfig.class)
-public class ThymleafConfig extends WebMvcConfigurerAdapter {
+public class ThymeleafConfig extends WebMvcConfigurerAdapter {
 
-    @Bean(name="templateResolver")
+    @Bean(name ="templateResolver")
     public ServletContextTemplateResolver getTemplateResolver() {
         ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
         templateResolver.setTemplateMode("XHTML");
-        templateResolver.setCacheable(false);
-        templateResolver.setOrder(1);
         return templateResolver;
     }
 
