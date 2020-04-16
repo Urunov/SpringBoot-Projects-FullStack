@@ -23,13 +23,22 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("admin123")).roles("ADMIN")
+                .withUser("admin")
+                .password(passwordEncoder().encode("admin123"))
+                .roles("ADMIN").authorities("ACCESS_TEST1", "ACCESS_TEST2")
                 .and()
-                .withUser("hamdamboy").password(passwordEncoder().encode("dan123")).roles("USER");
+                .withUser("hamdamboy")
+                .password(passwordEncoder().encode("hamdamboy123"))
+                .roles("USER")
+                .and()
+                .withUser("manager")
+                .password(passwordEncoder().encode("manager"))
+                .roles("MANAGER")
+                .authorities("ACCESS_TEST1");
     }
 
     /**
-     *  This is Http security, consists of all incoming requests.
+     *
      * **/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -41,6 +50,8 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")
+                .antMatchers("/api/public/test1").hasAuthority("ACCESS_TEST1")
+                .antMatchers("/api/public/test2").hasAuthority("ACCESS_TEST2")
                 .and()
                 .httpBasic();
 
