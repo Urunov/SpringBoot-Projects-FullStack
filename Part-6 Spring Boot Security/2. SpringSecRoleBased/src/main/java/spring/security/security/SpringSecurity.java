@@ -28,11 +28,15 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
                 .withUser("hamdamboy").password(passwordEncoder().encode("dan123")).roles("USER");
     }
 
+    /**
+     *  This is Http security, consists of all incoming requests.
+     * **/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http
                 .authorizeRequests()
+              //  .anyRequest().permitAll() if you fix all permission values, then remove all conditions.
                 .antMatchers("/index.html").permitAll()
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
