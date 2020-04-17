@@ -8,9 +8,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableAsync
+@EnableCaching
+@EnableScheduling
 public class SecurityApplication {
 
     public static void main(String[] args) {
@@ -19,7 +25,7 @@ public class SecurityApplication {
 
     @Bean
     public ServletWebServerFactory servletContainer(){
-        // Enable SSL Trafic
+        // Enable SSL Traffic
 
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
             @Override
@@ -35,7 +41,7 @@ public class SecurityApplication {
         };
 
         //Add HTTP to HTTPS redirect
-        tomcat.addAdditionalTomcatConnectors(httpToHttpRedirectConnector());
+        tomcat.addAdditionalTomcatConnectors(httpToHttpsRedirectConnector());
 
         return tomcat;
     }
@@ -46,7 +52,7 @@ public class SecurityApplication {
      *
      * */
 
-    private Connector httpToHttpRedirectConnector() {
+    private Connector httpToHttpsRedirectConnector() {
         Connector connector = new Connector(TomcatServletWebServerFactory.DEFAULT_PROTOCOL);
         connector.setScheme("http");
         connector.setPort(8082);
@@ -54,4 +60,6 @@ public class SecurityApplication {
         connector.setRedirectPort(8443);
         return connector;
     }
+
+
 }
