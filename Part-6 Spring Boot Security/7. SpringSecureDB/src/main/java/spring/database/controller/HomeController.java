@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Author Hamdamboy
  */
 @Controller
-@RequestMapping("")
 public class HomeController {
 
-    @GetMapping("index")
-    public String index(){
+    @GetMapping("/index")
+    public String index() {
         return "index";
     }
 }

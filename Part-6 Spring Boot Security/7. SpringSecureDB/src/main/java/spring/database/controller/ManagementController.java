@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-@RequestMapping("management")
+@RequestMapping("/management")
 public class ManagementController {
 
-    @GetMapping("index")
-    public String index(){
+    @GetMapping("/index")
+    public String index() {
         return "management/index";
     }
 }

@@ -3,6 +3,7 @@ package spring.database.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import spring.database.db.UserRepository;
 import spring.database.model.User;
 
@@ -13,29 +14,28 @@ import java.util.List;
  * @project security
  * @Author Hamdamboy
  */
-@Controller
-@RequestMapping("api/public")
+@RestController
+@RequestMapping("/api/public")
 public class PublicRestApiController {
 
     private UserRepository userRepository;
 
-    public PublicRestApiController(UserRepository userRepository){
+    public PublicRestApiController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("test1")
-    public String index(){
+    @GetMapping("/test1")
+    public String index() {
         return "testing 1";
     }
 
-    @GetMapping("test2")
-    public String index2(){
+    @GetMapping("/test2")
+    public String index2() {
         return "API Test 2";
     }
 
-
-    @GetMapping("users")
-    public List<User> users(){
+    @GetMapping("/users")
+    public List<User> users() {
         return this.userRepository.findAll();
     }
 }

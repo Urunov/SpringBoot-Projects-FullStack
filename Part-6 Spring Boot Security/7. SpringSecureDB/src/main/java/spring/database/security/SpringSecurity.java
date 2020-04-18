@@ -23,24 +23,28 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .inMemoryAuthentication()
+
                 .withUser("admin")
                 .password(passwordEncoder().encode("admin123"))
-
                 .roles("ADMIN").authorities("ACCESS_TEST1", "ACCESS_TEST2", "ROLE_ADMIN")
                 .and()
+
                 .withUser("hamdamboy")
                 .password(passwordEncoder().encode("hamdamboy123"))
+
                 .roles("USER")
                 .and()
+
                 .withUser("manager")
                 .password(passwordEncoder().encode("manager123"))
+
                 .roles("MANAGER")
                 .authorities("ACCESS_TEST1", "ROLE_MANAGER");
     }
 
     /**
      * Enable HTTPS/SSL in Spring Boot
-     * **/
+     **/
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
@@ -51,16 +55,16 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")
-                .antMatchers("/api/public/test1").hasAuthority("ACCESS_TEST1")
+                .antMatchers("/api/public/test1").hasAuthority("ROLE_ADMIN")
                 .antMatchers("/api/public/test2").hasAuthority("ACCESS_TEST2")
-                .antMatchers("/api/public/users").hasAuthority("ADMIN")
+                .antMatchers("/api/public/users").permitAll()
                 .and()
                 .httpBasic();
 
     }
 
     @Bean
-    PasswordEncoder passwordEncoder(){
+    PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 }
