@@ -11,11 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Controller
-@RequestMapping("management")
-public class ManagementController {
-
-    @GetMapping
+@RequestMapping("/")
+public class HomeController {
+    //
+    @GetMapping("/index")
     public String index(){
-        return "management/index";
+        return "index";
+    }
+
+    @GetMapping("/login")
+    public String login(){
+        return "login";
     }
 }

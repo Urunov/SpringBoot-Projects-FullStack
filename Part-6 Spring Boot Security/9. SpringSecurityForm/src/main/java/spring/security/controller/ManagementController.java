@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @project SpringSecurityForm
  * @Author Hamdamboy
  */
-@Controller
-@RequestMapping("admin")
-public class AdminController {
 
-    @GetMapping("index")
+@Controller
+@RequestMapping("/management")
+public class ManagementController {
+
+    @GetMapping
     public String index(){
-        return "admin/index";
+        return "management/index";
     }
 }

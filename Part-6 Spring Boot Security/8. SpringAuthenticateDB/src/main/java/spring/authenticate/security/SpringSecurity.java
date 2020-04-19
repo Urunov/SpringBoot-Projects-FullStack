@@ -25,10 +25,16 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
 
     private UserPrincipalDetialService userPrincipalDetialService;
 
+    public SpringSecurity(UserPrincipalDetialService userPrincipalDetialService){
+        this.userPrincipalDetialService = userPrincipalDetialService;
+    }
+
     @Override
     protected void configure(AuthenticationManagerBuilder auth)  {
 
         auth.authenticationProvider(authenticationProvider());
+
+
         /***
         auth
                 .inMemoryAuthentication()
@@ -59,7 +65,7 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 //  .anyRequest().permitAll() if you fix all permission values, then remove all conditions.
-                .antMatchers("/index.html").permitAll()
+                .antMatchers("/index").permitAll()
                 .antMatchers("/profile/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/management/**").hasAnyRole("ADMIN", "MANAGER")

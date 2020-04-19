@@ -14,7 +14,7 @@ import java.util.List;
  * @Author Hamdamboy
  */
 @RestController
-@RequestMapping("api/public")
+@RequestMapping("/api/public")
 public class PublicRestApiController {
 
     private UserRepository userRepository;
