@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author Hamdamboy
  */
 
-@RestController
+@Controller
 @RequestMapping("/management")
 public class ManagementController {
 

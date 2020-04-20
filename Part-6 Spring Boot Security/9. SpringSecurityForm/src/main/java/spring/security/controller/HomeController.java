@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @Author Hamdamboy
  */
 
-@RestController
-@RequestMapping("")
+@Controller
+@RequestMapping(name = "")
 public class HomeController {
     //
-    @GetMapping("/index")
+    @GetMapping()
     public String index(){
         return "index";
     }

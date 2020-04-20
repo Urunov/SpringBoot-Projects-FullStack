@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/profile")
 public class ProfileController {
     //
-    @GetMapping("/index")
+    @GetMapping()
     public String index(){
         return "profile/index";
     }
