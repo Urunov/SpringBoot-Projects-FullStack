@@ -10,25 +10,26 @@ import java.util.List;
  * @project SpringSecurityForm
  * @Author Hamdamboy
  */
-@Entity
-public class User {
+    @Entity
+    public class User {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        private long id;
 
-    @Column(nullable = false)
-    private String username;
+        @Column(nullable = false)
+        private String username;
 
-    @Column(nullable = false)
-    private String password;
+        @Column(nullable = false)
+        private String password;
 
-    private int active;
+        private int active;
 
     private String roles ="";
 
     private String permissions = "";
 
+    public User(){}
     public long getId() {
         return id;
     }

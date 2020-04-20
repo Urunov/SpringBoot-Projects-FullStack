@@ -45,7 +45,7 @@ public class SecurityFormApplication {
     private Connector httpToHttpRedirectConnector(){
         Connector connector = new Connector(TomcatServletWebServerFactory.DEFAULT_PROTOCOL);
         connector.setScheme("http");
-        connector.setPort(8082);
+        connector.setPort(8091);
         connector.setSecure(false);
         connector.setRedirectPort(8443);
         return connector;

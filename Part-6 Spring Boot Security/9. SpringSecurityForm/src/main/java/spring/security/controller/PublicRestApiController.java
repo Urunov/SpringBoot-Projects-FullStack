@@ -23,18 +23,19 @@ public class PublicRestApiController {
         this.userRepository = userRepository;
     }
 
-    @GetMapping("test1")
+    @GetMapping("/test1")
     public String test1(){
         return "API Test 1";
     }
 
-    @GetMapping("test2")
+    @GetMapping("/test2")
     public String test2(){
         return "API TEST 2";
     }
 
-    @GetMapping("users")
+    @GetMapping("/users")
     public List<User> users(){
+
         return this.userRepository.findAll();
     }
 }
