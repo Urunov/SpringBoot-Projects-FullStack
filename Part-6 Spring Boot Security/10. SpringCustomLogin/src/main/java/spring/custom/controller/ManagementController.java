@@ -5,21 +5,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @Author: apple
- * @created on 20/04/2020
- * @Project is SpringCustomLogin
+ * @Created 13 / 04 / 2020 - 10:21 AM
+ * @project SpringSecurityForm
+ * @Author Hamdamboy
  */
+
 @Controller
-@RequestMapping("/")
-public class HomeController {
+@RequestMapping("/management")
+public class ManagementController {
 
-    @GetMapping()
+    @GetMapping
     public String index(){
-        return "index";
-    }
-
-    @GetMapping("/login")
-    public String login(){
-        return "login";
+        return "management/index";
     }
 }

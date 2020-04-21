@@ -1,21 +1,24 @@
-package spring.security;
+package spring.custom;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.connector.Connector;
 import org.apache.tomcat.util.descriptor.web.SecurityCollection;
 import org.apache.tomcat.util.descriptor.web.SecurityConstraint;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
-public class SecurityFormApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(SecurityFormApplication.class, args);
-    }
+/**
+ * @Created 21 / 04 / 2020 - 4:29 PM
+ * @project custom
+ * @Author Hamdamboy
+ */
+@Configuration
+@EnableConfigurationProperties
+public class HttpsConfiguration {
 
     @Bean
     public ServletWebServerFactory servletContainer(){
@@ -36,24 +39,22 @@ public class SecurityFormApplication {
         tomcat.addAdditionalTomcatConnectors(httpToHttpRedirectConnector());
         return tomcat;
     }
-
     /*
-    *  We need redirect from HTTP to HTTPS. Without SSL, this application used port 8082. With SSL it will use port 8443.
-    *  SO, any request for 8090 needs to be redirected to HTTPS on 8443.
-    * */
+     *  We need redirect from HTTP to HTTPS. Without SSL, this application used port 8082. With SSL it will use port 8443.
+     *  SO, any request for 8082 needs to be redirected to HTTPS on 8443.
+     * */
+    @Value("${server.port.http}")
+    private int serverPortHttp;
+
+    @Value("${server.port}")
+    private int serverPortHttps;
 
     private Connector httpToHttpRedirectConnector(){
         Connector connector = new Connector(TomcatServletWebServerFactory.DEFAULT_PROTOCOL);
         connector.setScheme("http");
-        connector.setPort(8090);
+        connector.setPort(serverPortHttp);
         connector.setSecure(false);
-        connector.setRedirectPort(8443);
+        connector.setRedirectPort(serverPortHttps);
         return connector;
     }
 }
-
-
-/**
- *  Start will be initliaze https://localhost:8443/login
- * **/
-

@@ -1,16 +1,16 @@
-package spring.security.dao;
+package spring.custom.dao;
 
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Service;
-import spring.security.model.User;
-
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import spring.custom.model.User;
+
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * @Created 13 / 04 / 2020 - 10:22 AM
- * @project SpringSecurityForm
+ * @Created 21 / 04 / 2020 - 11:11 AM
+ * @project custom
  * @Author Hamdamboy
  */
 
@@ -20,25 +20,26 @@ public class DbInit implements CommandLineRunner {
     private UserRepository userRepository;
     private PasswordEncoder passwordEncoder;
 
-    public DbInit(UserRepository userRepository, PasswordEncoder passw){
+    public DbInit(UserRepository userRepository, PasswordEncoder passwordEncoder){
         this.userRepository = userRepository;
-        this.passwordEncoder = passw;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
-    public void run(String... args) {
-        // Delete all
+    public void run(String... args) throws Exception {
+
+        // delete all
         this.userRepository.deleteAll();
 
         // Create User
-        User dan = new User("hamdamboy", passwordEncoder.encode("babam123"), "USER", "");
+
+        User me = new User("me", passwordEncoder.encode("me123"), "USER", "");
         User admin = new User("admin", passwordEncoder.encode("admin123"), "ADMIN", "ACCESS_TEST1, ACCESS_TEST2");
         User manager = new User("manager", passwordEncoder.encode("manager123"), "MANAGER", "ACCESS_TEST1");
 
-        List<User> users = Arrays.asList(dan, admin, manager);
+        List<User> users = Arrays.asList(me, admin, manager);
 
-        //Save to db
+        // Save to db
         this.userRepository.saveAll(users);
     }
-
 }
