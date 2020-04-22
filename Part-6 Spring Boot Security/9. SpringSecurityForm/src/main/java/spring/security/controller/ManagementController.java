@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @Controller
-@RequestMapping("/management")
+@RequestMapping("management")
 public class ManagementController {
 
     @GetMapping

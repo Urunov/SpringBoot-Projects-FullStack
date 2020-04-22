@@ -52,3 +52,10 @@ public class AuthenticateApplication {
         return connector;
     }
 }
+/***
+ *   We will security those steps:
+ *   1. http://localhost:8080/
+ *   2. https://localhost:8443/index
+ *
+ *
+ * **/

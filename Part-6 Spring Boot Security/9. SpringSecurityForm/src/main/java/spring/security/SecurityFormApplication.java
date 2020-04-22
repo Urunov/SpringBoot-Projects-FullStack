@@ -53,7 +53,9 @@ public class SecurityFormApplication {
 }
 
 
-/**
- *  Start will be initliaze https://localhost:8443/login
+/**1. localhost:8090/admin --> https://localhost:8443/login
+ * 2. Login page
+ * 3.
+ * Start will be initliaze https://localhost:8443/login
  * **/
 

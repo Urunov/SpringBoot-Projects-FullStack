@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @Controller
-@RequestMapping(name = "")
+@RequestMapping("/")
 public class HomeController {
     //
-    @GetMapping()
+    @GetMapping("index")
     public String index(){
         return "index";
     }
 
-    @GetMapping("/login")
+    @GetMapping("login")
     public String login(){
         return "login";
     }

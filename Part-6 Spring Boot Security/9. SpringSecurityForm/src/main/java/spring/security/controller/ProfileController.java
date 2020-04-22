@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/profile")
+@RequestMapping("profile")
 public class ProfileController {
     //
     @GetMapping()

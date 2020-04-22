@@ -47,19 +47,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin()
                 .loginPage("/login").permitAll();
 
-    }
+        }
 
-    @Bean
+@Bean
     DaoAuthenticationProvider authenticationProvider(){
-        DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
-        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
-        daoAuthenticationProvider.setUserDetailsService(this.userPrincipalDetailsService);
+            DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+            daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
+            daoAuthenticationProvider.setUserDetailsService(this.userPrincipalDetailsService);
 
-        return daoAuthenticationProvider;
-    }
+            return daoAuthenticationProvider;
+            }
 
-    @Bean
+@Bean
     PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
-}
+            return new BCryptPasswordEncoder();
+            }
+            }
