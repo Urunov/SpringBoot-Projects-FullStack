@@ -10,11 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @project SpringSecurityForm
  * @Author Hamdamboy
  */
-@Controller
+
+@RestController
 @RequestMapping("/admin")
 public class AdminController {
 
-    @GetMapping()
+    @GetMapping("")
     public String index(){
         return "admin/index";
     }

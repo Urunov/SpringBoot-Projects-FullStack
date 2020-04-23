@@ -45,7 +45,14 @@ public class SpringSecurity extends WebSecurityConfigurerAdapter  {
                 .antMatchers("/api/public/users").hasRole("ADMIN")
                 .and()
                 .formLogin()
-                .loginPage("/login").permitAll();
+                .loginProcessingUrl("/signin")
+                .loginPage("/login").permitAll()
+                .usernameParameter("txtUsername")
+                .passwordParameter("txtPassword")
+                .and()
+                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login")
+                .and()
+                .rememberMe().tokenValiditySeconds(2592000).key("mySecret!").rememberMeParameter("checkRememberMe");
 
         /** */
     }
