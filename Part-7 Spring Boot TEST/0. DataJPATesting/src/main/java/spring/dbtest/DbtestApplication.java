@@ -11,3 +11,8 @@ public class DbtestApplication {
     }
 
 }
+
+/** *
+ *   Your system environment is IntelljIdea , u just follow this below link; and configure JUNIT test case
+ *  https://www.jetbrains.com/help/idea/creating-run-debug-configuration-for-tests.html
+ * */
