@@ -91,7 +91,7 @@
      * User Registration Module using Spring Boot 2 + Spring MVC + Spring Security + Hibernate 5 + Thymeleaf + MySQL
 #
 # Part-7: TEST: Spring Boot 
- * ### (resource/code)  Security possiblities
+ * ### (resource/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-7%20Spring%20Boot%20TEST))  Security possiblities
  
    * Spring Data JPA + Repository Testing using Spring Boot + @DataJpaTest
    * Spring Boot 2 + REST APIs Integration Testing
