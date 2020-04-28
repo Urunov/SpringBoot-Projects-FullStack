@@ -6,4 +6,5 @@ package spring.project.controller;
  * @Author Hamdamboy
  */
 public class Controller {
+    
 }
