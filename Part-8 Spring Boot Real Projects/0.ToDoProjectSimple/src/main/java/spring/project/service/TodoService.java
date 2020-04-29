@@ -1,7 +1,6 @@
 package spring.project.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Service;
 import spring.project.model.Todo;
 import spring.project.repository.TodoRepository;

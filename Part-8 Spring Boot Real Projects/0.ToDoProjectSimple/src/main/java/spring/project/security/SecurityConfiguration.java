@@ -22,7 +22,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception{
 
-        authenticationManagerBuilder.inMemoryAuthentication()
+        authenticationManagerBuilder
+                .inMemoryAuthentication()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .withUser("admin").password("admin123")
                 .roles("USER", "ADMIN");
@@ -42,7 +43,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception{
         http
                 .authorizeRequests()
-                .antMatchers("/login", "/h2-console/**").permitAll()
+                .antMatchers("/login", "index", "/h2-console/**").permitAll()
                 .antMatchers("/", "/*todo*/**").access("hasRole('USER')")
                 .and()
 //                .antMatcher("/login").authorizeRequests()
