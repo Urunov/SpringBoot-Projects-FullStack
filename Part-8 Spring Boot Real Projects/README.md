@@ -1,5 +1,4 @@
-#                                           Spring Boot Projects - Full Stack
-   Total projects provide Source Codes/Guides/App, indeed down below represents. We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot.
+#                                           Spring Boot Projects
    
 #  
 ## Configuration table
@@ -19,16 +18,16 @@
 
 
 # Part-8: Spring Boot Real Project (TO-DO)
-  * ### (resource/code) Project: Spring Boot  (toddler steps) 
-
-     * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
-     * Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
-     * Spring Boot + Angular 8 Example Tutorial
-     * Spring Boot + Angular 8 + WebSocket Example Tutorial
-     * Spring Boot Thymeleaf CRUD Example Tutorial
-     * Spring Boot + Angular 6 CRUD Example
-     * Spring Boot 2 + Angular 7 CRUD Example Tutorial
-  
+  * ### (resource/code) Project: Spring Boot 
+    
+     * 0. pp
+     * 1. P 
+     * 2.TodoSimpleProject
+     
+     
+     <img width="1428" alt="Screen Shot 2020-04-30 at 11 58 22 AM" src="https://user-images.githubusercontent.com/11626327/80667795-17ccf380-8adb-11ea-8471-8e0daae83c3a.png">
+     
+     
 # License: Spring Boot is Open Source software released 
   * [ Apache 2.0 license ](http://www.apache.org/licenses/LICENSE-2.0.html)
   
