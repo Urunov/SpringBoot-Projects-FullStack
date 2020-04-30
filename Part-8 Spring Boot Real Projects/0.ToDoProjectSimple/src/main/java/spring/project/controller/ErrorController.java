@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
  * @project SpringToDoSimple
  * @Author Hamdamboy
  */
-@RestController("/error")
+@Controller("/error")
 public class ErrorController {
 
     @ExceptionHandler(Exception.class)

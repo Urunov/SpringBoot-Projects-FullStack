@@ -17,46 +17,26 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  */
 
 @Configuration
+
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    public void configureGlobalSecurity(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception{
-
-        authenticationManagerBuilder
-                .inMemoryAuthentication()
+    public void configureGlobalSecurity(AuthenticationManagerBuilder auth)
+            throws Exception {
+        auth.inMemoryAuthentication()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                .withUser("admin").password("admin123")
+                .withUser("admin").password("admin")
                 .roles("USER", "ADMIN");
     }
 
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-//        authenticationManagerBuilder
-//                .inMemoryAuthentication()
-//                .withUser("admin")
-//                .password(passwordEncoder().encode("admin123"))
-//                .roles("ADMIN").authorities("ADMIN");
-//    }
-//
-
     @Override
-    protected void configure(HttpSecurity http) throws Exception{
-        http
-                .authorizeRequests()
-                .antMatchers("/login", "index", "/h2-console/**").permitAll()
-                .antMatchers("/", "/*todo*/**").access("hasRole('USER')")
-                .and()
-//                .antMatcher("/login").authorizeRequests()
-//                .antMatchers("/login").hasRole("ADMIN")
-//                .and()
+    protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests().antMatchers("/login", "/h2-console/**").permitAll()
+                .antMatchers("/", "/*todo*/**").access("hasRole('USER')").and()
                 .formLogin();
 
         http.csrf().disable();
         http.headers().frameOptions().disable();
     }
 
-    @Bean
-    PasswordEncoder passwordEncoder(){
-        return new BCryptPasswordEncoder();
-    }
 }

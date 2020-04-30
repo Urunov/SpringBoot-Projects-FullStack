@@ -33,6 +33,7 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+
         //Read the Authorization header, where the JWT token should be
         String header = request.getHeader(JwtProperties.HEADER_STRING);
 

@@ -11,7 +11,7 @@ import java.util.List;
  * @project SpringToDoSimple
  * @Author Hamdamboy
  */
-@Repository
+//@Repository
 public interface TodoRepository extends JpaRepository<Todo, Long> {
     List<Todo> findByUserName(String user);
 }
