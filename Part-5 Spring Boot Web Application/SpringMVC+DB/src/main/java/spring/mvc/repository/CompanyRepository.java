@@ -9,4 +9,6 @@ import spring.mvc.domain.Company;
         * @Author Hamdamboy
         */
 public interface CompanyRepository extends JpaRepository<Company, Integer> {
+
+
 }

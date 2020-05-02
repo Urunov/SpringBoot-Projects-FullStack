@@ -12,10 +12,10 @@ import lombok.NoArgsConstructor;
  * @Project is SpringSimpleTodo
  */
 @Entity
-@Table(name = "todos")
+@Table(name = "schedule")
 @Data
 //@NoArgsConstructor
-//@AllArgsConstructor
+//@AllArgsConstructorf
 public class ToDo {
 
     @Id
@@ -52,5 +52,9 @@ public class ToDo {
         super();
         this.todoItem = todoItem;
         this.completed = completed;
+    }
+
+    public ToDo(long id) {
+        this.id = id;
     }
 }

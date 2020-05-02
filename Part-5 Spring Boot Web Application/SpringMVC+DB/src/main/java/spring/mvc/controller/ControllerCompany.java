@@ -1,10 +1,10 @@
 package spring.mvc.controller;
 
+import com.fasterxml.jackson.databind.util.ViewMatcher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import spring.mvc.repository.CompanyRepository;
 
 /**
@@ -12,7 +12,7 @@ import spring.mvc.repository.CompanyRepository;
  * @project SpringMVC
  * @Author Hamdamboy
  */
-@Controller
+@RestController
 public class ControllerCompany {
     //
     @Autowired
@@ -23,9 +23,11 @@ public class ControllerCompany {
        // model.addAttribute("company", companyRepository.findAll());
         return "working";
     }
-    @RequestMapping("/")
-    public String home(Model model){
-        model.addAttribute("company", companyRepository.findAll());
-        return "index";
+
+    @RequestMapping(value = "/to", method = RequestMethod.GET)
+    public String home(@PathVariable int id, Model model){
+        model.addAttribute("index",  companyRepository.findById(id));
+        return "redirect:/index";
+
     }
 }

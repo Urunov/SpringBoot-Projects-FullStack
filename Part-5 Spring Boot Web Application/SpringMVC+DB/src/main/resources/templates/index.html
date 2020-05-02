@@ -16,17 +16,17 @@
         <h1>Spring MVC + JSP + JPA + Spring Boot 2</h1>
     </header>
     <div class="starter-template">
-        <h1>Company List</h1>
+        <h1>Users List</h1>
         <table
                 class="table table-striped table-hover table-condenstemplatesed table-bordered">
             <tr>
                 <th>Id</th>
                 <th>Name</th>
             </tr>
-            <c:forEach var="company" items="${company}">
+            <c:forEach var="user" items="${users}">
                 <tr>
-                    <td>${company.id}</td>
-                    <td>${company.name}</td>
+                    <td>${user.id}</td>
+                    <td>${user.name}</td>
                 </tr>
             </c:forEach>
         </table>
