@@ -99,7 +99,7 @@
 #
 
 # Part-8: Spring Boot Real Project (TO-DO)
-  * ### (resource/code) Project: Spring Boot  (toddler steps) 
+  * ### (resource/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-8%20Spring%20Boot%20Real%20Projects)) Project: Spring Boot  (toddler steps) 
 
      * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
      * Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
