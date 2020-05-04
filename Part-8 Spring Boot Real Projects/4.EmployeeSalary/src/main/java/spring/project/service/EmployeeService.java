@@ -29,7 +29,7 @@ public class EmployeeService {
         employeeDB.save(product);
     }
 
-    public Employee get(long id) {
+    public Employee put(long id) {
         return employeeDB.findById(id).get();
     }
 

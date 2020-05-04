@@ -3,35 +3,35 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8"/>
-    <title>Product Manager</title>
+    <title>Employee Manager</title>
 </head>
 <body>
 <div align="center">
-    <h1>Product List</h1>
-    <a href="new">Create New Product</a>
+    <h1>Employee in Company List</h1>
+    <a href="new">Create New Employee</a>
     <br/><br/>
     <table border="1" cellpadding="10">
         <thead>
         <tr>
-            <th>Product ID</th>
+            <th>Employee ID</th>
             <th>Name</th>
-            <th>Brand</th>
-            <th>Made In</th>
-            <th>Price</th>
-            <th>Actions</th>
+            <th>Designation</th>
+            <th>Salary</th>
+            <th>Update Values</th>
+
         </tr>
         </thead>
         <tbody>
-        <tr th:each="employee : ${listEmployee}">
-            <td th:text="${product.id}">Product ID</td>
-            <td th:text="${product.name}">Name</td>
-            <td th:text="${product.brand}">Brand</td>
-            <td th:text="${product.madein}">Made in</td>
-            <td th:text="${product.price}">Price</td>
+        <tr th:each="employee : ${employeeList}">
+            <td th:text="${employee.id}">Employee ID</td>
+            <td th:text="${employee.name}">Name</td>
+            <td th:text="${employee.designation}">Designation</td>
+            <td th:text="${employee.salary}">Salary</td>
+
             <td>
-                <a th:href="@{'/edit/' + ${product.id}}">Edit</a>
+                <a th:href="@{'/edit/{id}' + ${employee.id}}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
-                <a th:href="@{'/delete/' + ${product.id}}">Delete</a>
+                <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
             </td>
         </tr>
         </tbody>
