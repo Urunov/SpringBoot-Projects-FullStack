@@ -22,18 +22,19 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="employee : ${employeeList}">
-            <td th:text="${employee.id}">Employee ID</td>
-            <td th:text="${employee.name}">Name</td>
-            <td th:text="${employee.designation}">Designation</td>
-            <td th:text="${employee.salary}">Salary</td>
+            <tr th:each="employee : ${employeeList}">
+                <td th:text="${employee.id}">Employee ID</td>
+                <td th:text="${employee.name}">Name</td>
+                <td th:text="${employee.designation}">Designation</td>
+                <td th:text="${employee.salary}">Salary</td>
 
             <td>
-                <a th:href="@{'/edit/{id}' + ${employee.id}}">Edit</a>
+                <a th:href="@{'/edit/' + ${employee.id}}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
                 <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
             </td>
-        </tr>
+
+            </tr>
         </tbody>
     </table>
 </div>

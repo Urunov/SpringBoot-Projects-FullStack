@@ -34,28 +34,28 @@ public class EmployeeController {
         model.addAttribute("employee", employee);
 
         return "new_employee";
-    }
+}
 
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public String saveEmployee(@ModelAttribute("employee") Employee employee) {
         employeeService.save(employee);
+
         return "redirect:/";
     }
 
-    @RequestMapping(value = "/edit/{id}", method =RequestMethod.PUT)
+    @RequestMapping("/edit/{id}")
     public ModelAndView showEditEmployeePage(@PathVariable(name = "id") int id){
         ModelAndView mav = new ModelAndView("edit_employee");
-        Employee employeeUpdate= employeeService.put(id);
-        mav.addObject("edit_employee", employeeUpdate);
+        Employee employee1= employeeService.get(id);
+        mav.addObject("employee", employee1);
 
         return mav;
     }
 
-    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete/{id}")
     public String deleteEmp(@PathVariable(name = "id") int id) {
         employeeService.delete(id);
+
         return "redirect:/";
     }
-
-
 }
