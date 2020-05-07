@@ -34,12 +34,28 @@ public class PosilkaSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http
+                .formLogin()
+                .loginPage("/login.html").loginProcessingUrl("/login").permitAll();
+        http
+                .logout()
+                .logoutUrl("/logout");
+        http
+                .csrf().disable();
+
+        http
                 .authorizeRequests()
-                .antMatchers("/index").permitAll()
+                .antMatchers("/admin/**").hasRole("ADMIN")
+                .and()
+                .httpBasic();
+
+              /*  .authorizeRequests()
+                .antMatchers("/index.html").permitAll()
                 .antMatchers("/admin/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .and()
                 .httpBasic();
+
+               */
     }
 
     @Bean

@@ -10,33 +10,33 @@
     <h1>Employee in Company List</h1>
     <a href="new">Create New Employee</a>
     <br/><br/>
-    <table border="1" cellpadding="10">
-        <thead>
-        <tr>
-            <th>Employee ID</th>
-            <th>Name</th>
-            <th>Designation</th>
-            <th>Salary</th>
-            <th>Update Values</th>
+<table border="1" cellpadding="10">
+    <thead>
+    <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Designation</th>
+        <th>Salary</th>
+        <th>Update Values</th>
 
-        </tr>
-        </thead>
-        <tbody>
-            <tr th:each="employee : ${employeeList}">
-                <td th:text="${employee.id}">Employee ID</td>
-                <td th:text="${employee.name}">Name</td>
-                <td th:text="${employee.designation}">Designation</td>
-                <td th:text="${employee.salary}">Salary</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${employeeList}">
+        <td th:text="${employee.id}">Employee ID</td>
+        <td th:text="${employee.name}">Name</td>
+        <td th:text="${employee.designation}">Designation</td>
+        <td th:text="${employee.salary}">Salary</td>
 
-            <td>
-                <a th:href="@{'/edit/' + ${employee.id}}">Edit</a>
-                &nbsp;&nbsp;&nbsp;
-                <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
-            </td>
+        <td>
+            <a th:href="@{'/edit/' + ${employee.id}}">Edit</a>
+            &nbsp;&nbsp;&nbsp;
+            <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
+        </td>
 
-            </tr>
-        </tbody>
-    </table>
+    </tr>
+    </tbody>
+</table>
 </div>
 </body>
 </html>

@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head th:insert="fragments.html :: headerfiles"></head>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Country Manager</title>
+</head>
 <body>
-<header th:insert="fragments.html :: nav"></header>
-<!-- Page content goes here -->
-<div class="container">
-    <div class="jumbotron">
+<div align="center">
+    <h1>Country List</h1>
+    <a href="new">Create New Employee</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+        <tr>
+            <th>Country ID</th>
+            <th>Name</th>
+            <th>Picture</th>
 
-        <h1 class="display-4">Assalomu alaykum, Welcome to Posilka</h1>
-        <p class="lead">This is the home page of our posilka web application. Anyone can access it, even if they have not <b>signed in </b>. </p>
-        <hr class="my-4">
-        <p><center>Yuklaringiz endi Posilka bilan.</center></p>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="country : ${country}">
+            <td th:text="${coun.id}">Employee ID</td>
+            <td th:text="${employee.name}">Name</td>
 
-    </div>
+
+            <td>
+                <a th:href="@{'/edit/' + ${country.id}}">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a th:href="@{'/delete/' + ${country.id}}">Delete</a>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
