@@ -19,11 +19,11 @@ public class PosilkaSecurity extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("admin")).roles("ADMIN")
-                .and()
-                .withUser("hamdamboy").password(passwordEncoder().encode("dam123")).roles("USER");
+       auth
+        .inMemoryAuthentication()
+        .withUser("admin").password(passwordEncoder().encode("admin")).roles("ADMIN")
+        .and()
+        .withUser("hamdamboy").password(passwordEncoder().encode("dam123")).roles("USER");
 
     }
 
@@ -33,7 +33,7 @@ public class PosilkaSecurity extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        http
+     /*   http
                 .formLogin()
                 .loginPage("/login.html").loginProcessingUrl("/login").permitAll();
         http
@@ -47,15 +47,17 @@ public class PosilkaSecurity extends WebSecurityConfigurerAdapter {
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .and()
                 .httpBasic();
+                */
 
-              /*  .authorizeRequests()
+            http
+               .authorizeRequests()
                 .antMatchers("/index.html").permitAll()
                 .antMatchers("/admin/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .and()
                 .httpBasic();
 
-               */
+
     }
 
     @Bean
