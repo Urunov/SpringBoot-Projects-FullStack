@@ -13,25 +13,24 @@
     <table border="1" cellpadding="10">
         <thead>
         <tr>
-            <th>Product ID</th>
+            <th>Employee ID</th>
             <th>Name</th>
-            <th>Brand</th>
-            <th>Made In</th>
-            <th>Price</th>
+            <th>Salary</th>
+            <th>Designation</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="employee : ${listEmployee}">
-            <td th:text="${product.id}">Product ID</td>
-            <td th:text="${product.name}">Name</td>
-            <td th:text="${product.brand}">Brand</td>
-            <td th:text="${product.madein}">Made in</td>
-            <td th:text="${product.price}">Price</td>
+        <tr th:each="employee : ${employeeList}">
+            <td th:text="${employeeList.id}">Product ID</td>
+            <td th:text="${employee.name}">Name</td>
+            <td th:text="${employee.salary}">Brand</td>
+            <td th:text="${employeeList.}">Made in</td>
+
             <td>
-                <a th:href="@{'/edit/' + ${product.id}}">Edit</a>
+                <a th:href="@{'/edit/' + ${employee.id}}">Edit</a>
                 &nbsp;&nbsp;&nbsp;
-                <a th:href="@{'/delete/' + ${product.id}}">Delete</a>
+                <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
             </td>
         </tr>
         </tbody>
