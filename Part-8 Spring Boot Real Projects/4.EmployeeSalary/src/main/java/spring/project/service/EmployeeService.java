@@ -25,8 +25,8 @@ public class EmployeeService {
         return employeeDB.findAll();
     }
 
-    public void save(Employee product) {
-        employeeDB.save(product);
+    public void save(Employee employee) {
+        employeeDB.save(employee);
     }
 
     public Employee get(long id) {
