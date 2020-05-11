@@ -10,6 +10,33 @@
     <h1>Employee in Company List</h1>
     <a href="new">Create New Employee</a>
     <br/><br/>
+<<<<<<< HEAD
+    <table border="1" cellpadding="10">
+        <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Designation</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="employee : ${employeeList}">
+            <td th:text="${employeeList.id}">Product ID</td>
+            <td th:text="${employee.name}">Name</td>
+            <td th:text="${employee.salary}">Brand</td>
+            <td th:text="${employeeList.}">Made in</td>
+
+            <td>
+                <a th:href="@{'/edit/' + ${employee.id}}">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a th:href="@{'/delete/' + ${employee.id}}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+=======
 <table border="1" cellpadding="10">
     <thead>
     <tr>
@@ -37,6 +64,7 @@
     </tr>
     </tbody>
 </table>
+>>>>>>> f9e05af2098fb528dd16f954605c25209728b4fd
 </div>
 </body>
 </html>

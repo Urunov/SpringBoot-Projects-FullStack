@@ -1,12 +1,18 @@
 package posilka.admin.model;
 
+import javax.persistence.*;
+
 /**
  * @Created 06 / 05 / 2020 - 11:58 AM
  * @project AdminPage
  * @Author Hamdamboy
  */
+@Entity
+@Table(name = "elituvchi")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String UserName;
     private String UserPassword;
@@ -22,6 +28,8 @@ public class User {
 
     private String roles = "";
     private String permission="";
+
+    public User(){}
 
     public User(String userName, String userPassword, int active, String roles, String permission) {
         UserName = userName;

@@ -51,7 +51,7 @@ public class PosilkaSecurity extends WebSecurityConfigurerAdapter {
 
             http
                .authorizeRequests()
-                .antMatchers("/index.html").permitAll()
+                .antMatchers("/index").permitAll()
                 .antMatchers("/admin/**").authenticated()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .and()
