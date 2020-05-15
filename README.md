@@ -84,7 +84,7 @@
 
 #
 # Part-6: Spring Boot + Security 
- * ### (resource/[code]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-6%20Spring%20Boot%20Security))  Security possiblities
+ * ### ([resource](https://dev.to/urunov/already-hacked-security-environment-of-the-system-1b82)/[code]( https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-6%20Spring%20Boot%20Security))  Security possiblities
   
      * Spring Boot 2 + Spring MVC + Role Based Spring Security + JPA + Thymeleaf + MySQL 
      * Authenticating a User with LDAP using Spring Boot and Spring Security
@@ -99,7 +99,7 @@
 #
 
 # Part-8: Spring Boot Real Project (TO-DO)
-  * ### (resource/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-8%20Spring%20Boot%20Real%20Projects)) Project: Spring Boot  (toddler steps) 
+  * ### ([resource]/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-8%20Spring%20Boot%20Real%20Projects)) Project: Spring Boot  (toddler steps) 
 
      * Spring Boot + PostgreSQL + JPA/Hibernate CRUD Restful API Tutorial
      * Spring Boot + Spring JDBC + MySQL CRUD (Simple Project) 
