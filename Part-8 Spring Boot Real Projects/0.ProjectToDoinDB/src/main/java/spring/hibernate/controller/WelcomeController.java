@@ -15,13 +15,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class WelcomeController {
-//
-//    @GetMapping("/")
-//    public String index() {
-//        return "index";
-//    }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @GetMapping("/start")
+    public String index() {
+        return "login";
+    }
+
+    @GetMapping("/login")
+    public String loginAgain(){
+        return "index";
+    }
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
     public String showWelcomePage(ModelMap modelMap) {
         modelMap.put("name", getLoggedinUserName());
         return "welcome";
