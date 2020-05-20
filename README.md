@@ -6,15 +6,15 @@
   
    | Components  | Technology  | 
    | :---        |    :----:   |   
-   | Frontend  | BootStrap, Jsp -> React 16+  | 
-   | Backend   | Spring Boot 2.1+, Java 8, and Java 11+ |
-   | Security |  Spring Security, JWT|
+   | Frontend  | BootStrap, Jsp/ React 16+  | 
+   | Backend   | Spring Boot 2.1+, Java 8/Java 11+ |
+   | Security |  Spring Security, SSL, Form, https, JWT|
    | Database | JPA-Hibernate, H2, MySQL, Oracle, MangoDB, Postgresql|
-   | API Documentation	| Swagger API (Hub)|
+   | API Documentation	| Swagger API + (Hub)|
    | Client Build | npm, yarn, webpack|
    | Server Build| Maven / Gradle|
    | API testing| POSTMAN|
-   | Tool | Intellj Idea|
+   | Tool | Intellj Idea/VSC|
 
 
 ![spring](https://user-images.githubusercontent.com/11626327/82421331-ce5d3c00-9abb-11ea-9ba6-246044d124de.png)
