@@ -14,24 +14,25 @@ import java.util.Map;
  * @project ProjectTodo
  * @Author Hamdamboy
  */
-@RestController
-public class WelcomeController {
+    @RestController
+    public class WelcomeController {
 
-    @GetMapping("/start")
-    public String index() {
-        return "index";
+        private String message = "Hello World";
+
+        @RequestMapping(value = "", method = RequestMethod.GET)
+        public ModelAndView showWelcomePage(Map<String, Object> modelMap) {
+            modelMap.put("message", this.message);
+
+            ModelAndView mav = new ModelAndView("index");
+            return mav;
+        }
+
+
     }
-
-
-    private String message = "Hello World";
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView showWelcomePage(Map<String, Object> modelMap) {
-     modelMap.put("message", this.message);
-
-     ModelAndView mav = new ModelAndView("index");
-        return mav;
-    }
-
-
-}
+/***
+ *  This project :
+ *   When you integrate (template) folder information is working well (as html, htm..)
+ *
+ *   But webapp/WEB-INF/jsp --> mapping not woring , other logic is working.
+ *
+ * */

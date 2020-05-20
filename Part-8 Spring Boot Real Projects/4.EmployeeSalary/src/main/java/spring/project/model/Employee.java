@@ -11,7 +11,7 @@ import javax.persistence.*;
  */
 
 @Entity
-
+@Table(name = "employeeinfo")
 public class Employee {
 
 
