@@ -13,7 +13,7 @@
    | API Documentation	| Swagger API + (Hub)|
    | Client Build | npm, yarn, webpack|
    | Server Build| Maven / Gradle|
-   | API testing| POSTMAN|
+   | API testing| POSTMAN / insomnia|
    | Tool | Intellj Idea/VSC|
 
 
