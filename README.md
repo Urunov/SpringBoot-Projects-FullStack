@@ -16,7 +16,7 @@
    | API testing| POSTMAN / insomnia|
    | Tool | Intellj Idea/VSC|
 
-        ![springMove1](https://user-images.githubusercontent.com/11626327/82535952-a5ec4500-9b82-11ea-97e1-688ac0d4410b.jpg)
+![springMove1](https://user-images.githubusercontent.com/11626327/82535952-a5ec4500-9b82-11ea-97e1-688ac0d4410b.jpg)
 
 # Part-1: Spring Boot Basics and Fundamentals with Projects
     (Attention: When You click  RESOURE OR CODE, indeed, Detail explanations are inside the sources!)
