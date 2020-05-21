@@ -1,11 +1,5 @@
 #                                           Part-8: Spring Boot Real Project 
-     (Attention Please, each project folder has README.md, and this project result repesents.!)
-
-     0.ToDoProjectSimple
-     1.RegistrationProject
-     2.TodoSimpleProject
-     3.TodoProjectDB
-     4.EmployeeSalary
-     
-     
+      
      9. AdminPage
+![Project-9-0](https://user-images.githubusercontent.com/11626327/82537939-df727f80-9b85-11ea-8f5e-89134f439b98.JPG)
+![Project-9-1](https://user-images.githubusercontent.com/11626327/82537945-e0a3ac80-9b85-11ea-97ce-13ce952e37f9.JPG)
