@@ -33,6 +33,6 @@ import java.util.Map;
  *  This project :
  *   When you integrate (template) folder information is working well (as html, htm..)
  *
- *   But webapp/WEB-INF/jsp --> mapping not woring , other logic is working.
+ *   But webapp/WEB-INF/jsp --> mapping not working , other logic is working.
  *
  * */

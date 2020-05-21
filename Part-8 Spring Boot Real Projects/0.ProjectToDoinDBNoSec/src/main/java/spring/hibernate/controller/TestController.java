@@ -1,7 +1,10 @@
 package spring.hibernate.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
@@ -11,16 +14,27 @@ import java.util.Map;
  * @Author Hamdamboy
  */
 //
+//@Controller
+//public class TestController {
+//
+//    private static final String message = "Hello World Hamdamboy";
+//
+//    @GetMapping(value = "/")
+//    public String welcome(Map<String, Object> model) {
+//        model.put("message" , this.message);
+//        return "index";
+//    }
+//}
+
 @Controller
 public class TestController {
 
-    private static final String message = "Hello World Hamdamboy";
+    private String message = "Hello World";
+    @RequestMapping("/list")
+    public String test(Model model) {
 
-    @GetMapping(value = "/")
-    public String welcome(Map<String, Object> model) {
-        model.put("message" , this.message);
-        return "index";
+        model.addAttribute("message", message);
+
+        return "welcome";
     }
 }
-
-
