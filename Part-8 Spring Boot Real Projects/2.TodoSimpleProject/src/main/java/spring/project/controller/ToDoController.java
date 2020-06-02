@@ -22,7 +22,7 @@ public class ToDoController {
     @Autowired
     private ToDoRepository todoRepository;
 
-    @GetMapping
+    @GetMapping("")
     public String index(){
         return "index";
     }

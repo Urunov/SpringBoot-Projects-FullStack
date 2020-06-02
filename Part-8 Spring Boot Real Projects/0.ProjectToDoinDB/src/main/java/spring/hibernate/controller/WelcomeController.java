@@ -4,7 +4,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -16,15 +15,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class WelcomeController {
 
-    @GetMapping("/start")
-    public String index() {
-        return "login";
-    }
+//    @GetMapping("/start")
+//    public String index() {
+//        return "login";
+//    }
+//
+//    @GetMapping("/login")
+//    public String loginAgain(){
+//        return "index";
+//    }
 
-    @GetMapping("/login")
-    public String loginAgain(){
-        return "index";
-    }
     @RequestMapping(value = "/welcome", method = RequestMethod.GET)
     public String showWelcomePage(ModelMap modelMap) {
         modelMap.put("name", getLoggedinUserName());
