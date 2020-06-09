@@ -16,24 +16,18 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
  * @project SpringRegistration
  * @Author Hamdamboy
  */
-
-
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
     @Autowired
-
     private UserService userService;
-
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
         http
-
                 .authorizeRequests()
                 .antMatchers(
-
                         "/registration**",
                         "/js/**",
                         "/css/**",
@@ -46,24 +40,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
                         .loginPage("/login")
                         .permitAll()
                 .and()
-                .logout()
+                 .logout()
                     .invalidateHttpSession(true)
-                  //  .clearAuthentication(true)
+                 //   .clearAuthentication(true)
                     .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                     .logoutSuccessUrl("/login?logout")
-                .permitAll();
+                 .permitAll();
 
     }
-
-
     @Bean
-
     public BCryptPasswordEncoder passwordEncoder() {
-
         return new BCryptPasswordEncoder();
-
     }
-
 
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
@@ -71,15 +59,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
         auth.setUserDetailsService(userService);
         auth.setPasswordEncoder(passwordEncoder());
         return auth;
-
     }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-
         auth.authenticationProvider(authenticationProvider());
-
     }
-
-
 }
