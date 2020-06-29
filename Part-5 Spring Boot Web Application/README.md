@@ -1,8 +1,6 @@
 #                                           Spring Boot Projects - Full Stack
 
-# Part-5: Spring Boot + Web Application 
- * ### (resource/[code](https://github.com/Hamdambek/SpringBoot-Projects-FullStack/tree/master/Part-5%20Spring%20Boot%20Web%20Application))  Web applicaiton develops
- 
+## Most small project related to Web (JPS and Themeleaf). Spring MVC implementation etc. 
    * Spring MVC + Spring Boot2 + JSP + JPA + Hibernate 5 + MySQL Example
    * Spring Boot 2 MVC Web Application Thymeleaf JPA MySQL Example
    * Spring Boot 2 - Spring MVC + Thymeleaf Input Form Validation
