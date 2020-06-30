@@ -122,7 +122,7 @@
          -> Spring Boot + JPA/Hibernate + Thymeleaf 
          -> Create JPA Entities - User and Role (Many to Many Mapping)
      * Backend implementation for Registration Feature (Repository, Service and Controller)
-     
+    * Project-2. RegistrationFrontBackend_v2: Registration and Login with Spring Boot, Security, Thymeleaf, Hibernate, MySQL
      * Front-end implementation for Registration Feature (Thymeleaf template_)
      
      * Spring Security Configuration
