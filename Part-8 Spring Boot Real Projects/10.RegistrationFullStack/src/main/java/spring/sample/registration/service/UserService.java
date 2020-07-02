@@ -1,5 +1,6 @@
 package spring.sample.registration.service;
 
+
 import org.springframework.security.core.userdetails.UserDetailsService;
 import spring.sample.registration.model.User;
 import spring.sample.registration.web.dto.UserRegistrationDto;
@@ -12,6 +13,4 @@ import spring.sample.registration.web.dto.UserRegistrationDto;
 public interface UserService extends UserDetailsService {
 
     User save(UserRegistrationDto registrationDto);
-
-
 }
