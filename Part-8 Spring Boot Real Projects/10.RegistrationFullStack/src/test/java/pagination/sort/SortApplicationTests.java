@@ -1,10 +1,10 @@
-package spring.sample.registration;
+package pagination.sort;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RegistrationApplicationTests {
+class SortApplicationTests {
 
     @Test
     void contextLoads() {
