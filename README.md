@@ -111,23 +111,7 @@
      * Spring Boot + Angular 6 CRUD Example
      * Spring Boot 2 + Angular 7 CRUD Example Tutorial 
      
-     
-# Part-9: Spring Boot + Thymeleaf for Goverment Project: FrontBackend 
-  * ### ([resource]/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-9%20SpringBoot%20Goverment%20Projects))
-  
-  * Project-1. RegistrationFrontBackend_v1: Registration and Login with Spring Boot, Security, Thymeleaf, Hibernate, MySQL
-            -> Create and Setup Spring Boot Project in IntelliJ
-            -> Database(DB) Setup
-        * Registration and Login with Spring Boot, Spring Security, Thymeleaf, Hibernate and MySQL
-            -> Spring Boot + JPA/Hibernate + Thymeleaf 
-            -> Create JPA Entities - User and Role (Many to Many Mapping)
-        * Backend implementation for Registration Feature (Repository, Service and Controller)
-  * Project-2. RegistrationFrontBackend_v2: Registration and Login with Spring Boot, Security, Thymeleaf, Hibernate, MySQL
-        * Front-end implementation for Registration Feature (Thymeleaf template_)
-        * Spring Security Configuration
-        * Backend implementation for Login Feature
-        * Front-end implementation for Login Feature
-        * Logout and Home Page Implementation
+
      
      
 # Reference Resources 
