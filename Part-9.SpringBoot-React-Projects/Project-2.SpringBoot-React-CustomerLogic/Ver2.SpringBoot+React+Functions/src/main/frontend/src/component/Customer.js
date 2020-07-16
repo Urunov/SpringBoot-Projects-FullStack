@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import CustomerRow from "./CustomerRow";
-
-
+import {Link} from "react-router-dom";
 
 function Customer(){
     
@@ -23,27 +22,33 @@ function Customer(){
         }).catch(err => alert(err));
     };
 
+    const sendTest=() => {
+        console.log("Tess");
+    };
+
     return (
+
         <div>
+
+            <Link to="/save">        
+              <button className="btn btn-primary btn-sm m-2"> Add Customer </button>
+            </Link>
+
           <table className="table">
             <thead>
                 <tr>
+                <td scope="col"> Select </td>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">LastName</th>
                 <th scope="col">CreditLimitation</th>
+                <th scope="col">    Edit     </th>
+
                 </tr>
             </thead>
                 <tbody>
-                    {stateCustomer.map(d => (
-                        <tr key={d.id}>
-                        <th scope="col">{d.id}</th>
-                        <td>{d.name}</td>
-                        <td>{d.dob}</td> 
-                        <td>{d.criditlimit}</td>
-                        </tr>
-                    ))}
-                   
+                
+                   <CustomerRow stateCustomer={stateCustomer} sendTest={sendTest}/>
                 </tbody>
             </table> 
     </div> 
