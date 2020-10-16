@@ -1,6 +1,4 @@
 
-[![Build Status](https://travis-ci.org/SuperEvenSteven/spring-boot-graphql-example.svg?branch=master)](https://travis-ci.org/SuperEvenSteven/spring-boot-graphql-example) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
-
 #                                           Spring Boot Projects - Full Stack
    Total projects provide Source Codes/Guides/App, indeed down below represents. We take an opinionated view of the Spring platform and several-party libraries so you can get started with as Spring Boot.
    
@@ -134,8 +132,5 @@
   
   * [Spring, MicroService, GraphQL, API](https://github.com/Java-Techie-jt)
  
-  
-# License: Spring Boot is Open Source software released 
-  * [ Apache 2.0 license ](http://www.apache.org/licenses/LICENSE-2.0.html)
-  
+
 #   
