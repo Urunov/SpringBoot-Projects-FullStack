@@ -20,9 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     
     @Autowired
-    private UserRespository userRespository;
+    private UsersRespository userRespository;
 
-    @GetMapping("/")
+   @ GetMapping("/")
     private List<Users> getUsers(){
         return userRespository.findAll();
         
