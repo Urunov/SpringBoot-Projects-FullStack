@@ -41,5 +41,8 @@
        
  ![Screen Shot 2020-10-27 at 5 15 15 PM](https://user-images.githubusercontent.com/11626327/97274499-13aa4480-1878-11eb-9abb-650a0f73e092.png)
        
-
-#   
+       *  ReactJS Snippet Component (install VSC pluggin)
+       
+#   Using and Recommentated List of References
+ 1. https://getbootstrap.com/docs/4.5/getting-started/introduction/
+ 2. 
