@@ -37,5 +37,9 @@
        * Basic Knowledge of JavaScript and Programming
        * Node.js and npm installed
        * React basic (from scratch )
+       * Swagger UI (documentation & API testing_) // http://localhost:8080/swagger-ui.html
+       
+ ![Screen Shot 2020-10-27 at 5 15 15 PM](https://user-images.githubusercontent.com/11626327/97274499-13aa4480-1878-11eb-9abb-650a0f73e092.png)
+       
 
 #   
