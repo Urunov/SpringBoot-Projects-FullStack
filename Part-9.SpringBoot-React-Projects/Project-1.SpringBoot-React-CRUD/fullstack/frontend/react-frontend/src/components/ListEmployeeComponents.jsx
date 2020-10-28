@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EmployeeService from '../services/EmployeeService';
 
 class ListEmployeeComponents extends Component {
 
@@ -8,15 +9,32 @@ class ListEmployeeComponents extends Component {
         this.state = {
             employee: []
         }
+
+        this.addEmployee = this.addEmployee.bind(this);
     }
 
+    componentDidMount(){
+        EmployeeService.getEmployees().then((res) => 
+        {
 
+            
+            this.setState({ employee: res.data});
+        });
+    }
+
+    addEmployee(){
+        this.props.history.push('/add-employee');
+    }
 
     render() {
         return (
             <div>
         
                 <h2 className="text-center"> Employee List</h2>
+
+                <div className= "row">
+                    <button className="btn btn-primary" onClick={this.addEmployee}> Add Employee </button>
+                </div>
 
                 <div className = "row" >
                     <table className="table table-striped table-bordered">
