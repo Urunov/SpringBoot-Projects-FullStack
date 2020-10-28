@@ -43,6 +43,12 @@
        
        *  ReactJS Snippet Component (install VSC pluggin)
        
+
+Confuguration Router: 
+
+`npm install react-router-dom `
+
+
  In React.JS we should know about skelet of source in VSC:
  
  `rcc` command given as : 
