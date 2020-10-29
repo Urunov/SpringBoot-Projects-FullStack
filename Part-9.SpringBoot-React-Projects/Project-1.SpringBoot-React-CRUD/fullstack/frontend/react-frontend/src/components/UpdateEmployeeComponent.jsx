@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import EmployeeService from '../services/EmployeeService';
 
-class CreateEmployeeComponent extends Component {
-
+class UpdateEmployeeComponent extends Component {
     constructor(props){
         super(props)
 
         this.state = {
+            id:this.props.match.params.id,
             firstName: '', 
             lastName: '',
             emailId:''
@@ -14,20 +14,32 @@ class CreateEmployeeComponent extends Component {
 
           this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
           this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
-          this.saveEmployee = this.saveEmployee.bind(this);
-          this.changeEmailIdHandler = this.changeEmailIdHandler.bind(this);
+          this.updateEmployee = this.updateEmployee.bind(this);
+        //  this.changeEmailIdHandler = this.changeEmailIdHandler.bind(this);
         
     }
 
-    saveEmployee = (e) => {
+    componentDidMount(){
+        EmployeeService.getEmployeeById(this.state.id).then((res) => {
+
+            let employee = res.data;
+            this.setState({firstName: employee.firstName, 
+                lastName: employee.lastName,
+                emailId: employee.emailId
+            });
+        });
+    }
+
+    updateEmployee = (e) => {
         e.preventDefault();
 
         let employee = {firstName: this.state.firstName, lastName: this.state.lastName, emailId: this.state.emailId};
         console.log('emoloyee => ' + JSON.stringify(employee));
+        console.log('id=>' + JSON.stringify(this.state.id));
 
-       EmployeeService.createEmployee(employee).then(res => {
-           this.props.history.push('/employees');
-       })
+         EmployeeService.updateEmployee(employee, this.state.id).then( res => {
+            this.props.history.push('/employees');
+        });
     }
 
     changeFirstNameHandler = (event) => {
@@ -87,6 +99,7 @@ class CreateEmployeeComponent extends Component {
             </div>
         );
     }
+
 }
 
-export default CreateEmployeeComponent;
+export default UpdateEmployeeComponent;

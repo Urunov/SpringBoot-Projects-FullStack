@@ -12,6 +12,7 @@ import ListEmployeeComponents from './components/ListEmployeeComponents';
 import HeaderComponents from './components/HeaderComponents';
 import FooterComponents from './components/FooterComponents';
 import CreateEmployeeComponent from './components/CreateEmployeeComponent';
+import UpdateEmployeeComponent from './components/UpdateEmployeeComponent';
 
 
 function App() {
@@ -24,11 +25,13 @@ function App() {
                 <div className="container">
                 {/* http://localhost:3000/employee */}
                  
-                    <Switch>   http://localhost:3000/employee/add-employee
+                    <Switch>   http://localhost:3000/update-employee/
                      
                       <Route path="/" exact component={ListEmployeeComponents}/> 
                       <Route path="/employee" component={ListEmployeeComponents} /> 
                       <Route path="/add-employee" component={CreateEmployeeComponent}/>
+                      <Route path="/update-employee/:id" component={UpdateEmployeeComponent}/>
+
                            {/* <ListEmployeeComponents />  */}
                     </Switch>   
                 </div>
