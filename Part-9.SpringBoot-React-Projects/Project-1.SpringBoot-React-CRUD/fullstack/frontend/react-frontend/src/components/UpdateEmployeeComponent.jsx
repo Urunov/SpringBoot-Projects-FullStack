@@ -54,7 +54,7 @@ class UpdateEmployeeComponent extends Component {
     }
 
     cancel() {
-        this.props.history.path('/employee');
+        this.props.history.push('/employee');
     }
 
     render() {

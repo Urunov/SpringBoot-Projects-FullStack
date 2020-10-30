@@ -7,7 +7,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
 @EnableSwagger2
-@CrossOrigin
+//@CrossOrigin
+@CrossOrigin(origins = {"http://localhost:3000" })
+
 public class FullstackApplication {
 
     public static void main(String[] args) {
