@@ -37,10 +37,10 @@
        * Basic Knowledge of JavaScript and Programming
        * Node.js and npm installed
        * React basic (from scratch )
-       * Swagger UI (documentation & API testing_) // http://localhost:8080/swagger-ui.html
+       * Swagger UI (documentation & API testing_) // http://localhost:8080/swagger-ui.html#/employee-controller
        
- ![Screen Shot 2020-10-27 at 5 15 15 PM](https://user-images.githubusercontent.com/11626327/97274499-13aa4480-1878-11eb-9abb-650a0f73e092.png)
-       
+
+![Screen Shot 2020-11-02 at 3 17 41 PM](https://user-images.githubusercontent.com/11626327/97836020-bbaf8a00-1d1e-11eb-93fd-0404df416b38.png)
        *  ReactJS Snippet Component (install VSC pluggin)
        
 
@@ -69,6 +69,6 @@ export default HeaderComponents;
 ----------------------------
 
 
-#   Using and Recommentated List of References
+#   Using and Recommendated List of References
  1. [Bootstarapping](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
- 2. 
+ 2. [Full Stack: React and Spring](https://www.youtube.com/watch?v=S5AFJIfRxQU&list=PLGRDMO4rOGcNLnW1L2vgsExTBg-VPoZHr&index=14)
