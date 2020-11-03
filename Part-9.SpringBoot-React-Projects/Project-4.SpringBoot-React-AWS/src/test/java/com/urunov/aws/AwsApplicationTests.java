@@ -1,10 +1,10 @@
-package com.urunov;
+package com.urunov.aws;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FullstackApplicationTests {
+class AwsApplicationTests {
 
     @Test
     void contextLoads() {

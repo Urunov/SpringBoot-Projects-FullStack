@@ -1,13 +1,13 @@
-package com.urunov;
+package com.urunov.aws;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FullstackApplication {
+public class AwsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(FullstackApplication.class, args);
+        SpringApplication.run(AwsApplication.class, args);
     }
 
 }
