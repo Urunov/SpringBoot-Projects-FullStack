@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EmployeeService from '../services/EmployeeService';
+//import EmployeeService from '../services/EmployeeService';
 
 class CreateEmployeeComponent extends Component {
 
@@ -7,6 +8,8 @@ class CreateEmployeeComponent extends Component {
         super(props)
 
         this.state = {
+            // step-1 
+           // id: this.props.match.params.id,
             firstName: '', 
             lastName: '',
             emailId:''
@@ -14,22 +17,21 @@ class CreateEmployeeComponent extends Component {
 
           this.changeFirstNameHandler = this.changeFirstNameHandler.bind(this);
           this.changeLastNameHandler = this.changeLastNameHandler.bind(this);
-          this.changeEmailIdHandler = this.changeEmailIdHandler.bind(this);
-
-          this.saveEmployee = this.saveEmployee.bind(this);
-          this.changeEmailIdHandler = this.changeEmailIdHandler.bind(this);
-        
+         // this.saveOrUpdateEmployee = this.saveorUpdateEmployee.bind(this);
+          this.saveEmployee = this.saveEmployee.bind(this); 
     }
 
     saveEmployee = (e) => {
+
         e.preventDefault();
-
         let employee = {firstName: this.state.firstName, lastName: this.state.lastName, emailId: this.state.emailId};
-        console.log('emoloyee => ' + JSON.stringify(employee));
+        console.log('employee=> ' + JSON.stringify(employee));
 
-         EmployeeService.createEmployee(employee).then(res => {
-           this.props.history.push('/employees');
-       });
+        /*Navigate List page of the */
+        EmployeeService.createEmployee(employee).then( res => {
+                this.props.history.push('/employees');
+        });
+
     }
 
     changeFirstNameHandler = (event) => {
@@ -44,18 +46,18 @@ class CreateEmployeeComponent extends Component {
     }
 
     cancel() {
-        this.props.history.push('/employee');
+        this.props.history.push('/employees');
     }
 
     render() {
         return (
             <div>
+                <br></br>
                    <div className="container">
                         <div className="row">
                             <div className="card col-md-6 offset-md-3 offset-md-3">
-                                <h3 className = "text-center" > Add Employee</h3>
+                                <h3 className="text-center">  Add Employee infromation </h3>
                                 <div className = "card-body">
-
                                     <form>
                                         <div className = "form-group">
                                             <label > First Name: </label>

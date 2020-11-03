@@ -25,14 +25,14 @@ public class SwaggerConfig {
     }
 
     private Predicate<String> postPaths() {
-        return (Predicate<String>) or(regex("/api/posts.*"), regex("/api/javainuse.*"));
+        return (Predicate<String>) or(regex("/api/posts.*"), regex("/api/urunov.*"));
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("JavaInUse API")
+        return new ApiInfoBuilder().title("Employee API")
                 .description("JavaInUse API reference for developers")
-                .termsOfServiceUrl("http://javainuse.com")
-                .contact("javainuse@gmail.com").license("JavaInUse License")
-                .licenseUrl("javainuse@gmail.com").version("1.0").build();
+                .termsOfServiceUrl("http://github.com/urunov/")
+                .contact("myindexuz@gmail.com").license("Git License")
+                .licenseUrl("myindexu@gmail.com").version("1.0").build();
     }
 }
