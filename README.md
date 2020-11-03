@@ -109,12 +109,17 @@
     * Spring Boot Thymeleaf CRUD Example Tutorial
      
  # Part-9: Full Stack [Spring Boot and React JS]
-  * ### (resource/code) 
+  * ### (resource/[code](https://github.com/Urunov/SpringBoot-Projects-FullStack/tree/master/Part-9.SpringBoot-React-Projects)) 
  
-    * Spring Boot + ReactJS 
-    * Spring Boot + React JS CRUD Example Tutorial
-         
-
+ Included README inside the folder. There are several projects and more detail information. 
+    
+     * Part-1. FullStack : Spring Boot React JS CRUD Swagger API 
+            > Company Employee ver1. Full Stack 
+                  - Spring Boot 
+                  - ReactJS
+                  - Swagger API
+                  - Database (MySQL)
+                  
      
      
 # Reference Resources 
