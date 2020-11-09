@@ -25,12 +25,18 @@ public class Retailer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    /**
+     * Наименование
+     * Name
+     * */
     @Column(name="name", length = 255, nullable = false)
     private String name;
 
     /**
+     * Логотип
      * Logo-tip
      * */
+    @Lob
     private byte[] logo;
 
     @Transient

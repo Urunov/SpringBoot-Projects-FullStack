@@ -19,6 +19,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @ToString
 @Entity
+@Table(name = "roles")
 public class Role {
 
     @Id

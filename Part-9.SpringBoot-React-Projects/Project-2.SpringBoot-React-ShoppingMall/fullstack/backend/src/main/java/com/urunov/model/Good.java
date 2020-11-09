@@ -43,6 +43,8 @@ public class Good{
     @Column
     private String description;
 
+    @ManyToOne(optional = false, cascade = CascadeType.ALL)
+    @JoinColumn(name = "retailers_id")
     private Retailer retialer;
 
     private Boolean isOutdated = false;
