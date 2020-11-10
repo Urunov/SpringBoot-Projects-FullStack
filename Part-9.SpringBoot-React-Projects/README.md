@@ -69,6 +69,12 @@ export default HeaderComponents;
 ----------------------------
 
 
+## Project-2. FullStack: Spring Boot + React + Swagger API Shopping Mall Project
+------
+
+
+<img width="794" alt="Screen Shot 2020-11-10 at 11 15 55 PM" src="https://user-images.githubusercontent.com/11626327/98685483-c2876e00-23aa-11eb-92ae-9012000c46bb.png">
+
 ## Project-4. Spring Boot AWS S3 Upload
 
 ![Screen Shot 2020-11-05 at 11 31 02 AM](https://user-images.githubusercontent.com/11626327/98190535-94450100-1f5a-11eb-8019-804d32892b93.png)
