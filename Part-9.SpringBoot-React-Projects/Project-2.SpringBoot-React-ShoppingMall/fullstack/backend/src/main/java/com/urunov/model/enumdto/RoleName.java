@@ -7,9 +7,8 @@ package com.urunov.model.enumdto;
  * Github: @urunov
  */
 
-public enum RoleName {
+public enum  RoleName {
 
-    ROLE_USER,
+    ROLE_NAME,
     ROLE_ADMIN
-
 }

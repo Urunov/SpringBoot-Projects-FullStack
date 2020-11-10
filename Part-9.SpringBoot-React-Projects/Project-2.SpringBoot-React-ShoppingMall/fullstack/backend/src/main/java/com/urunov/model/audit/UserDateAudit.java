@@ -16,20 +16,24 @@ import javax.persistence.MappedSuperclass;
  * Project: IntelliJ IDEA
  * Github: @urunov
  */
+
+@Data
+@Getter
+@Setter
+@ToString
 @MappedSuperclass
 @JsonIgnoreProperties(
         value = {"createdBy", "updatedBy"},
         allowGetters = true
 )
-@Data
-@Getter
-@Setter
-@ToString
-public class UserDateAudit extends DateAudit{
+public abstract class UserDateAudit extends DateAudit{
 
     @CreatedBy
     private Long createdBy;
 
     @LastModifiedBy
-    private Long updateBy;
+    private Long updatedBy;
+
+
+
 }

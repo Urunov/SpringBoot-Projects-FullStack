@@ -12,12 +12,12 @@ import javax.persistence.*;
  * Project: IntelliJ IDEA
  * Github: @urunov
  */
+
 @Data
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-@ToString
+@AllArgsConstructor
 @Entity
 @Table(name = "roles")
 public class Role {

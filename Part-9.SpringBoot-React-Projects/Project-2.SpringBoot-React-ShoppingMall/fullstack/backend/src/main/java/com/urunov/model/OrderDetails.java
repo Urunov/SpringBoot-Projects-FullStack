@@ -1,6 +1,7 @@
 package com.urunov.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.model.audit.DateAudit;
 import lombok.*;
 
 import javax.persistence.*;
@@ -15,10 +16,10 @@ import javax.persistence.*;
 @Data
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Entity
-public class OrderDetails {
+public class OrderDetails extends DateAudit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,22 +29,11 @@ public class OrderDetails {
     @JsonIgnore
     private String ImageUrl;
 
-    /**
-     * Количество товара
-     */
-
-    private Integer quantity;
-
-    /**
-     *  Order = Заказ
-     * */
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "order_id", nullable = false)
     private Orders order;
 
-
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "good_id", nullable = false)
-    private Good good;
+    /**Number of good, Количество товара*/
+    private Integer quantity;
 }

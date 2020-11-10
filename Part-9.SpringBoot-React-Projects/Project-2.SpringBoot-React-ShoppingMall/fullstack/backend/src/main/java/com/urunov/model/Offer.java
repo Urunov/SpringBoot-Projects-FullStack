@@ -1,7 +1,5 @@
 package com.urunov.model;
 
-import lombok.*;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -12,20 +10,7 @@ import java.util.List;
  * Project: IntelliJ IDEA
  * Github: @urunov
  */
-
-
-@Data
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-@ToString
-@Entity
 public class Offer {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     private byte[] image;
 
@@ -33,6 +18,7 @@ public class Offer {
     private String imageUrl;
 
     @Lob
+    @Column
     private String description;
 
     private Date startDate;
@@ -41,9 +27,10 @@ public class Offer {
 
     private String name;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "offer_goods",
-          joinColumns = @JoinColumn(name = "offer_id"),
-          inverseJoinColumns = @JoinColumn(name = "good_id"))
-    private List<Good> goodList;
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "offer_goods",
+//            joinColumns = @JoinColumn(name = "offer_id"),
+//            inverseJoinColumns = @JoinColumn(name = "good_id"))
+//    private List<Good> goodList;
+
 }

@@ -1,10 +1,10 @@
 package com.urunov.model;
 
 import com.urunov.model.audit.DateAudit;
-import com.urunov.model.enumdto.OrderStatus;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 /**
@@ -13,11 +13,13 @@ import java.util.List;
  * Project: IntelliJ IDEA
  * Github: @urunov
  */
+
+@EqualsAndHashCode(callSuper = true)
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 @Entity
 public class Orders extends DateAudit {
@@ -26,33 +28,42 @@ public class Orders extends DateAudit {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
-
     private String email;
+
     private String additionalPhone;
+
+    @NotBlank
     private String address;
+
     private String name;
 
     @Lob
     private String comment;
 
     private Float deliveryPrice;
+
     private String paymentNumber;
+
     private String carMark;
+
     private String carModel;
+
     private String carColor;
+
     private String carNumber;
+
+    private String nameDriver;
+
     private String phoneDriver;
 
-    @Column(name = "status", columnDefinition = "ENUM('awaitingPayment', 'inProgress', 'paid', 'transferredToDeliveryService', 'completed', 'NEW', 'canceled', 'courierSearch', 'courierFound' ,'deliveryInProgress','awaitingConfirmation', 'delivered') NOT NULL DEFAULT 'inProgress'")
-    @Enumerated(EnumType.STRING)
-    private OrderStatus status;
+    /**
+     * Buy from Online shop;
+     * Покупатель (Customer)
+     * */
 
-    private Long taxiOrderId;
-
-
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "user", nullable = false)
+   // @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+   // @JoinColumn(name = "User", nullable = false)
+    @ManyToOne(cascade = CascadeType.ALL)
     private User user;
 
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
