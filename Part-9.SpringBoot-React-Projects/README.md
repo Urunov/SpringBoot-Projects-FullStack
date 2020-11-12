@@ -26,6 +26,11 @@
        * Bootstarp 4.5 and Axios HTTP Library
           
       --> `Backend-side tools and technologies used: `
+      
+      Backend represents 2 folders: 
+         * backend 
+         * backend + Swagger 
+         
        * SpringBoot 2 + 
        * Spring Data JPA (Hibernate)
        * Maven 3.2  + 
@@ -37,11 +42,11 @@
        * Basic Knowledge of JavaScript and Programming
        * Node.js and npm installed
        * React basic (from scratch )
-       * Swagger UI (documentation & API testing_) // http://localhost:8080/swagger-ui.html#/employee-controller
+       * Swagger UI (documentation & API testing_) // http://localhost:8080/swagger-ui.html#/
        
-
-![Screen Shot 2020-11-02 at 3 17 41 PM](https://user-images.githubusercontent.com/11626327/97836020-bbaf8a00-1d1e-11eb-93fd-0404df416b38.png)
-       *  ReactJS Snippet Component (install VSC pluggin)
+![Screen Shot 2020-11-12 at 5 01 26 PM](https://user-images.githubusercontent.com/11626327/98912066-ef519780-2508-11eb-830f-590747a416c8.png)
+      
+      *  ReactJS Snippet Component (install VSC pluggin)
        
 
 Confuguration Router: 
