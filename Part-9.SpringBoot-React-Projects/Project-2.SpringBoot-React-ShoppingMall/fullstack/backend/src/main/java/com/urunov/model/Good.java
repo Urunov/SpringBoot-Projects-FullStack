@@ -1,6 +1,7 @@
 package com.urunov.model;
 
 import com.urunov.model.audit.DateAudit;
+import com.urunov.model.retailer.Retailer;
 import lombok.*;
 
 import javax.persistence.*;
@@ -44,8 +45,9 @@ public class Good extends DateAudit {
     @Column
     private String description;
 
-    //    @ManyToOne(optional = false, cascade = CascadeType.MERGE)
-    //    @JoinColumn(name = "retailers_id")
-    //    private Retailer retailer;
+    @ManyToOne(optional = false, cascade = CascadeType.MERGE)
+    @JoinColumn(name = "retailers_id")
+    private Retailer retailer;
+
 
 }

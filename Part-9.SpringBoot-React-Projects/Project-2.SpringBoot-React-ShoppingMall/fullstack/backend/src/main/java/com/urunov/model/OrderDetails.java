@@ -36,4 +36,9 @@ public class OrderDetails extends DateAudit {
 
     /**Number of good, Количество товара*/
     private Integer quantity;
+
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @JoinColumn(name = "good_id", nullable = false)
+    private Good good;
+
 }

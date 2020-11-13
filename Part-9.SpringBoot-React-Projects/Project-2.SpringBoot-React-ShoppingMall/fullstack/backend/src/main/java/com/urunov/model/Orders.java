@@ -68,5 +68,4 @@ public class Orders extends DateAudit {
 
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
     private List<OrderDetails> orderDetailsList;
-
 }
