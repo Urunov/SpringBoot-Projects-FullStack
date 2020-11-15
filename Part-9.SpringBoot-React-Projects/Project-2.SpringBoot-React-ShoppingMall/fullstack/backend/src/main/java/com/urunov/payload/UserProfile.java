@@ -23,7 +23,10 @@ public class UserProfile {
     private Long id;
 
     @JsonIgnore
-    private Instant avatarImgUrl;
+    private Instant joinedAt;
+
+    @JsonIgnore
+    private String avatarImgUrl;
 
     private String surname;
     private String name;
@@ -33,7 +36,5 @@ public class UserProfile {
     private String email;
     private String password;
     private String city;
-
-
 
 }
