@@ -1,6 +1,7 @@
 package com.urunov.model;
 
 import com.urunov.model.audit.DateAudit;
+import com.urunov.model.enumdto.OrderStatus;
 import lombok.*;
 
 import javax.persistence.*;
@@ -56,6 +57,13 @@ public class Orders extends DateAudit {
 
     private String phoneDriver;
 
+    @Column(name = "status", columnDefinition = "ENUM('awaitingPayment', 'inProgress', 'paid', 'transferredToDeliveryService', 'completed', 'NEW', 'canceled', 'courierSearch', 'courierFound' ,'deliveryInProgress','awaitingConfirmation', 'delivered') NOT NULL DEFAULT 'inProgress'")
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
+
+    private Long taxiOrderId;
+
+
     /**
      * Buy from Online shop;
      * Покупатель (Customer)
@@ -68,4 +76,15 @@ public class Orders extends DateAudit {
 
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
     private List<OrderDetails> orderDetailsList;
+
+    public Orders(String additionalPhone, @NotBlank String address, String name, String comment, List<Good> goodList, Float  deliveryPrice)
+    {
+        this.additionalPhone = additionalPhone;
+        this.address = address;
+        this.name = name;
+        this.comment = comment;
+        this.deliveryPrice = deliveryPrice;
+    }
+
+
 }

@@ -13,7 +13,6 @@ import lombok.*;
 @Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
 public class UserSummary {
 
     private Long id;
@@ -30,12 +29,12 @@ public class UserSummary {
     }
 
 
-//    public UserSummary(Long id, String username, String surname, String name, String lastname, String city) {
-//        this.id = id;
-//        this.username = username;
-//        this.surname = surname;
-//        this.name = name;
-//        this.lastname = lastname;
-//        this.city = city;
-//    }
+    public UserSummary(Long id, String username, String surname, String name, String lastname, String city) {
+        this.id = id;
+        this.username = username;
+        this.surname = surname;
+        this.name = name;
+        this.lastname = lastname;
+        this.city = city;
+    }
 }

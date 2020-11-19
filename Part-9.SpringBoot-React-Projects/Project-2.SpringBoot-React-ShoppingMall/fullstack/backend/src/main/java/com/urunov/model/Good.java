@@ -49,5 +49,5 @@ public class Good extends DateAudit {
     @JoinColumn(name = "retailers_id")
     private Retailer retailer;
 
-
+    private Boolean isOutdated = false;
 }

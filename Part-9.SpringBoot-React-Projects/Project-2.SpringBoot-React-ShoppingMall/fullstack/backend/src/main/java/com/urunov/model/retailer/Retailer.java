@@ -51,6 +51,11 @@ public class Retailer {
     @Column(name = "position_Y", columnDefinition = "decimal(10, 8) Default null")
     private Double positionY;
 
+    public void RetailerDto(String name, byte[] logo)
+    {
+        this.name = name;
+        this.logo = logo;
+    }
 //    @ManyToMany(fetch = FetchType.EAGER)
 //    @JoinTable(name = "retailer_taxiproperites",
 //            joinColumns = @JoinColumn(name = "retailer"),

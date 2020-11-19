@@ -32,7 +32,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
 //    @Query("select u from User w where u.username like %:username%")
 //    List<User> findUsersByUsername(@Param("username") String username);
-//
-//    @Query("Select u.username from User u")
-//    List<String> findAllUsers();
+
+    @Query("Select u.username from User u")
+    List<String> findAllUsers();
 }
