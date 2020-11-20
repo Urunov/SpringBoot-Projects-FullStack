@@ -74,6 +74,4 @@ public class EmployeeController {
         response.put("delete", Boolean.TRUE);
         return ResponseEntity.ok(response);
     }
-
-
 }

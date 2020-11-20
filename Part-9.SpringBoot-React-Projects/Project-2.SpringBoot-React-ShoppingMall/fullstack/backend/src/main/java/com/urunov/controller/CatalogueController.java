@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
  * User: hamdamboy
  * Project: IntelliJ IDEA
  * Github: @urunov
+ *
+ * this part represents
  */
 
 @RestController
@@ -49,7 +51,7 @@ public class CatalogueController {
     }
 
     @GetMapping("/getGoodById")
-    public Good getGoodById(@RequestParam(value = "goodId"), String goodId){
+    public Good getGoodById(@RequestParam(value = "goodId") String goodId){
         return goodsRepository.findGoodById(Long.valueOf(goodId));
     }
 

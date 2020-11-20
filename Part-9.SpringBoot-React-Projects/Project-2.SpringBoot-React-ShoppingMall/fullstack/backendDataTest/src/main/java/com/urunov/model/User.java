@@ -61,14 +61,14 @@ public class User extends DateAudit {
 
     private String city;
 
-    @ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(name = "user_roles",
-                joinColumns = @JoinColumn(name = "user_id"),
-                inverseJoinColumns = @JoinColumn(name = "role_id")
-    )
-    private Set<Role> roles = new HashSet<>();
-
-
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private List<Orders> ordersList;
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(name = "user_roles",
+//                joinColumns = @JoinColumn(name = "user_id"),
+//                inverseJoinColumns = @JoinColumn(name = "role_id")
+//    )
+//    private Set<Role> roles = new HashSet<>();
+//
+//
+//    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+//    private List<Orders> ordersList;
 }
