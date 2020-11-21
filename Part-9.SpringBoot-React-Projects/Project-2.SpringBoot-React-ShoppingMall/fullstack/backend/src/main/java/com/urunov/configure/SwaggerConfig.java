@@ -38,7 +38,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
     private ApiInfo metaData() {
         return new ApiInfoBuilder()
-                .title("Spring Boot REST API with Swagger")
+                .title("Full Stack: Spring Boot and React JS for the Shopping Mall")
                 .description("\"Shopping Mall")
                 .version("1.0.0")
                 .license("Apache License Version 2.0")
