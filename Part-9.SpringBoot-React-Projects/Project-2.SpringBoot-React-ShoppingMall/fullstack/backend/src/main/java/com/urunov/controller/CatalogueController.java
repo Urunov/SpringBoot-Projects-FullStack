@@ -41,6 +41,7 @@ public class CatalogueController {
     @Autowired
     private CataloguesService cataloguesService;
 
+    @GetMapping("/getCataloguesOfGoods")
     public PagedResponse<GoodResponseForRetailer> getCatalogueOfGoods(
             @RequestParam(value = "page", defaultValue = AppConstants.DEFAULT_PAGE_NUMBER) int page,
             @RequestParam(value = "size", defaultValue = AppConstants.DEFAULT_PAGE_SIZE) int size,
@@ -55,6 +56,7 @@ public class CatalogueController {
         return goodsRepository.findGoodById(Long.valueOf(goodId));
     }
 
+    @GetMapping("/getGoodsByRetailers")
     public PagedResponse<GoodResponseForRetailer> getGoodsByRetailers
             (
             @CurrentUser UserPrincipal userPrincipal, @RequestParam(value = "retailersId") Long id,

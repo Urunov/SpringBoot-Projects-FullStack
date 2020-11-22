@@ -28,7 +28,6 @@ public class UserPrincipal implements UserDetails {
     private String name;
 
     private String lastname;
-
     private String username;
 
     private String city;

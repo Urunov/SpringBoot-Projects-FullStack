@@ -50,4 +50,16 @@ public class Good extends DateAudit {
     private Retailer retailer;
 
     private Boolean isOutdated = false;
+
+    public Good(String name, BigDecimal currentPrice, byte[] image, String description, Retailer retailer, String internalCode)
+    {
+        this.id = id;
+        this.name = name;
+        this.currentPrice = currentPrice;
+        this.image = image;
+        this.description = description;
+        this.retailer = retailer;
+        this.internalCode = internalCode;
+    }
+
 }

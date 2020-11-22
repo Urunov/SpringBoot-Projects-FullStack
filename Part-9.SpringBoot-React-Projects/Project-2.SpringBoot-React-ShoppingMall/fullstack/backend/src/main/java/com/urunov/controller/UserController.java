@@ -29,7 +29,7 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:8080")
 public class UserController {
 
     @Autowired
@@ -43,11 +43,11 @@ public class UserController {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-    // create employee rest api
-    @PostMapping("/addUser")
-    public User createEmployee(@RequestBody User user){
-        return userRepository.save(user);
-    }
+//    // create employee rest api
+//    @PostMapping("/addUser")
+//    public User createEmployee(@RequestBody User user){
+//        return userRepository.save(user);
+//    }
 
 
     @GetMapping("/user/me")
