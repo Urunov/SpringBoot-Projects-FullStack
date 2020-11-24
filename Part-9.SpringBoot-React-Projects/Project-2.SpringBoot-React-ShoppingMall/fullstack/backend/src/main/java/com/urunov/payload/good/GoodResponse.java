@@ -1,5 +1,6 @@
 package com.urunov.payload.good;
 
+import com.urunov.model.Good;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -41,4 +42,14 @@ public class GoodResponse {
     private Boolean isAddToBucket;
 
 
+    public GoodResponse(Good good) {
+        this.goodId = good.getId();
+        this.name = good.getName();
+        this.price = good.getCurrentPrice();
+        this.retailer = good.getRetailer().getInternalCode();
+        this.internalCode = good.getInternalCode();
+        this.isAddToBucket = good.getAddToBucket();
+        this.retailerId = good.getRetailer().getId();
+        this.city = good.getRetailer().getCity();
+    }
 }

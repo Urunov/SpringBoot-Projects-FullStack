@@ -51,7 +51,7 @@ public class GoodConsumeService {
                             o.setIsOutdated(true);
                             goodsRepository.save(o);
                         });
-                removeOutdatedGoodsFromBuckets(existGoods);
+              //  removeOutdatedGoodsFromBuckets(existGoods);
             }
 
              if(goodResponse.getIsOutdated() !=null && !goodResponse.getIsOutdated())

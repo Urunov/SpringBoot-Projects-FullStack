@@ -62,4 +62,13 @@ public class Good extends DateAudit {
         this.internalCode = internalCode;
     }
 
+    public Boolean getAddToBucket()
+    {
+        return isAddToBucket;
+    }
+    public void setAddToBucket(Boolean addToBucket)
+    {
+        isAddToBucket = addToBucket;
+    }
+
 }

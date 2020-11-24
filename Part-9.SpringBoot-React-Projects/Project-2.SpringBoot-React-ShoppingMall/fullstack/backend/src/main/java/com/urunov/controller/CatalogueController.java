@@ -68,6 +68,4 @@ public class CatalogueController {
     {
         return cataloguesService.getGoodsByRetailers(userPrincipal, id, page, size, sortBy, sortOrder, filteredValue);
     }
-
-
 }

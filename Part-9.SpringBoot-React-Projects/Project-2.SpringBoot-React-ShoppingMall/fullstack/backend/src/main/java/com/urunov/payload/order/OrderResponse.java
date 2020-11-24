@@ -4,6 +4,7 @@ import com.urunov.model.Orders;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.criterion.Order;
 
 import java.math.BigDecimal;
 
@@ -58,4 +59,6 @@ public class OrderResponse
         this.deliveryPrice = orders.getDeliveryPrice() != null ? orders.getDeliveryPrice(): 0F;
         this.status = orders.getStatus().getTitle();
     }
+
+
 }

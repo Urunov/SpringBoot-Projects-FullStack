@@ -141,7 +141,7 @@ public class CataloguesService {
         if(page < 0)
         {
             throw new BadRequestException("this page cannot be null or zero" +
-                    "/Номер страницы не может быть меньше нуля.");
+                    "Номер страницы не может быть меньше нуля.");
         }
         if(size > AppConstants.MAX_PAGE_SIZE)
         {
