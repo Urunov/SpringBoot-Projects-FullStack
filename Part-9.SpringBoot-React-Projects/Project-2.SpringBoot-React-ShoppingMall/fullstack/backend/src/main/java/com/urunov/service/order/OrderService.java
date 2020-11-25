@@ -12,16 +12,15 @@ import com.urunov.repository.OrderRepository;
 import com.urunov.repository.UserRepository;
 import com.urunov.security.UserPrincipal;
 import com.urunov.utils.AppConstants;
-import org.hibernate.criterion.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
@@ -48,7 +47,7 @@ public class OrderService {
     {
         validatePageNumberAndSize(page, size);
         Pageable pageable;
-        Page<Order> orderList;
+        Page<Orders> ordersList;
 
         if(sortOrder.equals("ascend"))
             pageable = (Pageable) PageRequest.of(page, size, Sort.by(
@@ -66,20 +65,20 @@ public class OrderService {
         }
 
         if(isActive)
-            orderList = orderRepository.findAllByUserAndStatusIn(user, Arrays.asList(OrderStatus.inProgress, OrderStatus.awaitingPayment,
+            ordersList = orderRepository.findAllByUserAndStatusIn(user, Arrays.asList(OrderStatus.inProgress, OrderStatus.awaitingPayment,
                     OrderStatus.paid, OrderStatus.deliveryInProgress, OrderStatus.courierFound, OrderStatus.courierSearch, OrderStatus.awaitingConfirmation), pageable);
         else
-            orderList = orderRepository.findAllByUserAndStatusIn(user, Arrays.asList(OrderStatus.delivered, OrderStatus.canceled), pageable);
+            ordersList = orderRepository.findAllByUserAndStatusIn(user, Arrays.asList(OrderStatus.delivered, OrderStatus.canceled), pageable);
 
-        if(orderList.getNumberOfElements() == 0)
+        if(ordersList.getNumberOfElements() == 0)
         {
-            return new PagedResponse<>(Collections.emptyList(), orderList.getNumber(),
-                    orderList.getSize(), orderList.getTotalElements(), orderList.getTotalPages(), orderList.isLast());
+            return new PagedResponse<>(Collections.emptyList(), ordersList.getNumber(),
+                    ordersList.getSize(), ordersList.getTotalElements(), ordersList.getTotalPages(), ordersList.isLast());
         }
 
-        List<OrderResponse> responseList = orderList.map(order -> new OrderResponse(orders)).getContent();
-        return new PagedResponse<>(responseList, orderList.getTotalPages(),
-                orderList.isLast());
+        List<OrderResponse> responseList = ordersList.map(orders -> new OrderResponse(orders)).getContent();
+        return new PagedResponse<>(responseList, ordersList.getNumber(),
+                ordersList.getSize(), ordersList.getTotalElements(), ordersList.getTotalPages(), ordersList.isLast());
     }
 
 
@@ -123,7 +122,7 @@ public class OrderService {
             }
          orderRepository.save(orders);
             producer.sendOrderRequest(orders);
-            return new ResponseEntity(new ApiResponse(true, "Status updated sucessfully/ Статус заказа успешно изменен!", new Date(), orderResponse), HttpStatus.OK));
+            return new ResponseEntity(new ApiResponse(true, "Status updated sucessfully/ Статус заказа успешно изменен!", new Date(), orderResponse), HttpStatus.OK);
         }
         else
         {

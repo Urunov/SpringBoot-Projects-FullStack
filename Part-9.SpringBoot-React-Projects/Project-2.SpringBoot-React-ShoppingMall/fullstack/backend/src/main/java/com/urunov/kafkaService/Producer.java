@@ -3,6 +3,7 @@ package com.urunov.kafkaService;
 import com.google.gson.Gson;
 import com.urunov.model.Orders;
 import com.urunov.payload.SmsResponse;
+import com.urunov.payload.order.OrderKafkaResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

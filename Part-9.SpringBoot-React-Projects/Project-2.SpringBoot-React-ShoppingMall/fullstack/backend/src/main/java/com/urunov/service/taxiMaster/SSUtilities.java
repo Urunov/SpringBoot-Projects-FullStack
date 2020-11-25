@@ -1,10 +1,10 @@
 package com.urunov.service.taxiMaster;
 
 /**
- * Created by:
  * User: hamdamboy
- * Project: IntelliJ IDEA
+ * Project: Shopping
  * Github: @urunov
  */
-public class TIMApi {
+public class SSUtilities {
+
 }
