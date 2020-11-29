@@ -11,7 +11,7 @@ import com.urunov.model.taxi.TaxiProperties;
 import com.urunov.payload.order.DeliveryPriceResponse;
 import com.urunov.repository.OrderRepository;
 import com.urunov.service.taxiMaster.utils.AddressUtils;
-import org.apache.http.client.utils.DateUtils;
+import com.urunov.utils.DateUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -19,6 +19,7 @@ import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,7 +34,11 @@ import java.util.stream.Collectors;
  * Project: IntelliJ IDEA
  * Github: @urunov
  */
+@Service
 public class TaxiOrderProcess {
+
+
+    private final Logger LOG = LoggerFactory.getLogger(TaxiOrderProcess.class);
 
     @Autowired
     TMApi api;
@@ -48,7 +53,6 @@ public class TaxiOrderProcess {
     OrderRepository orderRepository;
 
 
-    private final Logger LOG = LoggerFactory.getLogger(TaxiProperties.class);
 
     JSONParser parser = new JSONParser();
 

@@ -57,9 +57,11 @@ public class Orders extends DateAudit {
 
     private String phoneDriver;
 
-    @Column(name = "status", columnDefinition = "ENUM('awaitingPayment', 'inProgress', 'paid', 'transferredToDeliveryService', 'completed', 'NEW', 'canceled', 'courierSearch', 'courierFound' ,'deliveryInProgress','awaitingConfirmation', 'delivered') NOT NULL DEFAULT 'inProgress'")
+    @Column(columnDefinition = "ENUM('awaitingPayment', 'inProgress', 'paid', 'transferredToDeliveryService', 'completed', 'NEW', 'canceled', 'courierSearch', 'courierFound' ,'deliveryInProgress','awaitingConfirmation', 'delivered') NOT NULL DEFAULT 'inProgress'")
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
+
+
 
     private Long taxiOrderId;
 
@@ -77,6 +79,8 @@ public class Orders extends DateAudit {
     @OneToMany(mappedBy = "order", fetch = FetchType.EAGER)
     private List<OrderDetails> orderDetailsList;
 
+
+
     public Orders(String additionalPhone, @NotBlank String address, String name, String comment, List<Good> goodList, Float  deliveryPrice)
     {
         this.additionalPhone = additionalPhone;
@@ -86,5 +90,9 @@ public class Orders extends DateAudit {
         this.deliveryPrice = deliveryPrice;
     }
 
+    public void setOrderDetailList(List<OrderDetails> ordersList)
+    {
+        this.orderDetailsList = ordersList;
+    }
 
 }

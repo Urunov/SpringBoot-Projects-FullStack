@@ -20,13 +20,17 @@ public class DeliveryPriceResponse {
 
     private String deliveryPrice;
     private String foundRightAddress;
-    private Map<String, String > coorMap;
+    private Map<String, String > coordMap;
 
     public DeliveryPriceResponse(String deliveryPrice, String foundRightAddress, Map<String, String> coorMap)
     {
         this.deliveryPrice = deliveryPrice;
         this.foundRightAddress = foundRightAddress;
-        this.coorMap = coorMap;
+        this.coordMap = coorMap;
+    }
+    public Map<String, String> getCoordMap()
+    {
+        return coordMap;
     }
 
 
