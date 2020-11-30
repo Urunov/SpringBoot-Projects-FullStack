@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.urunov.configure.JpaConfig;
+//import com.urunov.configure.JpaConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -27,10 +27,13 @@ import java.io.IOException;
         "com.urunov.service",
         "com.urunov.schedule"
 })
+
 public class ShoppingApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(new Class<?>[]{ShoppingApplication.class, JpaConfig.class}, args);
+       // SpringApplication.run(new Class<?>[]{ShoppingApplication.class, JpaConfig.class}, args);
+
+        SpringApplication.run(ShoppingApplication.class);
     }
     @Bean
     public JsonDeserializer jsonDeserializer()

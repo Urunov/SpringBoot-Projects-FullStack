@@ -43,13 +43,6 @@ public class UserController {
 
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
-//    // create employee rest api
-//    @PostMapping("/addUser")
-//    public User createEmployee(@RequestBody User user){
-//        return userRepository.save(user);
-//    }
-
-
     @GetMapping("/user/me")
     @PreAuthorize("hasRole('USER')")
     public UserSummary getCurrentUser(@CurrentUser UserPrincipal currentUser)

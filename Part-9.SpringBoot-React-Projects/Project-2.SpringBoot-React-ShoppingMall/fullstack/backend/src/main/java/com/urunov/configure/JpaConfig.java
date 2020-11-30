@@ -13,6 +13,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
 import java.util.Properties;
 
@@ -25,7 +26,9 @@ import java.util.Properties;
 @EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackageClasses = ShoppingApplication.class)
-public class JpaConfig {
+public class JpaConfig implements TransactionManagementConfigurer {
+
+
     @Value("${dataSource.driverClassName}")
     private String driver;
     @Value("${dataSource.url}")
@@ -61,7 +64,7 @@ public class JpaConfig {
     {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(configureDataSource());
-        entityManagerFactoryBean.setPackagesToScan("com.messager");
+        entityManagerFactoryBean.setPackagesToScan("com.urunov");
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
         Properties jpaProperties = new Properties();
         jpaProperties.put(org.hibernate.cfg.Environment.DIALECT, dialect);
