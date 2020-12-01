@@ -5,6 +5,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -41,8 +42,20 @@ public class User implements UserDetails {
     @Enumerated(EnumType.ORDINAL)
     private Set<Role> roles;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    private List<Perfume> perfumeList;
+
+
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name="perfumes_user", joinColumns = @JoinColumn(name = "user_id"),
+//            inverseJoinColumns = @JoinColumn(name = "perfumes_id"))
+//    private List<Perfume> perfumes = new ArrayList<>();
+//
+//
+//    @OneToMany(mappedBy = "user")
+//    private List<Order> orders;
+
+    public boolean isAdmin(){
+        return roles.contains(Role.ADMIN);
+    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -61,21 +74,21 @@ public class User implements UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return isActive();
     }
 }
