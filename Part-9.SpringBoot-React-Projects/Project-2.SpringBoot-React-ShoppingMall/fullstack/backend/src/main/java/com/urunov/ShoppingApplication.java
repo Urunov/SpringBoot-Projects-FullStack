@@ -15,18 +15,18 @@ import java.io.IOException;
 
 @SpringBootApplication
 @EnableSwagger2
-@ComponentScan(basePackages = {
-        "com.urunov.configure",
-        "com.urunov.controller",
-        "com.urunov.model",
-        "com.urunov.exception",
-        "com.urunov.repository",
-        "com.urunov.security",
-        "com.urunov.utils",
-        "com.urunov.kafkaService",
-        "com.urunov.service",
-        "com.urunov.schedule"
-})
+//@ComponentScan(basePackages = {
+//        "com.urunov.configure",
+//        "com.urunov.controller",
+//        "com.urunov.model",
+//        "com.urunov.exception",
+//        "com.urunov.repository",
+//        "com.urunov.security",
+//        "com.urunov.utils",
+//        "com.urunov.kafkaService",
+//        "com.urunov.service",
+//        "com.urunov.schedule"
+//})
 
 public class ShoppingApplication {
 
@@ -35,22 +35,22 @@ public class ShoppingApplication {
 
         SpringApplication.run(ShoppingApplication.class);
     }
-    @Bean
-    public JsonDeserializer jsonDeserializer()
-    {
-        return new JsonDeserializer()
-        {
-            @Override
-            public Object deserialize(JsonParser p, DeserializationContext context) throws IOException
-            {
-                return null;
-            }
-        };
-    }
-
-    @Bean
-    public ObjectMapper objectMapper()
-    {
-        return new ObjectMapper();
-    }
+//    @Bean
+//    public JsonDeserializer jsonDeserializer()
+//    {
+//        return new JsonDeserializer()
+//        {
+//            @Override
+//            public Object deserialize(JsonParser p, DeserializationContext context) throws IOException
+//            {
+//                return null;
+//            }
+//        };
+//    }
+//
+//    @Bean
+//    public ObjectMapper objectMapper()
+//    {
+//        return new ObjectMapper();
+//    }
 }
