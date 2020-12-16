@@ -1,0 +1,100 @@
+.blue-gradient-background {
+	background:#2193b0;
+	background:-moz-linear-gradient(left, #2193b0 0, #6dd5ed 100%);
+	background:-webkit-gradient(linear, left top, right top, color-stop(0%, #2193b0), color-stop(100%, #6dd5ed));
+	background:-webkit-linear-gradient(left, #2193b0 0, #6dd5ed 100%);
+	background:-o-linear-gradient(left, #2193b0 0, #6dd5ed 100%);
+	background:-ms-linear-gradient(left, #2193b0 0, #6dd5ed 100%);
+	background:linear-gradient(left, #2193b0 0, #6dd5ed 100%);
+}
+
+.logo {
+  margin-top: -6px;
+}
+
+.white {
+  color:#FFF
+}
+
+.row.extra-bottom-margin {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  border: 0;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-item
+{
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background: #FFF;
+}
+.col-item .photo img
+{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.col-item .info
+{
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  margin-top: 1px;
+}
+
+.col-item .price
+{
+  float: left;
+  margin-top: 5px;
+}
+
+.col-item .price h5
+{
+  line-height: 20px;
+  margin: 0;
+}
+
+.price-text-color
+{
+  color: #2193b0;
+}
+
+.col-item .separator
+{
+  border-top: 1px solid #E1E1E1;
+}
+
+.clear-left
+{
+  clear: left;
+}
+
+.col-item .separator p
+{
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.col-item .separator p i
+{
+  margin-right: 5px;
+}
+.col-item .section-qty
+{
+  width: 50%;
+  float: left;
+  border-right: 1px solid #E1E1E1;
+}
+
+.col-item .section-add
+{
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}

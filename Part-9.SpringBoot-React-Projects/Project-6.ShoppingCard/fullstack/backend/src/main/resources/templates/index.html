@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real-time shopping cart with Pusher, Java, and React</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body class="blue-gradient-background">
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://pusher.com">
+                <img class="logo" src="/images/pusher-logo.png" width="111" height="37"/>
+            </a>
+        </div>
+
+        <p class="navbar-text navbar-right"><a class="navbar-link" href="http://pusher.com/signup">Create a Free Account</a></p>
+    </div>
+</nav>
+
+<div id="app"></div>
+
+<!-- React -->
+    <script src="https://unpkg.com/react@15.4.1/dist/react-with-addons.js"></script>
+    <script src="https://unpkg.com/react-dom@15.4.1/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.19.0/babel.min.js"></script>
+
+<!-- Libs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.1/fetch.js"></script>
+    <script src="https://js.pusher.com/4.4/pusher.min.js"></script>
+
+<!-- Pusher Config -->
+<script th:inline="javascript">
+    var PUSHER_APP_KEY =[[${pusher_app_key}]];
+    var PUSHER_CHANNEL_NAME = [[${pusher_channel}]];
+    var PUSHER_CLUSTER_KEY = 'eu';
+</script>
+
+<!-- App/Components -->
+    <script type="text/babel" src="/js/components/header.js"></script>
+    <script type="text/babel" src="/js/components/cartItem.js"></script>
+    <script type="text/babel" src="/js/components/cart.js"></script>
+    <script type="text/babel" src="/js/components/product.js"></script>
+    <script type="text/babel" src="/js/components/productList.js"></script>
+    <script type="text/babel" src="/js/app.js"></script>
+
+</body>
+</html>

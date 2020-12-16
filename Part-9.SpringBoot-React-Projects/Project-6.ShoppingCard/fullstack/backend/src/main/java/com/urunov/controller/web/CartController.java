@@ -8,6 +8,7 @@ import com.urunov.model.Product;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.PostConstruct;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,7 @@ public class CartController {
 
     private Pusher pusher;
 
+    @PostConstruct
     public void configure()
     {
         pusher = new Pusher(
