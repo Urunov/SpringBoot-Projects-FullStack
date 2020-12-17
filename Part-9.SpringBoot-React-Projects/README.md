@@ -87,8 +87,21 @@ export default HeaderComponents;
 AWS/ Bucket 
 ![Screen Shot 2020-11-05 at 11 30 49 AM](https://user-images.githubusercontent.com/11626327/98190604-bb9bce00-1f5a-11eb-8b51-ebf75cd5215f.png)
 
+## Project-6. Shopping Card.
 
+The stack will be the following:
+
+      Java 10
+      Maven as the build manager
+      Spring Boot with Spring MVC as the server-side frameworks
+      Thymeleaf as the server-side template engine
+      React for the client-side interaction
+      Bootstrap as the CSS framework.
+      
+      
+![Screen Shot 2020-12-16 at 2 34 14 PM](https://user-images.githubusercontent.com/11626327/102309460-2c97c200-3fac-11eb-8ee6-917c6dff5679.png)
 
 #   Using and Recommendated List of References
  1. [Bootstarapping](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
  2. [Full Stack: React and Spring](https://www.youtube.com/watch?v=S5AFJIfRxQU&list=PLGRDMO4rOGcNLnW1L2vgsExTBg-VPoZHr&index=14)
+ 3. [Shopping Card](https://pusher.com/tutorials/shopping-cart-java-react)
