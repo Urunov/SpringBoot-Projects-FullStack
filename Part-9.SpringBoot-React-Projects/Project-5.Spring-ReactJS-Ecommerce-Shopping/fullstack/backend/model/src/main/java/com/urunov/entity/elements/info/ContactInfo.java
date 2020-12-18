@@ -1,6 +1,9 @@
-package com.urunov.entity.images;
+package com.urunov.entity.elements.info;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,24 +14,23 @@ import javax.persistence.Id;
  * Project: model
  * Github: @urunov
  */
-
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @ToString
-public class CarouselImages {
+@NoArgsConstructor
+public class ContactInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String link;
+    private String email;
 
-    private String imageLocalPath;
+    private String office;
 
-    private String imageURL;
+    private String mobile;
 
+    private String other;
 
 
 }

@@ -1,25 +1,23 @@
-package com.urunov.entity.categories;
+package com.urunov.entity.elements.categories;
 
 import lombok.*;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.io.Serializable;
 
 /**
  * User: hamdamboy
  * Project: model
  * Github: @urunov
  */
+
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-@Entity
-public class ApparelCategory implements Serializable {
+public class SortByCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,8 +25,5 @@ public class ApparelCategory implements Serializable {
 
     private String type;
 
-    public ApparelCategory(String type)
-    {
-        this.type = type;
-    }
+
 }

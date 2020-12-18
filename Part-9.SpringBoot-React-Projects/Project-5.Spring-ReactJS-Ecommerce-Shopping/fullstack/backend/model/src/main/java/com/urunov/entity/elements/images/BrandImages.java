@@ -1,12 +1,9 @@
-package com.urunov.entity.images;
+package com.urunov.entity.elements.images;
 
+import com.urunov.entity.elements.categories.ProductBrandCategory;
 import lombok.*;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * User: hamdamboy
@@ -31,5 +28,8 @@ public class BrandImages {
 
     private String imageUrl;
 
+    @ManyToOne(cascade =CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "brand_id", referencedColumnName = "id")
+    private ProductBrandCategory productBrandCategory;
 
 }

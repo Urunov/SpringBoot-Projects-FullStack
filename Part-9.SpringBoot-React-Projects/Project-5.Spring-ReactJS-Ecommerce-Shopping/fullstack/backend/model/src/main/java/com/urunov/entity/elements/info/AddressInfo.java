@@ -1,14 +1,13 @@
-package com.urunov.entity.info;
+package com.urunov.entity.elements.info;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * User: hamdamboy
@@ -36,6 +35,16 @@ public class AddressInfo {
     private String state;
 
     private String country;
+
+
+
+    @OneToOne(mappedBy = "addressInfo")
+    private OrderInfo order;
+
+    // Bank
+//    @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
+//    @JsonIgnore
+//    private List<BankInfo> banks;
 
 
 }

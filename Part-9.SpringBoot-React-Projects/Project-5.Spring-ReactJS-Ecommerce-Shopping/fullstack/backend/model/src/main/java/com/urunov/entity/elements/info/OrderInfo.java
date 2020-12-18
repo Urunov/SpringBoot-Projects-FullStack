@@ -1,14 +1,11 @@
-package com.urunov.entity.info;
+package com.urunov.entity.elements.info;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -38,4 +35,7 @@ public class OrderInfo implements Serializable {
     private String trackPackageLink;
 
 
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private AddressInfo addressInfo;
 }

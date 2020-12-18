@@ -1,10 +1,8 @@
-package com.urunov.entity.info;
+package com.urunov.entity.elements.info;
 
 import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * User: hamdamboy
@@ -37,4 +35,12 @@ public class BankInfo {
     private String routingNumber;
 
     private String accountNumber;
+
+    @ManyToOne
+    @JoinColumn(name = "address_id")
+    private AddressInfo addressInfo;
+
+//    @ManyToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "contact_id")
+//    private ContactInfo contactInfo;
 }
