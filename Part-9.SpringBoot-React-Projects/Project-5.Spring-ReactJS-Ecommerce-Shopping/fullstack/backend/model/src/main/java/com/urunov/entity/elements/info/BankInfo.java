@@ -16,6 +16,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class BankInfo {
 
     @Id
@@ -36,11 +37,12 @@ public class BankInfo {
 
     private String accountNumber;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "address_id")
     private AddressInfo addressInfo;
 
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "contact_id")
-//    private ContactInfo contactInfo;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "contact_id")
+    private ContactInfo contactInfo;
+
 }

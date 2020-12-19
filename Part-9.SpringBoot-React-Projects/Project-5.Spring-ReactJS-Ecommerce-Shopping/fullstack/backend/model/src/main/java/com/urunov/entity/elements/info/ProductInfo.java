@@ -13,6 +13,7 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * User: hamdamboy
@@ -65,5 +66,14 @@ public class ProductInfo implements Serializable {
     @JoinColumn(name = "gender_id")
     @JsonIgnore
     private GenderCategory genderCategory;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "price_id")
+    @JsonIgnore
+    private PriceRangeCategory priceRangeCategory;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "productInfo")
+    @JsonIgnore
+    private List<OrderInfo> orderInfo;
 
 }

@@ -1,5 +1,6 @@
 package com.urunov.entity.elements.info;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -38,4 +39,8 @@ public class OrderInfo implements Serializable {
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "address_id", referencedColumnName = "id")
     private AddressInfo addressInfo;
+
+    @ManyToOne
+    @JsonIgnore
+    private ProductInfo productInfo;
 }

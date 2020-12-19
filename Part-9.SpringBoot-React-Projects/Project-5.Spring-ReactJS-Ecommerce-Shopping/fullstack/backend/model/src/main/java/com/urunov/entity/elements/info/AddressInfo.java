@@ -7,6 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ import java.util.List;
 @NoArgsConstructor
 @ToString
 @Entity
-public class AddressInfo {
+public class AddressInfo implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,13 +39,13 @@ public class AddressInfo {
 
 
 
-    @OneToOne(mappedBy = "addressInfo")
-    private OrderInfo order;
+      @OneToOne(mappedBy = "addressInfo")
+      private OrderInfo order;
 
-    // Bank
-//    @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
-//    @JsonIgnore
-//    private List<BankInfo> banks;
+      // Bank
+      @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
+      @JsonIgnore
+      private List<BankInfo> banks;
 
 
 }

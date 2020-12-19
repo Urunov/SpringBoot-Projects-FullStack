@@ -1,13 +1,13 @@
 package com.urunov.entity.elements.info;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * User: hamdamboy
@@ -18,6 +18,7 @@ import javax.persistence.Id;
 @Setter
 @ToString
 @NoArgsConstructor
+@Entity
 public class ContactInfo {
 
     @Id
@@ -31,6 +32,10 @@ public class ContactInfo {
     private String mobile;
 
     private String other;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "contactInfo")
+    @JsonIgnore
+    private List<BankInfo> banks;
 
 
 }

@@ -19,6 +19,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@Entity
 public class PriceRangeCategory implements Serializable {
 
     @Id
