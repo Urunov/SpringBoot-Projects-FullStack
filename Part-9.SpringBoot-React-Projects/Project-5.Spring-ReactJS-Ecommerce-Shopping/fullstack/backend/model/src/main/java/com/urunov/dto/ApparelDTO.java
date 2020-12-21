@@ -1,10 +1,8 @@
 package com.urunov.dto;
 
-import com.urunov.entity.elements.info.ProductInfo;
 import lombok.*;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * User: hamdamboy
@@ -12,14 +10,12 @@ import java.util.List;
  * Github: @urunov
  */
 
-@Data
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class ProductInfoDTO implements Serializable {
+public class ApparelDTO implements Serializable {
 
-    private Long totalCount;
-    private List<ProductInfo> products;
+    private int id;
 }
