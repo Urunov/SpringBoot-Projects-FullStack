@@ -6,6 +6,7 @@ import com.urunov.model.FilterAttributesResponse;
 import com.urunov.model.HomeTabsDataResponse;
 import com.urunov.model.MainScreenResponse;
 import com.urunov.model.SearchSuggestionResponse;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
 
@@ -14,6 +15,7 @@ import java.util.HashMap;
  * Project: model
  * Github: @urunov
  */
+@Configuration
 public interface CommonDataService {
 
     MainScreenResponse getHomeScreenData(String apiName);
@@ -24,7 +26,7 @@ public interface CommonDataService {
 
     HashMap<Integer, ProductInfo> getProductsById(String queryParams);
 
-    HomeTabsDataResponse getBrainsAndApparelsByGender(String apiName);
+    HomeTabsDataResponse getBrandsAndApparelsByGender(String apiName);
 
     SearchSuggestionResponse getSearchSuggestionList();
 }

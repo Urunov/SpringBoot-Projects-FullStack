@@ -7,3 +7,4 @@ package com.urunov.dao.sql.info;
  */
 public interface AddressInfoRepository {
 }
+

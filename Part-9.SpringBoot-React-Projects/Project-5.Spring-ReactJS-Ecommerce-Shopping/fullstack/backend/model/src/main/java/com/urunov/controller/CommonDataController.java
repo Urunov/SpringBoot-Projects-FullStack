@@ -5,6 +5,7 @@ import com.urunov.entity.elements.info.ProductInfo;
 import com.urunov.model.FilterAttributesResponse;
 import com.urunov.model.MainScreenResponse;
 import com.urunov.model.SearchSuggestionResponse;
+
 import com.urunov.service.interfaces.CommonDataService;
 import com.urunov.service.interfaces.LoadFakeDataService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ import java.util.Objects;
  */
 
 @RestController
-public class DataController {
+public class CommonDataController {
 
     @Autowired
     Environment environment;
