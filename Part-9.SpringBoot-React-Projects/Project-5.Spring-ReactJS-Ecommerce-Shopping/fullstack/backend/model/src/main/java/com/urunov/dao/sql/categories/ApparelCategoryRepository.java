@@ -13,11 +13,11 @@ import java.util.List;
  */
 public interface ApparelCategoryRepository extends JpaRepository<ApparelCategory, Integer> {
 
-//    @Query(value = "SELECT c FROM ApparelImages c where c.apparelCategory.type=?1 and" +
-//            " c.genderCategory.type=?2")
-//
-//    @Query(value = "SELECT  c FROM ApparelCategory c")
-//    List<ApparelCategory> getAllDate();
+    @Query(value = "SELECT c FROM ApparelImages c where c.apparelCategory.type=?1 and" +
+            " c.genderCategory.type=?2")
+
+    @Query(value = "SELECT  c FROM ApparelCategory c")
+    List<ApparelCategory> getAllDate();
 
 
     ApparelCategory findByType(String title);

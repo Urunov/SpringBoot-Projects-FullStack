@@ -91,10 +91,9 @@ public class CommonDataServiceImpl implements CommonDataService {
     public MainScreenResponse getHomeScreenData(String apiName)
     {
         List<BrandImages> brandList = brandImagesRepository.getAllDate();
-        Type listType = new TypeToken<List<BrandImagesRepository>>()
-        {
 
-        }.getType();
+        Type listType = new TypeToken<List<BrandImagesRepository>>()
+        {}.getType();
 
         List<BrandImagesRepository> brandDtoList = modelMapper.map(brandList, listType);
 
@@ -110,13 +109,6 @@ public class CommonDataServiceImpl implements CommonDataService {
         return new MainScreenResponse(brandDtoList, apparelDTOList, carouselImages);
     }
 
-
-
-
-    @Override
-    public MainScreenResponse getHomeScreenData(String apiName) {
-        return null;
-    }
 
     @Override
     public FilterAttributesResponse getFilterAttributesByProducts(String queryParams) {
