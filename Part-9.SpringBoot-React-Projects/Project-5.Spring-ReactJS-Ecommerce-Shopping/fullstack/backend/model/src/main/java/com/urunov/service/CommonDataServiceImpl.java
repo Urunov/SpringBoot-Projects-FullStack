@@ -18,6 +18,7 @@ import com.urunov.model.HomeTabsDataResponse;
 import com.urunov.model.MainScreenResponse;
 import com.urunov.model.SearchSuggestionResponse;
 import com.urunov.service.interfaces.CommonDataService;
+import org.javatuples.Pair;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,20 +110,58 @@ public class CommonDataServiceImpl implements CommonDataService {
         return new MainScreenResponse(brandDtoList, apparelDTOList, carouselImages);
     }
 
-
-    @Override
+    @Cacheable(key = "#queryParams", value = "filterAttributesResponse")
     public FilterAttributesResponse getFilterAttributesByProducts(String queryParams) {
+        HashMap<String, String> conditionMap = getConditionMapFromQuery(queryParams);
+
+
+        if(conditionMap != null && !conditionMap.isEmpty())
+        {
+            FilterAttributesResponse filterAttributesResponse = productInfoRepository.getFilterAttributesByProducts(conditionMap);
+            filterAttributesResponse.setSortby(sortByCategoryRepository.getAllData());
+            return filterAttributesResponse;
+        }
+
         return null;
     }
 
-    @Override
+    @Cacheable(key = "#queryParams", value = "productInfoDTO")
     public ProductInfoDTO getProductsByCategories(String queryParams) {
-        return null;
+
+        HashMap<String, String> conditionMap = getConditionMapFromQuery(queryParams);
+        ProductInfoDTO productInfoDTO  = null;
+
+        if(conditionMap !=null && !conditionMap.isEmpty())
+        {
+            Pair<Long, List<ProductInfo>> result = productInfoRepository.getProductByCategories(conditionMap);
+            if(result !=null)
+            {
+                productInfoDTO = new ProductInfoDTO(result.getValue0(), result.getValue1());
+
+            }
+        }
+        return productInfoDTO;
     }
 
-    @Override
+    @Cacheable(key = "#queryParams", value = "bashMap")
     public HashMap<Integer, ProductInfo> getProductsById(String queryParams) {
-        return null;
+
+        String[] productIds = queryParams.split(",");
+        HashMap<Integer, ProductInfo> resultMap = null;
+
+        if(productIds.length > 0) {
+            List<ProductInfo> result = productInfoRepository.getProductsById(productIds);
+
+            if(result !=null)
+            {
+                resultMap = new HashMap<>();
+                for(ProductInfo info: result)
+                {
+                    resultMap.put(info.getId(), info);
+                }
+            }
+        }
+        return resultMap;
     }
 
     @Override
