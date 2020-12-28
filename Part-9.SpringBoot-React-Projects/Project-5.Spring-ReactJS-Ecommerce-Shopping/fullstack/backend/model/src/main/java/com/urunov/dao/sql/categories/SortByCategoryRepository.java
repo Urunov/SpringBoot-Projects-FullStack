@@ -13,7 +13,7 @@ import java.util.List;
  */
 public interface SortByCategoryRepository extends JpaRepository<SortByCategory, Integer> {
 
-    @Query(value = "SELECT s FROM SortByCategoty s")
+    @Query(value = "SELECT s FROM SortByCategory s")
     List<SortByCategory> getAllData();
 
     SortByCategory findByType(String type);

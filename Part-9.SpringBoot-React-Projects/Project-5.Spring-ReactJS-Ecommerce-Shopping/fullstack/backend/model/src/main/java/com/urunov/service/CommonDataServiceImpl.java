@@ -8,6 +8,8 @@ import com.urunov.dao.sql.images.ApparelImagesRepository;
 import com.urunov.dao.sql.images.BrandImagesRepository;
 import com.urunov.dao.sql.images.CarouselImagesRepository;
 import com.urunov.dao.sql.info.ProductInfoRepository;
+import com.urunov.dto.ApparelImagesDTO;
+import com.urunov.dto.BrandImageDTO;
 import com.urunov.dto.ProductInfoDTO;
 import com.urunov.entity.elements.images.ApparelImages;
 import com.urunov.entity.elements.images.BrandImages;
@@ -41,7 +43,7 @@ public class CommonDataServiceImpl implements CommonDataService {
     private ProductInfoRepository productInfoRepository;
 
     @Autowired
-    private GenderCategoryRepository categoryRepository;
+    private GenderCategoryRepository genderCategoryRepository;
 
     @Autowired
     private ApparelCategoryRepository apparelCategoryRepository;
@@ -91,23 +93,21 @@ public class CommonDataServiceImpl implements CommonDataService {
     @Cacheable(key = "#apiName", value = "mainScreenResponse")
     public MainScreenResponse getHomeScreenData(String apiName)
     {
-        List<BrandImages> brandList = brandImagesRepository.getAllDate();
+        List<BrandImages> brandList = brandImagesRepository.getAllData();
 
         Type listType = new TypeToken<List<BrandImagesRepository>>()
         {}.getType();
 
-        List<BrandImagesRepository> brandDtoList = modelMapper.map(brandList, listType);
-
+        List<BrandImageDTO> brandDTOList = modelMapper.map(brandList, listType);
 
         List<ApparelImages> apparelList = apparelImagesRepository.getAllData();
-        listType = new TypeToken<List<ApparelCategoryRepository>>() {
-        }.getType();
+        listType = new TypeToken<List<ApparelImagesDTO>>(){}.getType();
 
-        List<ApparelImagesRepository> apparelDTOList = modelMapper.map(apparelList, listType);
+        List<ApparelImagesDTO> apparelDTOList = modelMapper.map(apparelList, listType);
 
-        List<CarouselImages> carouselImages = carouselImagesRepository.getAllData();
+        List<CarouselImages> carouseList = carouselImagesRepository.getAllData();
 
-        return new MainScreenResponse(brandDtoList, apparelDTOList, carouselImages);
+        return new MainScreenResponse(brandDTOList, apparelDTOList, carouseList);
     }
 
     @Cacheable(key = "#queryParams", value = "filterAttributesResponse")
@@ -143,7 +143,7 @@ public class CommonDataServiceImpl implements CommonDataService {
         return productInfoDTO;
     }
 
-    @Cacheable(key = "#queryParams", value = "bashMap")
+    @Cacheable(key = "#queryParams", value = "hashMap")
     public HashMap<Integer, ProductInfo> getProductsById(String queryParams) {
 
         String[] productIds = queryParams.split(",");
@@ -164,13 +164,20 @@ public class CommonDataServiceImpl implements CommonDataService {
         return resultMap;
     }
 
-    @Override
+    @Cacheable(key = "#apiName", value = "homeTabsDataResponse")
     public HomeTabsDataResponse getBrandsAndApparelsByGender(String apiName) {
-        return null;
+
+        return productInfoRepository.getBrandsAndApparelsByGender();
     }
 
-    @Override
-    public SearchSuggestionResponse getSearchSuggestionList() {
-        return null;
+    public SearchSuggestionResponse getSearchSuggestionList()
+    {
+        return new SearchSuggestionResponse(genderCategoryRepository.getAllData(),
+                productBrandCategoryRepository.getAllData(), apparelCategoryRepository.getAllData(),
+                productInfoRepository.getGenderAndApparelByIdAndName(),
+                productInfoRepository.getGenderAndBrandByIdAndName(),
+                productInfoRepository.getApparelAndBrandByIdAndName(),
+                productInfoRepository.getGenderAndApparelByIdAndName(),
+                productInfoRepository.getProductByName());
     }
 }

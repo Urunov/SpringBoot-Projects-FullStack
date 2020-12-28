@@ -43,6 +43,7 @@ public class CommonDataController {
         }
     }
 
+    @GetMapping(value = "/products", params = "q")
     public ResponseEntity<?> getProductsByCategories(@RequestParam("q") String queryParams)
     {
         ProductInfoDTO productInfoDTO = commonDataService.getProductsByCategories(queryParams);
@@ -75,10 +76,10 @@ public class CommonDataController {
             return new ResponseEntity<Error>(HttpStatus.CONFLICT);
         }
 
-        return ResponseEntity.of(mainScreenInfoList);
+        return ResponseEntity.ok(mainScreenInfoList);
     }
 
-
+    @GetMapping(value = "/filter", params = "q")
     public ResponseEntity<?> getFilterAttributesProducts(@RequestParam("g") String queryParams)
     {
         String[] splitParams = queryParams.split("=");
@@ -96,14 +97,13 @@ public class CommonDataController {
         return ResponseEntity.ok(result);
     }
 
-    public ResponseEntity<?> getSearchSuggestionList()
-    {
+    @GetMapping("/search-suggestion-list")
+    public ResponseEntity<?> getSearchSuggestionList() {
         SearchSuggestionResponse searchSuggestionResponse = commonDataService.getSearchSuggestionList();
-        if(searchSuggestionResponse == null)
-        {
+        if (searchSuggestionResponse == null) {
             return new ResponseEntity<Error>(HttpStatus.CONFLICT);
         }
 
-        return ResponseEntity.of(searchSuggestionResponse);
+        return ResponseEntity.ok(searchSuggestionResponse);
     }
 }

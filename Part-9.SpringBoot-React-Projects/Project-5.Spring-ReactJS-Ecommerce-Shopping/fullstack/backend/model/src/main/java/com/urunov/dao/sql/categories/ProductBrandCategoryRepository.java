@@ -16,5 +16,5 @@ public interface ProductBrandCategoryRepository extends JpaRepository<ProductBra
         @Query(value = "SELECT p from ProductBrandCategory p")
         List<ProductBrandCategory> getAllData();
 
-        ProductBrandCategory
+        ProductBrandCategory findByType(String brandName);
 }
