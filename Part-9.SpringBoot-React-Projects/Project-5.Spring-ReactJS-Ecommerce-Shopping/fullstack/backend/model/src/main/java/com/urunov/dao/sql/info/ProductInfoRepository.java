@@ -8,6 +8,9 @@ import com.urunov.model.HomeTabsDataResponse;
 import org.javatuples.Pair;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
@@ -17,11 +20,12 @@ import java.util.List;
  * Project: model
  * Github: @urunov
  */
+//@Component
 public interface ProductInfoRepository extends JpaRepository<ProductInfo, Integer> {
 
-    Pair<Long, List<ProductInfo>> getProductByCategories(HashMap<String, String> conditionMap);
+    Pair<Long, List<ProductInfo>> getProductsByCategories(HashMap<String, String> conditionMap);
 
-    List<ProductInfo> getProductsById(String[] productsIds);
+    List<ProductInfo> getProductsById(String[] productIds);
 
     FilterAttributesResponse getFilterAttributesByProducts(HashMap<String, String> conditionMap);
 
@@ -35,7 +39,7 @@ public interface ProductInfoRepository extends JpaRepository<ProductInfo, Intege
 
     List<SearchSuggestionForTwoAttrDTO> getApparelAndBrandByIdAndName();
 
-    @Query(value = "SELECT DISTICT p.name FROM ProductInfo ")
+    @Query(value = "SELECT DISTINCT p.name FROM ProductInfo p")
     List<String> getProductByName();
 
 }

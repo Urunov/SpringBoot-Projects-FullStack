@@ -35,4 +35,8 @@ public class ProductBrandCategory implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "productBrandCategory")
     @JsonIgnore
     private List<BrandImages> brandImages;
+
+    public ProductBrandCategory(String type) {
+        this.type = type;
+    }
 }

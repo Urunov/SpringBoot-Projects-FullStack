@@ -66,22 +66,19 @@ public class CommonDataServiceImpl implements CommonDataService {
     @Autowired
     private ModelMapper modelMapper;
 
-    private HashMap<String, String> getConditionMapFromQuery(String queryParam)
-    {
+    private HashMap<String, String> getConditionMapFromQuery(String queryParam) {
         // append :: at the end so that we can split even if there is just one condition
         // for eg ?q=brand=1::
 
         queryParam = queryParam.concat("::");
         String[] separatedConditions = queryParam.split("::");
 
-        if(separatedConditions.length > 0)
-        {
+        if (separatedConditions.length > 0) {
             HashMap<String, String> conditionMap = new HashMap<>();
 
-            for(String condition: separatedConditions)
-            {
+            for (String condition : separatedConditions) {
                 String[] categories = condition.split("=");
-                if(categories.length > 1) {
+                if (categories.length > 1) {
                     conditionMap.put(categories[0], categories[1]);
                 }
             }
@@ -91,17 +88,17 @@ public class CommonDataServiceImpl implements CommonDataService {
     }
 
     @Cacheable(key = "#apiName", value = "mainScreenResponse")
-    public MainScreenResponse getHomeScreenData(String apiName)
-    {
+    public MainScreenResponse getHomeScreenData(String apiName) {
         List<BrandImages> brandList = brandImagesRepository.getAllData();
 
-        Type listType = new TypeToken<List<BrandImagesRepository>>()
-        {}.getType();
+        Type listType = new TypeToken<List<BrandImagesRepository>>() {
+        }.getType();
 
         List<BrandImageDTO> brandDTOList = modelMapper.map(brandList, listType);
 
         List<ApparelImages> apparelList = apparelImagesRepository.getAllData();
-        listType = new TypeToken<List<ApparelImagesDTO>>(){}.getType();
+        listType = new TypeToken<List<ApparelImagesDTO>>() {
+        }.getType();
 
         List<ApparelImagesDTO> apparelDTOList = modelMapper.map(apparelList, listType);
 
@@ -115,8 +112,7 @@ public class CommonDataServiceImpl implements CommonDataService {
         HashMap<String, String> conditionMap = getConditionMapFromQuery(queryParams);
 
 
-        if(conditionMap != null && !conditionMap.isEmpty())
-        {
+        if (conditionMap != null && !conditionMap.isEmpty()) {
             FilterAttributesResponse filterAttributesResponse = productInfoRepository.getFilterAttributesByProducts(conditionMap);
             filterAttributesResponse.setSortby(sortByCategoryRepository.getAllData());
             return filterAttributesResponse;
@@ -129,13 +125,11 @@ public class CommonDataServiceImpl implements CommonDataService {
     public ProductInfoDTO getProductsByCategories(String queryParams) {
 
         HashMap<String, String> conditionMap = getConditionMapFromQuery(queryParams);
-        ProductInfoDTO productInfoDTO  = null;
+        ProductInfoDTO productInfoDTO = null;
 
-        if(conditionMap !=null && !conditionMap.isEmpty())
-        {
-            Pair<Long, List<ProductInfo>> result = productInfoRepository.getProductByCategories(conditionMap);
-            if(result !=null)
-            {
+        if (conditionMap != null && !conditionMap.isEmpty()) {
+            Pair<Long, List<ProductInfo>> result = productInfoRepository.getProductsByCategories(conditionMap);
+            if (result != null) {
                 productInfoDTO = new ProductInfoDTO(result.getValue0(), result.getValue1());
 
             }
@@ -149,14 +143,12 @@ public class CommonDataServiceImpl implements CommonDataService {
         String[] productIds = queryParams.split(",");
         HashMap<Integer, ProductInfo> resultMap = null;
 
-        if(productIds.length > 0) {
+        if (productIds.length > 0) {
             List<ProductInfo> result = productInfoRepository.getProductsById(productIds);
 
-            if(result !=null)
-            {
+            if (result != null) {
                 resultMap = new HashMap<>();
-                for(ProductInfo info: result)
-                {
+                for (ProductInfo info : result) {
                     resultMap.put(info.getId(), info);
                 }
             }
@@ -170,8 +162,7 @@ public class CommonDataServiceImpl implements CommonDataService {
         return productInfoRepository.getBrandsAndApparelsByGender();
     }
 
-    public SearchSuggestionResponse getSearchSuggestionList()
-    {
+    public SearchSuggestionResponse getSearchSuggestionList() {
         return new SearchSuggestionResponse(genderCategoryRepository.getAllData(),
                 productBrandCategoryRepository.getAllData(), apparelCategoryRepository.getAllData(),
                 productInfoRepository.getGenderAndApparelByIdAndName(),

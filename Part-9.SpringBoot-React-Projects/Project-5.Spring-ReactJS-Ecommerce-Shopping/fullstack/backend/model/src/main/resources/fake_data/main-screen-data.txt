@@ -1,0 +1,21 @@
+brand|Website/brands/b1.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105963/zckf4bzdrknbzgyqyxcb.png|Anouk
+brand|Website/brands/b2.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105965/wenn1zcpgf37e9oa1z4e.png|Mango
+brand|Website/brands/b3.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105966/tuk4suwzops3zjzouq7r.png|Nike
+brand|Website/brands/b4.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105967/apxetgfkaaxwo2tq7cfc.png|Mast & Harbour
+brand|Website/brands/b5.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105968/jnsm6ynmvr2ei3nxqutn.jpg|Roadster
+brand|Website/brands/b6.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105969/cxgfyhyqyznzdzh5sbks.png|Invictus
+category|Website/categories/cat5.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105970/xhjsvollns5ptmrmdxwc.png|Tshirts|Men
+category|Website/categories/cat4.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105972/u9hadup4hhgc7h3lsl5l.png|Dresses|Women
+category|Website/categories/cat3.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105973/jpbdnsre2isczjudkrnl.png|Kurtas|Women
+category|Website/categories/cat2.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105974/ahbklutciomfdi7uf7bk.png|Casual Trousers|Men
+category|Website/categories/cat1.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105976/phxdpnewmacmnipeycxg.png|Tops|Women
+category|Website/categories/cat6.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105977/d7ul4mcxhtzbsbf8aqs3.png|Sports Shoes|Men
+carousel|Website/carousel/c1.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105979/x66lj1b4y4j2vz2rn26x.png
+carousel|Website/carousel/c4.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105981/xrvbpzjfhdhro9wooimh.png
+carousel|Website/carousel/c2.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105983/obndib6ujdyxsphn6h6s.png
+carousel|Website/carousel/c3.png|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105985/bxco4bjsnacotaj1w9l0.png
+carousel|Website/carousel/men-circular-icon.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105986/s6hkposzszbldqrb1rzn.jpg|Men
+carousel|Website/carousel/women-circular-icon.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105986/nbdn4usqzbklceqquf4j.jpg|Women
+carousel|Website/carousel/kids-circular-icon.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105987/yafkspofakzpyxywuuyu.jpg|Boys,Girls
+carousel|Website/carousel/home-circular-icon.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105988/koa6wiqk3dh41wzofzns.jpg|Home & Living
+carousel|Website/carousel/essentials-circular-icon.jpg|https://res.cloudinary.com/drzudfgzl/image/upload/v1596105989/vjrturanxn2gkpj1d3nt.jp2|Essentials

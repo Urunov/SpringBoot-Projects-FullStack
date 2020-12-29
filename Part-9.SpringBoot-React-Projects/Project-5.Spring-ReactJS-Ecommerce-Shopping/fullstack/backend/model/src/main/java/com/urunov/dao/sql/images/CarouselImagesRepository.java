@@ -13,6 +13,6 @@ import java.util.List;
  */
 public interface CarouselImagesRepository extends JpaRepository<CarouselImages, Integer> {
 
-@Query(value = "SELECT DISTINCT c FROM CarouselImages c")
-List<CarouselImages> getAllData();
+    @Query(value = "SELECT DISTINCT c FROM CarouselImages c")
+    List<CarouselImages> getAllData();
 }

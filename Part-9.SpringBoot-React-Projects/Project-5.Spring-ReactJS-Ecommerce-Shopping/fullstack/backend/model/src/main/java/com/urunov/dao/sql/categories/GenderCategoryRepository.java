@@ -11,8 +11,7 @@ import java.util.List;
  * Project: model
  * Github: @urunov
  */
-public interface GenderCategoryRepository extends JpaRepository<GenderCategory, Integer >
-{
+public interface GenderCategoryRepository extends JpaRepository<GenderCategory, Integer> {
 
     @Query(value = "SELECT g FROM GenderCategory g")
     List<GenderCategory> getAllData();

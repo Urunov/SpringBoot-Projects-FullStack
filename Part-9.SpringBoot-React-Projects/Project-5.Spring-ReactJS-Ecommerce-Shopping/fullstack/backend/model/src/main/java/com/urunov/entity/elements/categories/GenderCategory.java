@@ -36,4 +36,10 @@ public class GenderCategory implements Serializable {
     @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
     private List<ProductInfo> productInfos;
- }
+
+    public GenderCategory(int genderId, String gender) {
+
+        this.id = genderId;
+        this.type = gender;
+    }
+}

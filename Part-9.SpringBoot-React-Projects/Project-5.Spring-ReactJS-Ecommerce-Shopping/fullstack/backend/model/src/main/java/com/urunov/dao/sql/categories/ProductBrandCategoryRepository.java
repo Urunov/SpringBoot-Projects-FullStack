@@ -13,8 +13,8 @@ import java.util.List;
  */
 public interface ProductBrandCategoryRepository extends JpaRepository<ProductBrandCategory, Integer> {
 
-        @Query(value = "SELECT p from ProductBrandCategory p")
-        List<ProductBrandCategory> getAllData();
+    @Query(value = "SELECT p from ProductBrandCategory p")
+    List<ProductBrandCategory> getAllData();
 
-        ProductBrandCategory findByType(String brandName);
+    ProductBrandCategory findByType(String brandName);
 }

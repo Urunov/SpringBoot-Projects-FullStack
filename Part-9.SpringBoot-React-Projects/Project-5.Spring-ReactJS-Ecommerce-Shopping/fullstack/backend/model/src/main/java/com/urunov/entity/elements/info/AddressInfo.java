@@ -38,14 +38,13 @@ public class AddressInfo implements Serializable {
     private String country;
 
 
+    @OneToOne(mappedBy = "addressInfo")
+    private OrderInfo order;
 
-      @OneToOne(mappedBy = "addressInfo")
-      private OrderInfo order;
-
-      // Bank
-      @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
-      @JsonIgnore
-      private List<BankInfo> banks;
+    // Bank
+    @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<BankInfo> banks;
 
 
 }

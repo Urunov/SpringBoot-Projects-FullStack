@@ -19,11 +19,11 @@ import java.io.Serializable;
 @ToString
 public class HomeTabsDataResponse implements Serializable {
 
-   private BrandsAndApparelsDTO men;
-   private BrandsAndApparelsDTO women;
-   private BrandsAndApparelsDTO boys;
-   private BrandsAndApparelsDTO girls;
-   private BrandsAndApparelsDTO essentials;
-   private BrandsAndApparelsDTO homeAndLiving;
+    private BrandsAndApparelsDTO men;
+    private BrandsAndApparelsDTO women;
+    private BrandsAndApparelsDTO boys;
+    private BrandsAndApparelsDTO girls;
+    private BrandsAndApparelsDTO essentials;
+    private BrandsAndApparelsDTO homeAndLiving;
 
 }

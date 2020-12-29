@@ -33,4 +33,10 @@ public class PriceRangeCategory implements Serializable {
     @JsonIgnore
     private List<ProductInfo> productInfos;
 
+
+    public PriceRangeCategory(int id, String type) {
+
+        this.id = id;
+        this.type = type;
+    }
 }

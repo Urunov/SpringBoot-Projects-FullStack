@@ -30,5 +30,9 @@ public class CarouselImages {
     private String imageURL;
 
 
-
+    public CarouselImages(String s, String imageLocalPath, String imageURL) {
+        this.link = s;
+        this.imageLocalPath = imageLocalPath;
+        this.imageURL = imageURL;
+    }
 }

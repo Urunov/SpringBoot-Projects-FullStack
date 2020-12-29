@@ -5,10 +5,8 @@ import com.urunov.entity.elements.categories.ApparelCategory;
 import com.urunov.entity.elements.categories.GenderCategory;
 import com.urunov.entity.elements.categories.PriceRangeCategory;
 import com.urunov.entity.elements.categories.ProductBrandCategory;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -24,8 +22,9 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @ToString
+@Component
 @Entity
-//@Table(indexes = {@Index(columnList = "gender_id, apparel_id, brand_id, price")})
+@Table(indexes = {@Index(columnList = "gender_id, apparel_id, brand_id, price")})
 public class ProductInfo implements Serializable {
 
     @Id
@@ -72,8 +71,30 @@ public class ProductInfo implements Serializable {
     @JsonIgnore
     private PriceRangeCategory priceRangeCategory;
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "productInfo")
+    @OneToMany(mappedBy = "productInfo")
     @JsonIgnore
     private List<OrderInfo> orderInfo;
 
+    public ProductInfo(int id, String productName, Date generateRandomDate, ProductBrandCategory productBrandCategory,
+                       GenderCategory genderCategory, ApparelCategory apparelCategory,
+                       PriceRangeCategory priceRangeCategory, int availableQuantity, int deliveryTime,
+                       double price, float generateRandomFloat, boolean verificationStatus,
+                       String imageLocalPath, String imageURL) {
+
+        this.id = id;
+        this.name = productName;
+        this.publicationDate = generateRandomDate;
+        this.productBrandCategory = productBrandCategory;
+        this.genderCategory = genderCategory;
+        this.apparelCategory = apparelCategory;
+        this.priceRangeCategory = priceRangeCategory;
+        this.availableQuantity = availableQuantity;
+        this.imageUrl = imageURL;
+        this.imageLocalPath = imageLocalPath;
+        this.ratings = generateRandomFloat;
+        this.verificationStatus = verificationStatus;
+        this.deliveryTime = deliveryTime;
+        this.price = price;
+
+    }
 }

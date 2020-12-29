@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 import com.urunov.dto.FilterAttributesWithTotalltemsDTO;
+
 /**
  * User: hamdamboy
  * Project: model

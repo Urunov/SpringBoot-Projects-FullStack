@@ -36,4 +36,8 @@ public class ApparelCategory implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "apparelCategory")
     @JsonIgnore
     private List<ApparelImages> apparelImages;
+
+    public ApparelCategory(String apparel) {
+        this.type = apparel;
+    }
 }
