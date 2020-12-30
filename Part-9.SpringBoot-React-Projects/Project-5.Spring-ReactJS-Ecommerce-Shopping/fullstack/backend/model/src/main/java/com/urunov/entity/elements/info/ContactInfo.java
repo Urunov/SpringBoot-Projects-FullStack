@@ -33,9 +33,9 @@ public class ContactInfo {
 
     private String other;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "contactInfo")
-    @JsonIgnore
-    private List<BankInfo> banks;
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "contactInfo")
+//    @JsonIgnore
+//    private List<BankInfo> banks;
 
 
 }

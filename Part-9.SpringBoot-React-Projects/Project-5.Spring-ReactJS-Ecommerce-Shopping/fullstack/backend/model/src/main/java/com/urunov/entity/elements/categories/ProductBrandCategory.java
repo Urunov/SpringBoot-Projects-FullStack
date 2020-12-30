@@ -1,13 +1,12 @@
 package com.urunov.entity.elements.categories;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.urunov.entity.elements.images.BrandImages;
-import com.urunov.entity.elements.info.ProductInfo;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * User: hamdamboy
@@ -28,14 +27,14 @@ public class ProductBrandCategory implements Serializable {
 
     private String type;
 
-    @OneToMany(mappedBy = "productBrandCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnore
-    private List<ProductInfo> productInfos;
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "productBrandCategory")
-    @JsonIgnore
-    private List<BrandImages> brandImages;
-
+//    @OneToMany(mappedBy = "productBrandCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JsonIgnore
+//    private List<ProductInfo> productInfos;
+//
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "productBrandCategory")
+//    @JsonIgnore
+//    private List<BrandImages> brandImages;
+//
     public ProductBrandCategory(String type) {
         this.type = type;
     }

@@ -25,6 +25,4 @@ public class SortByCategory implements Serializable {
     private int id;
 
     private String type;
-
-
 }

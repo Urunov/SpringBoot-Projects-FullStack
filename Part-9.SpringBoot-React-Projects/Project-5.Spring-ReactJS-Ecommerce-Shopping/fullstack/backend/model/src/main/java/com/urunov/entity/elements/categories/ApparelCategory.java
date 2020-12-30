@@ -1,13 +1,12 @@
 package com.urunov.entity.elements.categories;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.urunov.entity.elements.images.ApparelImages;
-import com.urunov.entity.elements.info.ProductInfo;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * User: hamdamboy
@@ -29,13 +28,13 @@ public class ApparelCategory implements Serializable {
 
     private String type;
 
-    @OneToMany(mappedBy = "apparelCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnore
-    private List<ProductInfo> productInfos;
-
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "apparelCategory")
-    @JsonIgnore
-    private List<ApparelImages> apparelImages;
+//    @OneToMany(mappedBy = "apparelCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JsonIgnore
+//    private List<ProductInfo> productInfos;
+//
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "apparelCategory")
+//    @JsonIgnore
+//    private List<ApparelImages> apparelImages;
 
     public ApparelCategory(String apparel) {
         this.type = apparel;

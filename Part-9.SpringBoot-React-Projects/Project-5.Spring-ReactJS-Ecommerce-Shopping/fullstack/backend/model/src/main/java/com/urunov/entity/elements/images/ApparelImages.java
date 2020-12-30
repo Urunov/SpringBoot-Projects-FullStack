@@ -30,16 +30,16 @@ public class ApparelImages {
 
     private String imageURL;
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "apparel_id", referencedColumnName = "id")
-    //@JsonIgnore
-    private ApparelCategory apparelCategory;
-
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "gender_id")
-    //@JsonIgnore
-    private GenderCategory genderCategory;
-
+//    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JoinColumn(name = "apparel_id", referencedColumnName = "id")
+//    //@JsonIgnore
+//    private ApparelCategory apparelCategory;
+//
+//    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    @JoinColumn(name = "gender_id")
+//    //@JsonIgnore
+//    private GenderCategory genderCategory;
+//
 
     public ApparelImages(String title, String imageLocalPath, String imageURL) {
         this.title = title;

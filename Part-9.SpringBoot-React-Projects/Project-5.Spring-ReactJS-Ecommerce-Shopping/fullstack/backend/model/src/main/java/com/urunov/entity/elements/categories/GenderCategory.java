@@ -1,13 +1,12 @@
 package com.urunov.entity.elements.categories;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.urunov.entity.elements.images.ApparelImages;
-import com.urunov.entity.elements.info.ProductInfo;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * User: hamdamboy
@@ -19,7 +18,6 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @ToString
-@AllArgsConstructor
 @Entity
 public class GenderCategory implements Serializable {
 
@@ -29,17 +27,17 @@ public class GenderCategory implements Serializable {
 
     private String type;
 
-    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnore
-    private List<ApparelImages> apparelImages;
-
-    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-    @JsonIgnore
-    private List<ProductInfo> productInfos;
-
-    public GenderCategory(int genderId, String gender) {
-
-        this.id = genderId;
-        this.type = gender;
-    }
+//    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JsonIgnore
+//    private List<ApparelImages> apparelImages;
+//
+//    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JsonIgnore
+//    private List<ProductInfo> productInfos;
+//
+//    public GenderCategory(int genderId, String gender) {
+//
+//        this.id = genderId;
+//        this.type = gender;
+//    }
 }
