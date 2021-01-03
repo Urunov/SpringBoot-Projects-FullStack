@@ -1,11 +1,15 @@
 package com.urunov.entity.elements.images;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.urunov.entity.elements.categories.ApparelCategory;
-import com.urunov.entity.elements.categories.GenderCategory;
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * User: hamdamboy
@@ -18,7 +22,7 @@ import javax.persistence.*;
 @RequiredArgsConstructor
 @ToString
 @Entity
-public class ApparelImages {
+public class ApparelImages implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

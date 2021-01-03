@@ -1,12 +1,12 @@
 package com.urunov.entity.elements.categories;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.urunov.entity.elements.info.ProductInfo;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.List;
 
 /**
  * User: hamdamboy
@@ -29,14 +29,14 @@ public class PriceRangeCategory implements Serializable {
     private String type;
 
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "priceRangeCategory")
-    @JsonIgnore
-    private List<ProductInfo> productInfos;
-
-
-    public PriceRangeCategory(int id, String type) {
-
-        this.id = id;
-        this.type = type;
-    }
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "priceRangeCategory")
+//    @JsonIgnore
+//    private List<ProductInfo> productInfos;
+//
+//
+//    public PriceRangeCategory(int id, String type) {
+//
+//        this.id = id;
+//        this.type = type;
+//    }
 }

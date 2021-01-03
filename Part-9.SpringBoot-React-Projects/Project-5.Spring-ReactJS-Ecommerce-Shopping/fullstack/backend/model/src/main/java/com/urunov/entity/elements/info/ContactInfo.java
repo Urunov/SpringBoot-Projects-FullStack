@@ -37,5 +37,7 @@ public class ContactInfo {
 //    @JsonIgnore
 //    private List<BankInfo> banks;
 
+    // Customer OneToOne
+
 
 }

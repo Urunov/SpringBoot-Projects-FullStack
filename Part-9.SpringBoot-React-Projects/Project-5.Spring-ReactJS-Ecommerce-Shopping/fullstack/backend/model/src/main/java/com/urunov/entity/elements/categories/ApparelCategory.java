@@ -36,7 +36,5 @@ public class ApparelCategory implements Serializable {
 //    @JsonIgnore
 //    private List<ApparelImages> apparelImages;
 
-    public ApparelCategory(String apparel) {
-        this.type = apparel;
-    }
+
 }

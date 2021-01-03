@@ -1,9 +1,12 @@
 package com.urunov.entity.elements.images;
 
-import com.urunov.entity.elements.categories.ProductBrandCategory;
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * User: hamdamboy
@@ -16,7 +19,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class BrandImages {
+public class BrandImages implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
