@@ -1,34 +1,26 @@
-//package com.urunov.controller;
-//
-//import com.urunov.dto.ProductInfoDTO;
-//import com.urunov.entity.elements.info.ProductInfo;
-//import com.urunov.model.FilterAttributesResponse;
-//import com.urunov.model.HomeTabsDataResponse;
-//import com.urunov.model.MainScreenResponse;
-//import com.urunov.model.SearchSuggestionResponse;
-//
-//import com.urunov.service.interfaces.CommonDataService;
-//import com.urunov.service.interfaces.LoadFakeDataService;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.core.env.Environment;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.http.ResponseEntity;
-//import org.springframework.web.bind.annotation.GetMapping;
-//import org.springframework.web.bind.annotation.RequestParam;
-//import org.springframework.web.bind.annotation.RestController;
-//
-//import java.util.HashMap;
-//import java.util.Objects;
-//
-///**
-// * User: hamdamboy
-// * Project: model
-// * Github: @urunov
-// */
-//
-//@RestController
-//public class CommonDataController {
-//
+package com.urunov.controller;
+
+import com.urunov.dto.ProductInfoDTO;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * User: hamdamboy
+ * Project: model
+ * Github: @urunov
+ */
+
+@RestController
+public class CommonDataController {
+
+    private ProductInfoDTO productInfoDTO;
+
+    @GetMapping("/result")
+    public ResponseEntity<?> getResult(){
+        return (ResponseEntity<?>) productInfoDTO.getProducts();
+    }
+
 //    @Autowired
 //    Environment environment;
 //
@@ -115,4 +107,6 @@
 //
 //        return ResponseEntity.ok(searchSuggestionResponse);
 //    }
-//}
+
+
+}
