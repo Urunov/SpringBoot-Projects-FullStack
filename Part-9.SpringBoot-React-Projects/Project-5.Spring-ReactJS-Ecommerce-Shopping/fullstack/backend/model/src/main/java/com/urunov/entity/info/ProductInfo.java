@@ -1,4 +1,4 @@
-package com.urunov.entity.elements.info;
+package com.urunov.entity.info;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -53,6 +53,8 @@ public class ProductInfo implements Serializable {
      *   Mapping and DB integration.
      *   Apparel Category
      * **/
+
+
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "apparel_id")
 //    private ApparelCategory apparelCategory;

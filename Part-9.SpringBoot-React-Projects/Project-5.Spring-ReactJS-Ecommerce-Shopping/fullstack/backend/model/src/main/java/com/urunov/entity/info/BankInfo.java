@@ -1,4 +1,4 @@
-package com.urunov.entity.elements.info;
+package com.urunov.entity.info;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.urunov.entity.elements.categories;
+package com.urunov.entity.categories;
 
 import lombok.*;
 
@@ -13,14 +13,13 @@ import java.io.Serializable;
  * Project: model
  * Github: @urunov
  */
-
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 @Entity
-public class PriceRangeCategory implements Serializable {
+public class ProductBrandCategory implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,15 +27,15 @@ public class PriceRangeCategory implements Serializable {
 
     private String type;
 
-
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "priceRangeCategory")
+//    @OneToMany(mappedBy = "productBrandCategory", cascade = CascadeType.ALL, orphanRemoval = true)
 //    @JsonIgnore
 //    private List<ProductInfo> productInfos;
 //
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "productBrandCategory")
+//    @JsonIgnore
+//    private List<BrandImages> brandImages;
 //
-//    public PriceRangeCategory(int id, String type) {
-//
-//        this.id = id;
-//        this.type = type;
-//    }
+    public ProductBrandCategory(String type) {
+        this.type = type;
+    }
 }

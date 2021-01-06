@@ -1,6 +1,6 @@
 package com.urunov.dto;
 
-import com.urunov.entity.elements.info.ProductInfo;
+import com.urunov.entity.info.ProductInfo;
 import lombok.*;
 
 import java.io.Serializable;

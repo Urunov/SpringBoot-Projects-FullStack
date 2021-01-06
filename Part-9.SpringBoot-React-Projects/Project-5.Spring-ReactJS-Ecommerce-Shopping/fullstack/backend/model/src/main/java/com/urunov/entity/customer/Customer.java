@@ -1,12 +1,12 @@
-package com.urunov.entity.elements.customer;
+package com.urunov.entity.customer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.info.OrderInfo;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * User: hamdamboy
@@ -34,7 +34,9 @@ public class Customer implements Serializable {
 
 
     // Order
-
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "customer")
+    @JsonIgnore
+    private List<OrderInfo> orderInfos;
     // card (Bank)
 
     // address

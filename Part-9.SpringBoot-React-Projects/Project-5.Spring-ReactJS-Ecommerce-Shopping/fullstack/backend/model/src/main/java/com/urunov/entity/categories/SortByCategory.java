@@ -1,4 +1,4 @@
-package com.urunov.entity.elements.categories;
+package com.urunov.entity.categories;
 
 import lombok.*;
 

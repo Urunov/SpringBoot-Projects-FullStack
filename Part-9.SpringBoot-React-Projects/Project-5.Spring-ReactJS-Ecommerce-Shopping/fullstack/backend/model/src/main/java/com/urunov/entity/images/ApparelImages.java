@@ -1,4 +1,4 @@
-package com.urunov.entity.elements.images;
+package com.urunov.entity.images;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

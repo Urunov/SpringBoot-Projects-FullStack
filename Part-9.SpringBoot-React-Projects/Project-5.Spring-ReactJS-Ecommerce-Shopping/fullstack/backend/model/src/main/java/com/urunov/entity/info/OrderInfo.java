@@ -1,6 +1,7 @@
-package com.urunov.entity.elements.info;
+package com.urunov.entity.info;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.customer.Customer;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,8 +28,6 @@ public class OrderInfo implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int customerId;
-
     private String timestamp;
 
     private String deliveryStatus;
@@ -43,4 +42,8 @@ public class OrderInfo implements Serializable {
 //    @ManyToOne
 //    @JsonIgnore
 //    private ProductInfo productInfo;
+
+    @ManyToOne
+    @JsonIgnore
+    private Customer customer;
 }
