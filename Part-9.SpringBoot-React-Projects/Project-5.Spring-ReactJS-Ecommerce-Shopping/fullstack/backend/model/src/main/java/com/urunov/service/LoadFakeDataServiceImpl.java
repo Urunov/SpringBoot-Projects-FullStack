@@ -42,6 +42,7 @@
 //    private final int BOYS = 4;
 //    private final int HOME_AND_LIVING = 5;
 //    private final int ESSENTIALS = 6;
+
 //
 //    private final String DATA_DIRECTORY = "fake_data";
 //    private final String MAIN_SCREEN_DATA = "main-screen_data.txt";

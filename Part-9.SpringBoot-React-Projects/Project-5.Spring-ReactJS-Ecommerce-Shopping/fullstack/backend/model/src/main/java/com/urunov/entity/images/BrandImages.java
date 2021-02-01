@@ -1,11 +1,10 @@
 package com.urunov.entity.images;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.categories.ProductBrandCategory;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -31,9 +30,10 @@ public class BrandImages implements Serializable {
 
     private String imageUrl;
 
-//    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "brand_id", referencedColumnName = "id")
-//    private ProductBrandCategory productBrandCategory;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "brand_id", referencedColumnName = "id")
+    @JsonIgnore
+    private ProductBrandCategory productBrandCategory;
 
     public BrandImages(String title, String imageLocalPath, String imageURL) {
         this.title = title;

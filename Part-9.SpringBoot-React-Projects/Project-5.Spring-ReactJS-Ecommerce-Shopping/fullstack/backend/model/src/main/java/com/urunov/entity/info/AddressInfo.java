@@ -1,6 +1,7 @@
 package com.urunov.entity.info;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.customer.Customer;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -38,13 +39,20 @@ public class AddressInfo implements Serializable {
     private String country;
 
 
-//    @OneToOne(mappedBy = "addressInfo")
-//    private OrderInfo order;
-//
-//    // Bank
-//    @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
-//    @JsonIgnore
-//    private List<BankInfo> banks;
+    @OneToOne(mappedBy = "addressInfo")
+    @JsonIgnore
+    private OrderInfo order;
+
+    // Bank
+    @OneToMany(mappedBy = "addressInfo", orphanRemoval = true, cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<BankInfo> banks;
+
+    // Customer
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "customer_id")
+    @JsonIgnore
+    private Customer customer;
 
 
 }

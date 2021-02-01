@@ -35,13 +35,14 @@ public class OrderInfo implements Serializable {
     private String trackPackageLink;
 
 
-//    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "address_id", referencedColumnName = "id")
-//    private AddressInfo addressInfo;
-//
-//    @ManyToOne
-//    @JsonIgnore
-//    private ProductInfo productInfo;
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    private AddressInfo addressInfo;
+
+
+    @ManyToOne
+    @JsonIgnore
+    private ProductInfo productInfo;
 
     @ManyToOne
     @JsonIgnore

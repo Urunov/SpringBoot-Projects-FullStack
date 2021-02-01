@@ -1,7 +1,6 @@
 //package com.urunov.dao.sql.images;
 //
-//import com.urunov.entity.elements.images.BrandImages;
-//import org.springframework.boot.json.JacksonJsonParser;
+//import com.urunov.entity.images.BrandImages;
 //import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.data.jpa.repository.Query;
 //

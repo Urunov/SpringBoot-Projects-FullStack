@@ -1,5 +1,7 @@
 package com.urunov.entity.info;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.customer.Customer;
 import lombok.*;
 
 import javax.persistence.*;
@@ -23,8 +25,6 @@ public class BankInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private int customerId;
-
     private int sellerId;
 
     private String firstName;
@@ -37,12 +37,18 @@ public class BankInfo {
 
     private String accountNumber;
 
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "address_id")
-//    private AddressInfo addressInfo;
-//
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "contact_id")
-//    private ContactInfo contactInfo;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
+    private AddressInfo addressInfo;
 
+    //Contact
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "contact_id")
+    private ContactInfo contactInfo;
+
+    //Customer
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "customer_id")
+    @JsonIgnore
+    private Customer customer;
 }

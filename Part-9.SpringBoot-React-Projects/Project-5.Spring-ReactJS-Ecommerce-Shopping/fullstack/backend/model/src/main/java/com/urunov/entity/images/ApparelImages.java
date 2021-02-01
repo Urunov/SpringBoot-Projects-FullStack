@@ -1,14 +1,11 @@
 package com.urunov.entity.images;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.categories.ApparelCategory;
+import com.urunov.entity.categories.GenderCategory;
+import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -19,7 +16,7 @@ import java.io.Serializable;
 
 @Getter
 @Setter
-@RequiredArgsConstructor
+@NoArgsConstructor
 @ToString
 @Entity
 public class ApparelImages implements Serializable {
@@ -34,15 +31,15 @@ public class ApparelImages implements Serializable {
 
     private String imageURL;
 
-//    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "apparel_id", referencedColumnName = "id")
-//    //@JsonIgnore
-//    private ApparelCategory apparelCategory;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "apparel_id", referencedColumnName = "id")
+    @JsonIgnore
+    private ApparelCategory apparelCategory;
 //
-//    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-//    @JoinColumn(name = "gender_id")
-//    //@JsonIgnore
-//    private GenderCategory genderCategory;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "gender_id")
+    @JsonIgnore
+    private GenderCategory genderCategory;
 //
 
     public ApparelImages(String title, String imageLocalPath, String imageURL) {

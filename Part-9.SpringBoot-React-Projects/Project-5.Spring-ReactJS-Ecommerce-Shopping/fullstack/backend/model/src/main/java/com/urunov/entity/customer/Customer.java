@@ -1,6 +1,9 @@
 package com.urunov.entity.customer;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.info.AddressInfo;
+import com.urunov.entity.info.BankInfo;
+import com.urunov.entity.info.ContactInfo;
 import com.urunov.entity.info.OrderInfo;
 import lombok.*;
 
@@ -37,11 +40,21 @@ public class Customer implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "customer")
     @JsonIgnore
     private List<OrderInfo> orderInfos;
-    // card (Bank)
 
-    // address
+    // Card (Bank)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "customer")
+    @JsonIgnore
+    private List<BankInfo> bankInfos;
 
-    // contact
+    // Address
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "customer")
+    @JsonIgnore
+    private List<AddressInfo> adresses;
+
+    // Contact
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "contactInfo_id", referencedColumnName = "id")
+    private ContactInfo contactInfo;
 
     // searching engine
 

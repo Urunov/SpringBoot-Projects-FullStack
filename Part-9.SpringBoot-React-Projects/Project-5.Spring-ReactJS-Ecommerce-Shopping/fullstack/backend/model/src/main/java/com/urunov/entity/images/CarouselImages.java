@@ -15,7 +15,6 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 public class CarouselImages {
 
@@ -30,9 +29,9 @@ public class CarouselImages {
     private String imageURL;
 
 
-//    public CarouselImages(String link, String imageLocalPath, String imageURL) {
-//        this.link = link;
-//        this.imageLocalPath = imageLocalPath;
-//        this.imageURL = imageURL;
-//    }
+    public CarouselImages(String link, String imageLocalPath, String imageURL) {
+        this.link = link;
+        this.imageLocalPath = imageLocalPath;
+        this.imageURL = imageURL;
+    }
 }

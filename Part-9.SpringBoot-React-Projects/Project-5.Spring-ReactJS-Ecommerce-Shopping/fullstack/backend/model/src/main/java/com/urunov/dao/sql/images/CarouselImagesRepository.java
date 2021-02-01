@@ -1,6 +1,6 @@
 //package com.urunov.dao.sql.images;
 //
-//import com.urunov.entity.elements.images.CarouselImages;
+//import com.urunov.entity.images.CarouselImages;
 //import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.data.jpa.repository.Query;
 //
@@ -13,6 +13,6 @@
 // */
 //public interface CarouselImagesRepository extends JpaRepository<CarouselImages, Integer> {
 //
-//    @Query(value = "SELECT DISTINCT c FROM CarouselImages c")
-//    List<CarouselImages> getAllData();
+////    @Query(value = "SELECT DISTINCT c FROM CarouselImages c")
+////    List<CarouselImages> getAllData();
 //}

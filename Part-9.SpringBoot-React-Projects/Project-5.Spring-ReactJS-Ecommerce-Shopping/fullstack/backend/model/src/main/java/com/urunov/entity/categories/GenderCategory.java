@@ -1,12 +1,13 @@
 package com.urunov.entity.categories;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.urunov.entity.images.ApparelImages;
+import com.urunov.entity.info.ProductInfo;
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * User: hamdamboy
@@ -27,17 +28,17 @@ public class GenderCategory implements Serializable {
 
     private String type;
 
-//    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JsonIgnore
-//    private List<ApparelImages> apparelImages;
+    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
+    private List<ApparelImages> apparelImages;
 //
-//    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JsonIgnore
-//    private List<ProductInfo> productInfos;
+    @OneToMany(mappedBy = "genderCategory", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
+    private List<ProductInfo> productInfos;
 //
-//    public GenderCategory(int genderId, String gender) {
-//
-//        this.id = genderId;
-//        this.type = gender;
-//    }
+    public GenderCategory(int genderId, String gender) {
+
+        this.id = genderId;
+        this.type = gender;
+    }
 }

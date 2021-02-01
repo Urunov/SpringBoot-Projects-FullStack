@@ -1,5 +1,6 @@
 //package com.urunov.service;
 //
+//import com.google.common.reflect.TypeToken;
 //import com.urunov.dao.sql.categories.ApparelCategoryRepository;
 //import com.urunov.dao.sql.categories.GenderCategoryRepository;
 //import com.urunov.dao.sql.categories.ProductBrandCategoryRepository;
@@ -11,20 +12,16 @@
 //import com.urunov.dto.ApparelImagesDTO;
 //import com.urunov.dto.BrandImageDTO;
 //import com.urunov.dto.ProductInfoDTO;
-//import com.urunov.entity.elements.images.ApparelImages;
-//import com.urunov.entity.elements.images.BrandImages;
-//import com.urunov.entity.elements.images.CarouselImages;
-//import com.urunov.entity.elements.info.ProductInfo;
-//import com.urunov.model.FilterAttributesResponse;
-//import com.urunov.model.HomeTabsDataResponse;
+//import com.urunov.entity.images.ApparelImages;
+//import com.urunov.entity.images.BrandImages;
+//import com.urunov.entity.images.CarouselImages;
+//import com.urunov.entity.info.ProductInfo;
 //import com.urunov.model.MainScreenResponse;
-//import com.urunov.model.SearchSuggestionResponse;
 //import com.urunov.service.interfaces.CommonDataService;
-//import org.javatuples.Pair;
 //import org.modelmapper.ModelMapper;
-//import org.modelmapper.TypeToken;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.cache.annotation.Cacheable;
+//import org.springframework.data.util.Pair;
 //import org.springframework.stereotype.Service;
 //
 //import java.lang.reflect.Type;
@@ -62,10 +59,10 @@
 //
 //    @Autowired
 //    private SortByCategoryRepository sortByCategoryRepository;
-//
+////
 //    @Autowired
 //    private ModelMapper modelMapper;
-//
+////
 //    private HashMap<String, String> getConditionMapFromQuery(String queryParam) {
 //        // append :: at the end so that we can split even if there is just one condition
 //        // for eg ?q=brand=1::
@@ -87,8 +84,10 @@
 //        return null;
 //    }
 //
+//
+//
 //    @Cacheable(key = "#apiName", value = "mainScreenResponse")
-//    public MainScreenResponse getHomeScreenData(String apiName) {
+//     public MainScreenResponse getHomeScreenData(String apiName) {
 //        List<BrandImages> brandList = brandImagesRepository.getAllData();
 //
 //        Type listType = new TypeToken<List<BrandImagesRepository>>() {
@@ -108,12 +107,12 @@
 //    }
 //
 //    @Cacheable(key = "#queryParams", value = "filterAttributesResponse")
-//    public FilterAttributesResponse getFilterAttributesByProducts(String queryParams) {
+//    public com.urunov.model.FilterAttributesResponse getFilterAttributesByProducts(String queryParams) {
 //        HashMap<String, String> conditionMap = getConditionMapFromQuery(queryParams);
 //
 //
 //        if (conditionMap != null && !conditionMap.isEmpty()) {
-//            FilterAttributesResponse filterAttributesResponse = productInfoRepository.getFilterAttributesByProducts(conditionMap);
+//            com.urunov.model.FilterAttributesResponse filterAttributesResponse = productInfoRepository.getFilterAttributesByProducts(conditionMap);
 //            filterAttributesResponse.setSortby(sortByCategoryRepository.getAllData());
 //            return filterAttributesResponse;
 //        }
@@ -157,13 +156,13 @@
 //    }
 //
 //    @Cacheable(key = "#apiName", value = "homeTabsDataResponse")
-//    public HomeTabsDataResponse getBrandsAndApparelsByGender(String apiName) {
+//    public com.urunov.model.HomeTabsDataResponse getBrandsAndApparelsByGender(String apiName) {
 //
 //        return productInfoRepository.getBrandsAndApparelsByGender();
 //    }
 //
-//    public SearchSuggestionResponse getSearchSuggestionList() {
-//        return new SearchSuggestionResponse(genderCategoryRepository.getAllData(),
+//    public com.urunov.model.SearchSuggestionResponse getSearchSuggestionList() {
+//        return new com.urunov.model.SearchSuggestionResponse(genderCategoryRepository.getAllData(),
 //                productBrandCategoryRepository.getAllData(), apparelCategoryRepository.getAllData(),
 //                productInfoRepository.getGenderAndApparelByIdAndName(),
 //                productInfoRepository.getGenderAndBrandByIdAndName(),
