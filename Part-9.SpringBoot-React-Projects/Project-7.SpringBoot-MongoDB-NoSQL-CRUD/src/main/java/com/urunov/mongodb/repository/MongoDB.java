@@ -19,4 +19,20 @@ public interface MongoDB extends MongoRepository<Employees, String> {
  *    Office website:
  *        https://www.mongodb.com/try/download/compass
  *
+ *
+ *  -------------------------------------------------------------
+ *  db.createUser(
+ *   {
+ *     user: "reportsUser",
+ *     pwd: passwordPrompt(),  // or cleartext password
+ *     roles: [
+ *        { role: "read", db: "reporting" },
+ *        { role: "read", db: "products" },
+ *        { role: "read", db: "sales" },
+ *        { role: "readWrite", db: "accounts" }
+ *     ]
+ *   }
+ * )
+ *
  * */
+
