@@ -12,6 +12,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class DatabaseSequence {
     //
     private String id;
-    private long seq;
+    private String seq;
 
 }

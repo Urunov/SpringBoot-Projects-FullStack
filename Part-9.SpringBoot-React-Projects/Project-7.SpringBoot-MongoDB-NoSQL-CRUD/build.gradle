@@ -27,7 +27,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.junit.vintage:junit-vintage-engine'
     implementation 'org.springframework.boot:spring-boot-starter-validation:2.4.0'
-
+    compile  'io.springfox:springfox-swagger2:2.7.0'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.7.0'
 
 
 }
