@@ -1,0 +1,12 @@
+## DB
+
+use codevisuals;
+db.createUser(
+  {
+    user: "codevisuals",
+    pwd: "codevisuals",
+    roles : [
+      { role: "readWrite", db: "codevisuals" }
+    ]
+  }
+);
