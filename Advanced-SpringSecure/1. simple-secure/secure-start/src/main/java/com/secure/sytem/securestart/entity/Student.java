@@ -14,8 +14,7 @@ import lombok.*;
 @ToString
 public class Student {
     //
+    private Integer studentId;
     private String name;
-    private String lastName;
-    private String 
 
 }
