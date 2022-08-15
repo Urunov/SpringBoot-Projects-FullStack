@@ -57,27 +57,39 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
                 User.builder()
                         .username("urunov")
                         .password(passwordEncoder.encode("urunov1987"))
-                        .authorities(STUDENT.getGrantedAuthorities())
+                        .authorities("STUDENT")
+ //                       .authorities(STUDENT.getGrantedAuthorities())
 //                        .roles(STUDENT.name()) // ROLE_STUDENT
                         .build();
 
         UserDetails lindaUser = User.builder()
                 .username("linda")
                 .password(passwordEncoder.encode("linda333"))
-                .authorities(ADMIN.getGrantedAuthorities())
+                .authorities("ADMIN")
+ //               .authorities(ADMIN.getGrantedAuthorities())
 //                .roles(ADMIN.name()) // ROLE_ADMIN
                 .build();
 
         UserDetails tomUser = User.builder()
                 .username("tom")
                 .password(passwordEncoder.encode("tom555"))
-                .authorities(ADMINTRAINEE.getGrantedAuthorities())
+                .authorities("ADMINTRAINEE")
+//                .authorities(ADMINTRAINEE.getGrantedAuthorities())
 //                .roles(ADMINTRAINEE.name()) // ROLE ADMINTRAINEE
                 .build();
-        return new InMemoryUserDetailsManager(
+
+        UserDetails hotamboyUser = User.builder()
+                .username("hotam")
+                .password(passwordEncoder.encode("hotamboy"))
+                .build();
+
+        return new InMemoryUserDetailsManager( // manage user(s)
                 lindaUser,
                 urunovUser,
-                tomUser
+                tomUser,
+                hotamboyUser
         );
+
+
     }
 }

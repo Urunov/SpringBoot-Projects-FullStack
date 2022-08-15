@@ -18,7 +18,6 @@ import java.util.List;
 @RequestMapping("/api/v1/student/")
 public class StudentController {
     //
-
     private static final List<Student> students = Arrays.asList(
             new Student(1, "James Bond"),
             new Student(2, "Lary Gaga"),
@@ -27,7 +26,7 @@ public class StudentController {
     );
 
     @GetMapping(path = "{studentId}")
-    public Student getStudent(@PathVariable("studentId") Integer studentId){
+    public Student getStudent(@PathVariable("studentId") Integer studentId) {
 
         return students
                 .stream()
