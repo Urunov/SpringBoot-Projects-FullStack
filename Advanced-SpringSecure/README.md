@@ -36,3 +36,12 @@
   
   
 ## 2. Core Spring Security
+
+
+![pic6](https://user-images.githubusercontent.com/11626327/185386076-3455dd54-838b-4c22-9d2e-45cf2ad162a8.JPG)
+![pic7](https://user-images.githubusercontent.com/11626327/185386088-bfae653b-7f50-429d-abe5-f5522a4b69b0.JPG)
+
+![pic3](https://user-images.githubusercontent.com/11626327/185386045-eaf6bf2d-9594-4c93-a358-31149bb94546.JPG)
+![pic4](https://user-images.githubusercontent.com/11626327/185386053-2b584bc4-701f-4c0a-bb5f-2c78a2b84bf1.JPG)
+![pic5](https://user-images.githubusercontent.com/11626327/185386068-d5a84c3b-cbcd-4ca7-999e-ebdd7985808a.JPG)
+![pic2](https://user-images.githubusercontent.com/11626327/185386042-11db0876-0303-4b27-af67-c9a3a873921e.JPG)
