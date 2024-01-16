@@ -1,0 +1,10 @@
+
+
+The Spring AI project aims to streamline the development of applications that incorporate artificial intelligence functionality without unnecessary complexity.
+
+The project draws inspiration from notable Python projects, such as LangChain and LlamaIndex, but Spring AI is not a direct port of those projects.
+The project was founded with the belief that the next wave of Generative AI applications will not be only for Python developers but will be ubiquitous across many programming languages.
+
+At its core, Spring AI provides abstractions that serve as the foundation for developing AI applications. 
+These abstractions have multiple implementations, enabling easy component swapping with minimal code changes.
+For example, Spring AI introduces the ChatClient interface with implementations for OpenAI and Azure OpenAI.
