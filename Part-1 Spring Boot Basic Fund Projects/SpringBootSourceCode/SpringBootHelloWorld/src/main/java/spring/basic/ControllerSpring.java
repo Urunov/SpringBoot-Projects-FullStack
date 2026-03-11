@@ -22,6 +22,7 @@ public class ControllerSpring {
 
     @GetMapping("/hey")
     public HelloSpring Greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+        System.out.println("running");
         return new HelloSpring(counter.incrementAndGet(), String.format(template, name));
     }
 }
